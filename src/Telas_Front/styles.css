@@ -1,13 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: rgba(128, 128, 128, 0.205);
 }
-
+/* Barra de navegação */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0d214f;
+    background-color: #27374D;
     padding: 10px 20px;
     color: white;
 }
@@ -56,8 +57,6 @@ body {
     margin: 2px 0;
 }
 
-/* Mesmo CSS como antes */
-
 /* Adicione a animação de slide e fade */
 @keyframes slideFadeIn {
     from {
@@ -89,4 +88,59 @@ body {
 .navbar-menu.active {
     display: block;
     animation: slideFadeIn 0.3s ease-in-out;
+}
+/* Cartão */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    max-width: calc(50% - 20px); /* 50% de largura menos o espaço entre os cartões */
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.card p {
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #fcfcfc;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border: .1px solid black;
+    
+    
+}
+
+.card-button:hover {
+    background-color: #b9babb83;
 }

@@ -1,3 +1,4 @@
+/* Configurações do menu Hamburguer */
 const toggleButton = document.getElementById('navbar-toggle');
 const menu = document.getElementById('navbar-menu');
 
