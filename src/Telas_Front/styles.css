@@ -1,8 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgba(128, 128, 128, 0.205);
+    background-color: rgba(128, 128, 128, 0.534);
 }
+
 /* Barra de navegação */
 .navbar {
     display: flex;
@@ -15,6 +16,7 @@ body {
 
 .navbar-logo {
     font-size: 24px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .navbar-menu {
@@ -91,23 +93,19 @@ body {
 }
 /* Cartão */
 .card-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .card {
-    flex: 1;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    overflow: hidden;
-    max-width: calc(50% - 20px); /* 50% de largura menos o espaço entre os cartões */
-    box-sizing: border-box;
+    padding: 20px;
 }
 
 .card img {
@@ -132,15 +130,19 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: #fcfcfc;
-    color: black;
+    background-color: #007bff;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    border: .1px solid black;
-    
-    
 }
 
 .card-button:hover {
-    background-color: #b9babb83;
+    background-color: #0056b3;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #33333391;
+    color: white;
 }
