@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgba(128, 128, 128, 0.534);
+    background-color: #66666650;
 }
 
 /* Barra de navegação */
@@ -9,13 +9,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #27374D;
+    background-color: #001F3F;
     padding: 10px 20px;
     color: white;
 }
 
 .navbar-logo {
-    font-size: 24px;
+    font-size: 44px;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -25,8 +25,8 @@ body {
     padding: 40px;
     margin: 0;
     position: absolute;
-    top: 49px;
-    right: 2px;
+    top: 75px;
+    right: 8px;
     background-color: #0d214fe3;
     border-radius: 4px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -39,7 +39,7 @@ body {
 
 .navbar-menu li {
     padding: 20px;
-    
+
 }
 
 .navbar-menu a {
@@ -65,6 +65,7 @@ body {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -76,6 +77,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+
     to {
         opacity: 0;
         transform: translateY(-10px);
@@ -91,6 +93,7 @@ body {
     display: block;
     animation: slideFadeIn 0.3s ease-in-out;
 }
+
 /* Cartão */
 .card-container {
     display: grid;
@@ -143,6 +146,20 @@ body {
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: #33333391;
+    background-color: black;
     color: white;
+}
+
+.icone_div {
+    color: white;
+}
+
+.Icone {
+    font-size: xx-large;
+}
+
+.additional-info {
+    background-color: #000000d3;
+    padding: 20px;
+    text-align: center;
 }
