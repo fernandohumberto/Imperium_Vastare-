@@ -28,6 +28,7 @@ li {
 	--light-yellow: #FFF2C6;
 	--orange: #FD7238;
 	--light-orange: #FFE0D3;
+
 }
 
 html {
@@ -497,32 +498,47 @@ body {
 
 
 #botao_Cartao {
-	position: sticky;
+	display: flex;
+	justify-content: center;
+	position: relative;
 	left: 65%;
 	font-size: 15px;
 	border: none;
 	padding: 6px;
-	border-radius: 20px;
+	border-radius: 5px;
 	top: 10px;
+	cursor: pointer;
+	overflow: hidden;
 
 }
 
 #botao_Cartao:hover {
-	padding-right: 22px;
-	padding-left: 20px;
-	background-color: ;
-	transition: 0.2s;
+	background-color: #e6e33c;
+	transition: 0.3s;
+	padding-left: 18px;
+	padding-right: 16px;
+}
 
+
+@media screen and (max-width: 356px) {
+	#botao_Cartao {
+		position: relative;
+		left: 40%;
+		transition: .5s;
+
+	}
 
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 303px) {
 	#botao_Cartao {
 		position: relative;
-		left: 80%;
-		transition: 0.1s;
+		left: 5%;
+		transition: .5s;
+
 
 	}
+
 }
 
 
