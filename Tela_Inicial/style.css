@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
 }
 
 a {
@@ -17,34 +18,36 @@ li {
 :root {
 	--poppins: 'Poppins', sans-serif;
 	--lato: 'Lato', sans-serif;
-	--light: #c0b6b6;
-	--blue: #0e253b;
-	--light-blue: #f7f7f7;
-	--grey: #eee;
 
+	--light: #8ebbd0;
+	--blue: #0080ff;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
 	--red: #DB504A;
 	--yellow: #FFCE26;
-	--light-yellow: #FFF2C6;
+	--light-yellow: #7c6e99;
 	--orange: #FD7238;
 	--light-orange: #FFE0D3;
 
 
-	/* Cores dark */
-	--dark-grey: #AAAAAA;
-	--dark: #342E37;
+
 }
 
 html {
 	overflow-x: hidden;
 }
 
+/* Cores de background  escuro*/
 body.dark {
-	--light: #0C0C1E;
-	--grey: #060714;
+	--light: #05050f;
+	--grey: #1b1f46;
 	--dark: #FBFBFB;
 }
 
-body {
+
+body{
 	background: var(--grey);
 	overflow-x: hidden;
 }
@@ -291,22 +294,7 @@ body {
 	position: relative;
 }
 
-#content nav .notification .num {
-	position: absolute;
-	top: -6px;
-	right: -6px;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	border: 2px solid var(--light);
-	background: var(--red);
-	color: var(--light);
-	font-weight: 700;
-	font-size: 12px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 
 #content nav .profile img {
 	width: 36px;
@@ -371,42 +359,6 @@ body {
 	color: var(--dark);
 }
 
-#content main .head-title .left .breadcrumb {
-	display: flex;
-	align-items: center;
-	grid-gap: 16px;
-}
-
-#content main .head-title .left .breadcrumb li {
-	color: var(--dark);
-}
-
-#content main .head-title .left .breadcrumb li a {
-	color: var(--dark-grey);
-	pointer-events: none;
-}
-
-#content main .head-title .left .breadcrumb li a.active {
-	color: var(--blue);
-	pointer-events: unset;
-}
-
-#content main .head-title .btn-download {
-	height: 36px;
-	padding: 0 16px;
-	border-radius: 36px;
-	background: var(--blue);
-	color: var(--light);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	grid-gap: 10px;
-	font-weight: 500;
-}
-
-
-
-
 #content main .box-info {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -417,11 +369,14 @@ body {
 #content main .box-info li {
 	padding: 24px;
 	background: var(--light);
-	border-radius: 20px;
+	border-radius: 10px;
 	display: flex;
 	align-items: center;
 	grid-gap: 24px;
+
 }
+
+
 
 #content main .box-info li .bx {
 	width: 80px;
@@ -431,16 +386,21 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #000000;
+	
+
 }
 
 #content main .box-info li:nth-child(1) .bx {
 	background: var(--light-blue);
 	color: var(--blue);
+
 }
 
 #content main .box-info li:nth-child(2) .bx {
 	background: var(--light-yellow);
 	color: var(--yellow);
+
 }
 
 #content main .box-info li:nth-child(3) .bx {
@@ -606,6 +566,7 @@ body {
 
 	#content main .box-info {
 		grid-template-columns: 1fr;
+		background-color: #000000;
 	}
 
 	#content main .table-data .head {
