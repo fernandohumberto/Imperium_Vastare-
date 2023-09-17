@@ -1,0 +1,23 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    overflow: hidden;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    padding: 20px;
+    margin-top: -30%;
+    
+  }

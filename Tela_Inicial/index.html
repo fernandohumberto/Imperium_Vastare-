@@ -7,7 +7,8 @@
 
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<!-- Meu CSS -->
+	<!-- Todos os CSS -->
+	<link rel="stylesheet" href="tabela.css">
 	<link rel="stylesheet" href="style.css">
 
 	<title>Imperium Vastare</title>
@@ -194,20 +195,47 @@
 
 
 
-
-
-
-
-
-
-
-
+		
+		<div style="width: 500px; height: 500px; margin-top:10%;">
+			<canvas id="grafico1"></canvas>
+		</div>
+		<!--Tabela-->
+		<div class="container">
+		<table class="tabela">
+			<tr>
+			  <th>Item </th>
+			  <th>Data</th>
+			  <th>Valor</th>
+			</tr>
+			<tr>
+			  <td contenteditable="true"></td>
+			  <td contenteditable="true"></td>
+			  <td contenteditable="true"></td>
+			</tr>
+			<tr>
+			  <td contenteditable="true"></td>
+			  <td contenteditable="true"></td>
+			  <td contenteditable="true"></td>
+			</tr>
+			<tr>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+			  </tr>
+			  <tr>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+			  </tr>
+		  </table>
+		</div>
 
 		<!-- PRINCIPAL -->
 	</section>
 	<!-- CONTEÚDO -->
 
-
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="grafico.js"></script>
 	<script src="script.js"></script>
 </body>
 
