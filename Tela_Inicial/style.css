@@ -418,7 +418,7 @@ body {
 .button {
 	padding: 10px 20px;
 	font-size: 18px;
-	background: var(--blue);
+	background:var(--blue);
 	color: #fff;
 	border: none;
 	border-radius: 5px;
@@ -428,20 +428,18 @@ body {
 	padding: 2%;
 	left: 200px;
 	color: var(--grey);
-
+	
 }
-
-.container_button {
+.container_button{
 	position: static;
 	padding-left: 65%;
 	padding-top: 60
 }
 
-* Efeito de transição quando o cursor passa sobre o botão */ .button:hover {
-	transform: scale(1.05);
-	/* Aumenta um pouco o tamanho */
-	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-	/* Adiciona sombreamento mais pronunciado */
+/* Efeito de transição quando o cursor passa sobre o botão */
+.button:hover {
+	transform: scale(1.05); /* Aumenta um pouco o tamanho */
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombreamento mais pronunciado */
 }
 
 
@@ -546,7 +544,6 @@ body {
 		display: none;
 	}
 }
-
 @media screen and (max-width: 576px) {
 	#content nav form .form-input input {
 		display: none;
@@ -580,6 +577,7 @@ body {
 
 	#content main .box-info {
 		grid-template-columns: 1fr;
+		background-color: #000000;
 	}
 
 	#content main .table-data .head {
