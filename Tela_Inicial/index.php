@@ -1,5 +1,7 @@
+<php>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 	<meta charset="UTF-8">
@@ -190,19 +192,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<!-- PRINCIPAL -->
 	</section>
 	<!-- CONTEÚDO -->
@@ -212,3 +201,9 @@
 </body>
 
 </html>
+
+
+</php>
+
+
+ 
