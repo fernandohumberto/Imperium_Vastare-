@@ -44,7 +44,7 @@ body.dark {
 }
 
 
-body{
+body {
 	background: var(--grey);
 	overflow-x: hidden;
 }
@@ -384,7 +384,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	background-color: #000000;
-	
+
 
 }
 
@@ -415,6 +415,11 @@ body{
 	color: var(--dark);
 }
 
+.img_card {
+width: auto ;
+height: auto;
+overflow: hidden;
+}
 
 
 
