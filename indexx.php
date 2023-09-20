@@ -41,7 +41,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="index.html" class="app-brand-link">
+                    <a href="indexx.php" class="app-brand-link">
                         <span class="app-brand-logo demo">
                             <i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-2 -2 24 24"><path fill="currentColor" d="M9 13v-2a3 3 0 1 1 0-6V4a1 1 0 1 1 2 0v1h.022A2.978 2.978 0 0 1 14 7.978a1 1 0 0 1-2 0A.978.978 0 0 0 11.022 7H11v2a3 3 0 0 1 0 6v1a1 1 0 0 1-2 0v-1h-.051A2.949 2.949 0 0 1 6 12.051a1 1 0 1 1 2 0a.95.95 0 0 0 .949.949H9zm2 0a1 1 0 0 0 0-2v2zM9 7a1 1 0 1 0 0 2V7zm1 13C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10zm0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16z"/></svg></i>
                         </span>
@@ -60,7 +60,7 @@
                     <li class="menu-item active">
                         <a href="index.html" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                            <div data-i18n="Analytics">Dashboard</div>
+                            <div data-i18n="Analytics">Página Inicial</div>
                         </a>
                     </li>
 
@@ -70,7 +70,7 @@
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                            <div data-i18n="Account Settings">Painel de Controle</div>
+                            <div data-i18n="Account Settings">Conteúdos</div>
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
@@ -90,23 +90,6 @@
                             <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
                             <div data-i18n="Authentications">Meus Gastos</div>
                         </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="auth-login-basic.html" class="menu-link" target="_blank">
-                                    <div data-i18n="Basic">Login</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="auth-register-basic.html" class="menu-link" target="_blank">
-                                    <div data-i18n="Basic">Register</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
-                                    <div data-i18n="Basic">Forgot Password</div>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -263,9 +246,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <span class="fw-semibold d-block mb-1">Profit</span>
-                                                <h3 class="card-title mb-2">$12,628</h3>
-                                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
+                                                <span class="fw-semibold d-block mb-1">Inflação Real</span>
+                                                <h3 class="card-title mb-2">0,12%</h3>
+                                                <small class="text-danger fw-semibold"><i class="bx bx-up-arrow-alt"></i> +4,61%</small>
                                             </div>
                                         </div>
                                     </div>
@@ -274,21 +257,20 @@
                                             <div class="card-body">
                                                 <div class="card-title d-flex align-items-start justify-content-between">
                                                     <div class="avatar flex-shrink-0">
-                                                        <img src="../assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded" />
+                                                        <img src="img/money-saving.svg" alt="Credit Card" class="rounded" />
                                                     </div>
                                                     <div class="dropdown">
                                                         <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             <i class="bx bx-dots-vertical-rounded"></i>
                                                         </button>
                                                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                            <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Ver Cronograma</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <span>Sales</span>
+                                                <span>Economia</span>
                                                 <h3 class="card-title text-nowrap mb-1">$4,679</h3>
-                                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>
+                                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +10,50%</small>
                                             </div>
                                         </div>
                                     </div>
@@ -299,47 +281,8 @@
                                 <div class="card">
                                     <div class="row row-bordered g-0">
                                         <div class="col-md-8">
-                                            <h5 class="card-header m-0 me-2 pb-3">Total Revenue</h5>
+                                            <h5 class="card-header m-0 me-2 pb-3">Últimos Conteúdos Vistos</h5>
                                             <div id="totalRevenueChart" class="px-2"></div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="card-body">
-                                                <div class="text-center">
-                                                    <div class="dropdown">
-                                                        <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="growthReportId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            2022
-                                                        </button>
-                                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId">
-                                                            <a class="dropdown-item" href="javascript:void(0);">2021</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">2020</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">2019</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="growthChart"></div>
-                                            <div class="text-center fw-semibold pt-3 mb-2">62% Company Growth</div>
-
-                                            <div class="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between">
-                                                <div class="d-flex">
-                                                    <div class="me-2">
-                                                        <span class="badge bg-label-primary p-2"><i class="bx bx-dollar text-primary"></i></span>
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <small>2022</small>
-                                                        <h6 class="mb-0">$32.5k</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="me-2">
-                                                        <span class="badge bg-label-info p-2"><i class="bx bx-wallet text-info"></i></span>
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <small>2021</small>
-                                                        <h6 class="mb-0">$41.2k</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -352,21 +295,15 @@
                                             <div class="card-body">
                                                 <div class="card-title d-flex align-items-start justify-content-between">
                                                     <div class="avatar flex-shrink-0">
-                                                        <img src="../assets/img/icons/unicons/paypal.png" alt="Credit Card" class="rounded" />
+                                                        <img src="img/dollar-card.svg" alt="Credit Card" class="rounded" />
                                                     </div>
                                                     <div class="dropdown">
-                                                        <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </button>
-                                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
-                                                            <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                        </div>
+                                                        <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                                                     </div>
                                                 </div>
-                                                <span class="d-block mb-1">Payments</span>
-                                                <h3 class="card-title text-nowrap mb-2">$2,456</h3>
-                                                <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small>
+                                                <span class="d-block mb-1">Valor do Dólar</span>
+                                                <h3 class="card-title text-nowrap mb-2">$4,28</h3>
+                                                <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -1,38%</small>
                                             </div>
                                         </div>
                                     </div>
@@ -393,27 +330,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- </div>
-    <div class="row"> -->
-                                    <div class="col-12 mb-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
-                                                    <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
-                                                        <div class="card-title">
-                                                            <h5 class="text-nowrap mb-2">Profile Report</h5>
-                                                            <span class="badge bg-label-warning rounded-pill">Year 2021</span>
-                                                        </div>
-                                                        <div class="mt-sm-auto">
-                                                            <small class="text-success text-nowrap fw-semibold"><i class="bx bx-chevron-up"></i> 68.2%</small>
-                                                            <h3 class="mb-0">$84,686k</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div id="profileReportChart"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -429,16 +345,14 @@
                                 <script>
                                     document.write(new Date().getFullYear());
                                 </script>
-                                , made with ❤️ by
+                                , feito com ❤️ by
                                 <a href="" target="_blank" class="footer-link fw-bolder">ADS 6º M</a>
                             </div>
                             <div>
-                                <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
-                                <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="footer-link me-4">Documentation</a>
+                                <a href="" target="_blank" class="footer-link me-4">Documentação</a>
 
-                                <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank" class="footer-link me-4">Support</a>
+                                <a href="" target="_blank" class="footer-link me-4">Suporte</a>
                             </div>
                         </div>
                     </footer>
@@ -457,7 +371,7 @@
     <!-- / Layout wrapper -->
 
     <div class="buy-now">
-        <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="btn btn-danger btn-buy-now">Upgrade to Pro</a>
+        <a href="" target="_blank" class="btn btn-danger btn-buy-now">Atualizar para o Pro</a>
     </div>
 
     <!-- Core JS -->
