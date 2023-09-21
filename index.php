@@ -68,7 +68,7 @@
                         <span class="menu-header-text">Páginas</span>
                     </li>
                     <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <a href="conteudo.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-dock-top"></i>
                             <div data-i18n="Account Settings">Conteúdos</div>
                         </a>
@@ -236,15 +236,6 @@
                                                     <div class="avatar flex-shrink-0">
                                                         <img src="img/inflacao.svg" alt="chart success" class="rounded" />
                                                     </div>
-                                                    <div class="dropdown">
-                                                        <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </button>
-                                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                                            <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                                 <span class="fw-semibold d-block mb-1">Inflação Real</span>
                                                 <h3 class="card-title mb-2">0,12%</h3>
@@ -268,7 +259,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <span>Economia</span>
+                                                <span class="fw-semibold d-block mb-1">Economia</span>
                                                 <h3 class="card-title text-nowrap mb-1">$4,679</h3>
                                                 <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +10,50%</small>
                                             </div>
@@ -281,7 +272,7 @@
                                 <div class="card">
                                     <div class="row row-bordered g-0">
                                         <div class="col-md-8">
-                                            <h5 class="card-header m-0 me-2 pb-3">Últimos Conteúdos Vistos</h5>
+                                            <h5 class="card-header m-0 me-2 pb-3">Último Conteúdo Visto</h5>
                                             <div id="totalRevenueChart" class="px-2"></div>
                                         </div>
                                     </div>
@@ -301,7 +292,7 @@
                                                         <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                                                     </div>
                                                 </div>
-                                                <span class="d-block mb-1">Valor do Dólar</span>
+                                                <span class="fw-semibold d-block mb-1">Valor do Dólar</span>
                                                 <h3 class="card-title text-nowrap mb-2">$4,28</h3>
                                                 <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -1,38%</small>
                                             </div>
@@ -312,21 +303,13 @@
                                             <div class="card-body">
                                                 <div class="card-title d-flex align-items-start justify-content-between">
                                                     <div class="avatar flex-shrink-0">
-                                                        <img src="../assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded" />
-                                                    </div>
-                                                    <div class="dropdown">
-                                                        <button class="btn p-0" type="button" id="cardOpt1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </button>
-                                                        <div class="dropdown-menu" aria-labelledby="cardOpt1">
-                                                            <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                        </div>
+                                                        <img src="img/selic.svg" alt="Credit Card" class="rounded" />
                                                     </div>
                                                 </div>
-                                                <span class="fw-semibold d-block mb-1">Transactions</span>
-                                                <h3 class="card-title mb-2">$14,857</h3>
-                                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.14%</small>
+                                                <span class="fw-semibold d-block mb-1">Taxa Selic</span>
+                                                <h3 class="card-title mb-2">12,75%
+                                                </h3>
+                                                <small class="text-success fw-semibold"><i class="bx bx-down-arrow-alt"></i> -0,50%</small>
                                             </div>
                                         </div>
                                     </div>
