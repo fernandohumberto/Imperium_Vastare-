@@ -57,7 +57,7 @@
 
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="index.php" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Página Inicial</div>
@@ -79,7 +79,7 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="forum.php" class="menu-link">
+                                <a href="pages-account-settings-notifications.html" class="menu-link">
                                     <div data-i18n="Notifications">Fórum</div>
                                 </a>
                             </li>
@@ -97,7 +97,7 @@
                             <div data-i18n="Misc">Fórum</div>
                         </a>
 
-                        <li class="menu-item">
+                        <li class="menu-item active">
                         <a href="equipe.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-cube-alt"></i>
                             <div data-i18n="Misc">Equipe</div>
@@ -200,162 +200,13 @@
 
                 <!-- / Navbar -->
 
-                <!-- Content wrapper -->
-                <div class="content-wrapper">
-                    <!-- Content -->
-
-                    <div class="container-xxl flex-grow-1 container-p-y">
-                        <div class="row">
-                            <div class="col-lg-8 mb-4 order-0">
-                                <div class="card">
-                                    <div class="d-flex align-items-end row">
-                                        <div class="col-sm-7">
-                                            <div class="card-body">
-                                                <h5 class="card-title text-primary">Parabéns <!--?php echo $_SESSION['nome'] ?--> 🎉</h5>
-                                                <p class="mb-4">
-                                                    Você tem economizado <span class="fw-bold">38%</span> mais que o mês passado. Verifique seu cronograma.
-                                                </p>
-
-                                                <a href="javascript:;" class="btn btn-sm btn-outline-primary">Ver cronograma</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5 text-center text-sm-left">
-                                            <div class="card-body pb-0 px-0 px-md-4">
-                                                <img src="img/cronograma.svg" height="140" alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png" data-app-light-img="illustrations/man-with-laptop-light.png" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 order-1">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="card-title d-flex align-items-start justify-content-between">
-                                                    <div class="avatar flex-shrink-0">
-                                                        <img src="img/inflacao.svg" alt="chart success" class="rounded" />
-                                                    </div>
-                                                </div>
-                                                <span class="fw-semibold d-block mb-1">Inflação Real</span>
-                                                <h3 class="card-title mb-2">0,12%</h3>
-                                                <small class="text-danger fw-semibold"><i class="bx bx-up-arrow-alt"></i> +4,61%</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="card-title d-flex align-items-start justify-content-between">
-                                                    <div class="avatar flex-shrink-0">
-                                                        <img src="img/money-saving.svg" alt="Credit Card" class="rounded" />
-                                                    </div>
-                                                    <div class="dropdown">
-                                                        <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </button>
-                                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                            <a class="dropdown-item" href="javascript:void(0);">Ver Cronograma</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <span class="fw-semibold d-block mb-1">Economia</span>
-                                                <h3 class="card-title text-nowrap mb-1">$4,679</h3>
-                                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +10,50%</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Total Revenue -->
-                            <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
-                                <div class="card">
-                                    <div class="row row-bordered g-0">
-                                        <div class="col-md-8">
-                                            <h5 class="card-header m-0 me-2 pb-3">Último Conteúdo Visto</h5>
-                                            <div id="totalRevenueChart" class="px-2"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/ Total Revenue -->
-                            <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
-                                <div class="row">
-                                    <div class="col-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="card-title d-flex align-items-start justify-content-between">
-                                                    <div class="avatar flex-shrink-0">
-                                                        <img src="img/dollar-card.svg" alt="Credit Card" class="rounded" />
-                                                    </div>
-                                                    <div class="dropdown">
-                                                        <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                                                    </div>
-                                                </div>
-                                                <span class="fw-semibold d-block mb-1">Valor do Dólar</span>
-                                                <h3 class="card-title text-nowrap mb-2">$4,28</h3>
-                                                <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -1,38%</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mb-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="card-title d-flex align-items-start justify-content-between">
-                                                    <div class="avatar flex-shrink-0">
-                                                        <img src="img/selic.svg" alt="Credit Card" class="rounded" />
-                                                    </div>
-                                                </div>
-                                                <span class="fw-semibold d-block mb-1">Taxa Selic</span>
-                                                <h3 class="card-title mb-2">12,75%
-                                                </h3>
-                                                <small class="text-success fw-semibold"><i class="bx bx-down-arrow-alt"></i> -0,50%</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- / Content -->
-
-                    <!-- Footer -->
-                    <footer class="content-footer footer bg-footer-theme">
-                        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                            <div class="mb-2 mb-md-0">
-                                ©
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script>
-                                , feito com ❤️ by
-                                <a href="" target="_blank" class="footer-link fw-bolder">ADS 6º M</a>
-                            </div>
-                            <div>
-
-                                <a href="" target="_blank" class="footer-link me-4">Documentação</a>
-
-                                <a href="" target="_blank" class="footer-link me-4">Suporte</a>
-                            </div>
-                        </div>
-                    </footer>
-                    <!-- / Footer -->
-
-                    <div class="content-backdrop fade"></div>
-                </div>
-                <!-- Content wrapper -->
-            </div>
-            <!-- / Layout page -->
-        </div>
+    
 
         <!-- Overlay -->
         <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
 
-    <div class="buy-now">
-        <a href="" target="_blank" class="btn btn-danger btn-buy-now">Atualizar para o Pro</a>
-    </div>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
