@@ -563,7 +563,10 @@ body {
 	}
 
 	#content nav form.show .form-input button {
-		width: 36px;
+	#content nav form.show~.profile {
+		display: none;
+	}
+	width: 36px;
 		height: 100%;
 		border-radius: 0 36px 36px 0;
 		color: var(--light);
@@ -571,10 +574,7 @@ body {
 	}
 
 	#content nav form.show~.notification,
-	#content nav form.show~.profile {
-		display: none;
-	}
-
+	
 	#content main .box-info {
 		grid-template-columns: 1fr;
 		background-color: #000000;
