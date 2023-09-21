@@ -300,8 +300,8 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
     <!-- CONTEÚDO -->
 
 
-    <script src="js/script.js"></script>
-    <script src="js/API.js"></script>
+    <script src="script.js"></script>
+    <script src="API.js"></script>
 </body>
 
 </html>
