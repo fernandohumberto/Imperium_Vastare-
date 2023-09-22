@@ -72,7 +72,7 @@
 }
 
 .layout-menu-hover .layout-menu {
-  box-shadow: 0 0.625rem 1.25rem rgba(161, 172, 184, 0.5);
+  box-shadow: 0 0.625rem 1.25rem rgba(34, 96, 161, 0.5);
   transition: all 0.3s ease-in-out;
 }
 

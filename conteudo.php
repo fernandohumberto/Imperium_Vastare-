@@ -205,116 +205,147 @@
 
                 <!-- / Navbar -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <!-- conteudo/ cartões -->
-                <!DOCTYPE html>
-<html>
+            <!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-          .card-container {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container-cartoes {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Define 4 colunas igualmente espaçadas */
-            gap: 20px; /* Espaçamento entre os cartões */
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
         }
 
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
+        .cartao {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-left: 10px solid #3498db ;
+            transition: border-left 0.3s ease;
+            width: 100%;
         }
 
-        .container {
-            padding: 16px;
+        .cartao:hover {
+            border-left: 10px solid #e74c3c;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        .cartao h1 {
+            font-size: 24px;
+        }
+
+        .botao {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-position 0.3s ease;
+            background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #2980b9 50%, #2980b9 100%);
+            background-size: 200% 100%;
+            background-position: 100%;
+        }
+
+        .botao:hover {
+            background-position: 0;
+            background-color: #e74c3c;
         }
     </style>
 </head>
 <body>
+    <div class="container-cartoes">
+        <div class="cartao">
+            <h1>Título do Cartão 1</h1>
+            <p>Conteúdo do cartão 1.</p>
+            <button class="botao">Saiba Mais</button>
+        </div>
 
+        <div class="cartao">
+            <h1>Título do Cartão 2</h1>
+            <p>Conteúdo do cartão 2.</p>
+            <button class="botao">Saiba Mais</button>
+        </div>
 
+        <div class="cartao">
+            <h1>Título do Cartão 3</h1>
+            <p>Conteúdo do cartão 3.</p>
+            <button class="botao">Saiba Mais</button>
+        </div>
 
-<div class="card">
-    <img src="imagem1.jpg" alt="Imagem do Cartão 1" style="width:100%">
-    <div class="container">
-        <h4><b>Nome 1</b></h4>
-        <p>Título 1</p>
-        <p>Descrição do cartão 1.</p>
+        <div class="cartao">
+            <h1>Título do Cartão 4</h1>
+            <p>Conteúdo do cartão 4.</p>
+            <button class="botao">Saiba Mais </button>
+        </div>
+
+        <div class="cartao">
+            <h1>Título do Cartão 5</h1>
+            <p>Conteúdo do cartão 5.</p>
+            <button class="botao">Saiba Mais</button>
+        </div>
+        
+        <div class="cartao">
+            <h1>Título do Cartão 6</h1>
+            <p>Conteúdo do cartão 6.</p>
+            <button class="botao">Saiba Mais</button>
+        </div>
+
+        <!-- Adicione mais cartões aqui, se necessário -->
     </div>
-</div>
-
-<div class="card">
-    <img src="imagem2.jpg" alt="Imagem do Cartão 2" style="width:100%">
-    <div class="container">
-        <h4><b>Nome 2</b></h4>
-        <p>Título 2</p>
-        <p>Descrição do cartão 2.</p>
-    </div>
-</div>
-
-<div class="card">
-    <img src="imagem3.jpg" alt="Imagem do Cartão 3" style="width:100%">
-    <div class="container">
-        <h4><b>Nome 3</b></h4>
-        <p>Título 3</p>
-        <p>Descrição do cartão 3.</p>
-    </div>
-</div>
-
-<div class="card">
-    <img src="imagem4.jpg" alt="Imagem do Cartão 4" style="width:100%">
-    <div class="container">
-        <h4><b>Nome 4</b></h4>
-        <p>Título 4</p>
-        <p>Descrição do cartão 4.</p>
-    </div>
-</div>
-
-<div class="card">
-    <img src="imagem5.jpg" alt="Imagem do Cartão 5" style="width:100%">
-    <div class="container">
-        <h4><b>Nome 5</b></h4>
-        <p>Título 5</p>
-        <p>Descrição do cartão 5.</p>
-    </div>
-</div>
-
-<div class="card">
-    <img src="imagem6.jpg" alt="Imagem do Cartão 6" style="width:100%">
-    <div class="container">
-        <h4><b>Nome 6</b></h4>
-        <p>Título 6</p>
-        <p>Descrição do cartão 6.</p>
-    </div>
-</div>
-
-<div class="card">
-    <img src="imagem7.jpg" alt="Imagem do Cartão 7" style="width:100%">
-    <div class="container">
-        <h4><b>Nome 7</b></h4>
-        <p>Título 7</p>
-        <p>Descrição do cartão 7.</p>
-    </div>
-</div>
-
-<div class="card">
-    <img src="imagem8.jpg" alt="Imagem do Cartão 8" style="width:100%">
-    <div class="container">
-        <h4><b>Nome 8</b></h4>
-        <p>Título 8</p>
-        <p>Descrição do cartão 8.</p>
-    </div>
-</div>
-
 </body>
 </html>
 
 
                  <!-- conteudo/ cartões -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>
