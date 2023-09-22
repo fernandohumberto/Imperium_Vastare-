@@ -64,6 +64,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  #tamanho-do-video {
+    width: 80% !important;
+    height: 250px !important;
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

@@ -7,7 +7,7 @@ include_once('../config/conexao.php');
 
 $user = filter_input(INPUT_POST, 'user');
 $senha = filter_input(INPUT_POST, 'senha');
-$nome = filter_input(INPUT_POST, 'nome');
+$nome = filter_input(INPUT_POST, 'user');
 $email = filter_input(INPUT_POST, 'email');
 
 

@@ -1,40 +1,8 @@
-<!DOCTYPE html>
+<?php
+include_once ('config.php') ;
 
-<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
+?>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-
-    <title>Imperium Vastare - Controle seus gastos</title>
-
-    <meta name="description" content="" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-
-    <!-- Icons. Uncomment required icon fonts -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="css/demo.css" />
-    <link rel="stylesheet" href="css/cards.css">
-
-
-
-    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="js/config.js"></script>
-</head>
-
-<body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
@@ -166,7 +134,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['nome'] ?></span>
+                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['user'] ?></span>
 
                                                 </div>
                                             </div>
@@ -202,29 +170,67 @@
                         </ul>
                     </div>
                 </nav>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-                <!-- / Navbar -->
+                <script type="text/javascript">
+                    google.charts.load('current', {
+                        'packages': ['corechart']
+                    });
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    function drawChart() {
+
+                        var data = google.visualization.arrayToDataTable([
+                            ['Task', 'Hours per Day'],
+                            ['Cartão de Crédito', 350],
+                            ['Comida', 250],
+                            ['Investimnetos', 120],
+                            ['Streaming', 55],
+                            ['Gastos Imprevistos', 200],
+                            ['Saldo Restante', 525]
+                        ]);
+
+                        var options = {
+                            title: 'Cronograma de Gastos - (Gastos em R$)'
+                        };
+
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                        chart.draw(data, options);
+                    }
+                </script>
+
+                <div class="content-wrapper">
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row">
+
+                            <div id="piechart" style="width: 900px; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
 
 
-    <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bostap.js" ></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/perfect-scrollbar/perfect-scrollbar.js"></script>
+                <!-- Core JS -->
+                <!-- build:js assets/vendor/js/core.js -->
+                <script src="js/jquery.js"></script>
+                <script src="js/popper.js"></script>
+                <script src="js/bostap.js"></script>
+                <script src="js/bootstrap.js"></script>
+                <script src="js/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="js/menu.js"></script>
-    <!-- endbuild -->
-
-
-
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
+                <script src="js/menu.js"></script>
+                <!-- endbuild -->
 
 
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+                <!-- Main JS -->
+                <script src="js/main.js"></script>
+
+
+                <!-- Place this tag in your head or just before your close body tag. -->
+                <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
