@@ -187,7 +187,7 @@ include_once ('config.php') ;
                             ['Investimnetos', 120],
                             ['Streaming', 55],
                             ['Gastos Imprevistos', 200],
-                            ['Saldo Restante', 525]
+                            ['Saldo Restante', 325]
                         ]);
 
                         var options = {
