@@ -23,7 +23,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
-
+    <link rel="shortcut icon" href="img/favicon-aba.svg">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
