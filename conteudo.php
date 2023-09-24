@@ -1,8 +1,40 @@
-<?php
-include_once ('config.php') ;
+<!DOCTYPE html>
 
-?>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Imperium Vastare - Controle seus gastos</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/cards.css">
+
+
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="js/config.js"></script>
+</head>
+
+<body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
@@ -11,8 +43,10 @@ include_once ('config.php') ;
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
-<span class="app-brand-logo demo">
-                            <i><img src="img/favicon-aba.svg" alt=""></i>
+                        <span class="app-brand-logo demo">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-2 -2 24 24">
+                                    <path fill="currentColor" d="M9 13v-2a3 3 0 1 1 0-6V4a1 1 0 1 1 2 0v1h.022A2.978 2.978 0 0 1 14 7.978a1 1 0 0 1-2 0A.978.978 0 0 0 11.022 7H11v2a3 3 0 0 1 0 6v1a1 1 0 0 1-2 0v-1h-.051A2.949 2.949 0 0 1 6 12.051a1 1 0 1 1 2 0a.95.95 0 0 0 .949.949H9zm2 0a1 1 0 0 0 0-2v2zM9 7a1 1 0 1 0 0 2V7zm1 13C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10zm0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16z" />
+                                </svg></i>
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">Imperium <br>Vastare </span>
                     </a>
@@ -132,7 +166,7 @@ include_once ('config.php') ;
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['user'] ?></span>
+                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['nome'] ?></span>
 
                                                 </div>
                                             </div>
@@ -171,147 +205,84 @@ include_once ('config.php') ;
 
                 <!-- / Navbar -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <!-- conteudo/ cartões -->
-            <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-        }
 
-        .container-cartoes {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            justify-items: center;
-        }
+                <body>
+                    <div class="container">
+                        <div class="card">
+                            <h3>Cartão de Crédito</h3>
+                            <p>Domine a educação financeira e faça do cartão de crédito seu aliado para conquistar seus objetivos.</p>
+                            <a href="#" class="btn">Saiba Mais</a>
+                        </div>
+                        <div class="card">
+                            <h3>Impostos</h3>
+                            <p>Os impostos financiam serviços públicos vitais, garantindo nosso bem-estar e desenvolvimento</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        .cartao {
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            border-left: 10px solid #3498db ;
-            transition: border-left 0.3s ease;
-            width: 100%;
-        }
+                        <div class="card">
+                            <h3>Poupança</h3>
+                            <p>A poupança é a base de uma vida financeira segura, permitindo realizar sonhos e enfrentar imprevistos.</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        .cartao:hover {
-            border-left: 10px solid #e74c3c;
-        }
+                        <div class="card">
+                            <h3>Consumo conciente</h3>
+                            <p>O consumo inteligente preserva nosso bolso e o meio ambiente, promovendo uma vida equilibrada</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        .cartao h1 {
-            font-size: 24px;
-        }
+                        <div class="card">
+                            <h3>Seguros</h3>
+                            <p>Seguros são a proteção que proporcionam tranquilidade financeira em tempos de incerteza</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        .botao {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            cursor: pointer;
-            transition: background-position 0.3s ease;
-            background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #2980b9 50%, #2980b9 100%);
-            background-size: 200% 100%;
-            background-position: 100%;
-        }
+                        <div class="card">
+                            <h3>Dívidas</h3>
+                            <p>Gerenciar dívidas com sabedoria é o caminho para a liberdade financeira e o futuro tranquilo.</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        .botao:hover {
-            background-position: 0;
-            background-color: #e74c3c;
-        }
-    </style>
-</head>
-<body>
-    <div class="container-cartoes">
-        <div class="cartao">
-            <h1>Título do Cartão 1</h1>
-            <p>Conteúdo do cartão 1.</p>
-            <button class="botao">Saiba Mais</button>
-        </div>
+                        <div class="card">
+                            <h3>Contabilidade</h3>
+                            <p>A contabilidade é a linguagem dos negócios, revelando insights cruciais para o sucesso empresarial.</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        <div class="cartao">
-            <h1>Título do Cartão 2</h1>
-            <p>Conteúdo do cartão 2.</p>
-            <button class="botao">Saiba Mais</button>
-        </div>
+                        <div class="card">
+                            <h3>Controle de Dispesas</h3>
+                            <p>Controlar despesas é o alicerce para uma vida financeira saudável e próspera</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        <div class="cartao">
-            <h1>Título do Cartão 3</h1>
-            <p>Conteúdo do cartão 3.</p>
-            <button class="botao">Saiba Mais</button>
-        </div>
+                        <div class="card">
+                            <h3>Inflação</h3>
+                            <p>A inflação impacta o poder de compra, tornando o planejamento financeiro essencial para a estabilidade.</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        <div class="cartao">
-            <h1>Título do Cartão 4</h1>
-            <p>Conteúdo do cartão 4.</p>
-            <button class="botao">Saiba Mais </button>
-        </div>
+                        <div class="card">
+                            <h3>Economia</h3>
+                            <p>A economia é o motor que impulsiona o progresso, influenciando nossas vidas e o futuro do mundo</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        <div class="cartao">
-            <h1>Título do Cartão 5</h1>
-            <p>Conteúdo do cartão 5.</p>
-            <button class="botao">Saiba Mais</button>
-        </div>
-        
-        <div class="cartao">
-            <h1>Título do Cartão 6</h1>
-            <p>Conteúdo do cartão 6.</p>
-            <button class="botao">Saiba Mais</button>
-        </div>
+                        <div class="card">
+                            <h3>Aposentadoria</h3>
+                            <p>Planejar a aposentadoria é assegurar um futuro tranquilo e a realização de sonhos após anos de dedicação</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-        <!-- Adicione mais cartões aqui, se necessário -->
-    </div>
-</body>
-</html>
+                        <div class="card">
+                            <h3>Juros</h3>
+                            <p>Juros podem ser amigos ou inimigos; entender seu papel é fundamental para a saúde financeira.</p>
+                            <a href="#" class="btn">Botão</a>
+                        </div>
 
-
-                 <!-- conteudo/ cartões -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 
+                    </div>
+                </body>
+                <!-- conteudo/ cartões -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>
