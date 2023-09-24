@@ -22,10 +22,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="css/demo.css" />
-    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="../css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../css/demo.css" />
+    <link rel="stylesheet" href="../css/cards.css">
 
 
 
@@ -207,93 +207,106 @@
 
                 <!-- conteudo/ cartões -->
 
+
+                <!DOCTYPE html>
+                <html lang="pt-BR">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Guia de Uso Responsável do Cartão de Crédito</title>
+                    <style>
+                        /* Estilos gerais */
+                        body {
+                            font-family: 'Arial', sans-serif;
+                            margin: 0;
+                            padding: 0;
+                            background-color: #f3f3f3;
+                            color: #333;
+                        }
+
+                        /* Estilos para as seções de conteúdo */
+                        section {
+                            padding: 40px;
+                            background-color: white;
+                            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+                            border-radius: 5px;
+                            margin: 20px;
+                        }
+
+                        /* Estilos para links */
+                        a {
+                            text-decoration: none;
+                            color: #0078d4;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+
+                        /* Estilos para formulário de contato */
+                        form label,
+                        form textarea,
+                        form input,
+                        form button {
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+
+                        button {
+                            background-color: #0078d4;
+                            color: white;
+                            border: none;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+
+                        button:hover {
+                            background-color: #0056b3;
+                        }
+
+                        /* Estilos para títulos */
+                        h1 {
+                            color: #333;
+                        }
+
+                        h2 {
+                            color: #0078d4;
+                        }
+                    </style>
+                </head>
+
                 <body>
-                    <div class="container">
-                        <div class="card">
-                            <h3>Cartão de Crédito</h3>
-                            <img src="img/card.svg" alt="">
-                            <p>Domine a educação financeira e faça do cartão de crédito seu aliado para conquistar seus objetivos.</p>
-                            <a href="Paginas_Educacionais\CartaoCredito.php" class="btn">Saiba Mais</a>
-                        </div>
-                        <div class="card">
-                            <h3>Impostos</h3>
-                            <img src="img/impostos.svg" alt="">
-                            <p>Os impostos financiam serviços públicos vitais, garantindo nosso bem-estar e desenvolvimento</p>
-                            <a href="Paginas_Educacionais\impostos.php" class="btn">Saiba Mais</a>
-                        </div>
+                    <section id="inicio">
+                        <h1>Guia de Uso Responsável do Cartão de Crédito</h1>
+                        <p>Bem-vindo ao nosso guia informativo sobre como usar seu cartão de crédito de forma responsável.</p>
+                    </section>
 
-                        <div class="card">
-                            <h3>Poupança</h3>
-                            <img src="img/poupança.svg" alt="">
-                            <p>A poupança é a base de uma vida financeira segura, permitindo realizar sonhos e enfrentar imprevistos.</p>
-                            <a href="Paginas_Educacionais\poupanca.php" class="btn">Saiba Mais</a>
-                        </div>
+                    <section id="como-usar">
+                        <h2>Como Usar seu Cartão de Crédito de Forma Responsável</h2>
+                        <p>Aqui estão algumas dicas importantes para utilizar seu cartão de crédito de maneira responsável:</p>
+                        <ul>
+                            <li>Não gaste mais do que pode pagar.</li>
+                            <li>Pague suas faturas em dia.</li>
+                            <li>Mantenha um registro de seus gastos.</li>
+                        </ul>
+                    </section>
 
-                        <div class="card">
-                            <h3>Consumo conciente</h3>
-                            <img src="img/consumo_conciente.svg" alt="">
-                            <p>O consumo inteligente preserva nosso bolso e o meio ambiente, promovendo uma vida equilibrada</p>
-                            <a href="Paginas_Educacionais\consumoconciente.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Seguros</h3>
-                            <img src="img/seguro.svg" alt="">
-                            <p>Seguros são a proteção que proporcionam tranquilidade financeira em tempos de incerteza</p>
-                            <a href="Paginas_Educacionais\seguros.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Dívidas</h3>
-                            <img src="img/dividas.svg" alt="">
-                            <p>Gerenciar dívidas com sabedoria é o caminho para a liberdade financeira e o futuro tranquilo.</p>
-                            <a href="Paginas_Educacionais\dividas.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Contabilidade</h3>
-                            <img src="img/contabilidade.svg" alt="">
-                            <p>A contabilidade é a linguagem dos negócios, revelando insights cruciais para o sucesso empresarial.</p>
-                            <a href="Paginas_Educacionais\contabilidade.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Controle de Despesas</h3>
-                            <img src="img/controledispesas.svg" alt="">
-                            <p>Controlar despesas é o alicerce para uma vida financeira saudável e próspera</p>
-                            <a href="Paginas_Educacionais\controlededespesas.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Inflação</h3>
-                            <img src="img/inflacao2.svg" alt="">
-                            <p>A inflação impacta o poder de compra, tornando o planejamento financeiro essencial para a estabilidade.</p>
-                            <a href="Paginas_Educacionais\inflacao.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Economia</h3>
-                            <img src="img/economia.svg" alt="">
-                            <p>A economia é o motor que impulsiona o progresso, influenciando nossas vidas e o futuro do mundo</p>
-                            <a href="Paginas_Educacionais\economia.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Bitcoin</h3>
-                            <img src="img/bitcon.svg" alt="">
-                            <p>O Bitcoin é uma revolução financeira, transformando a forma como realizamos transações digitais.</p>
-                            <a href="Paginas_Educacionais\bitcoin.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Juros</h3>
-                            <img src="img/jurus.svg" alt="">
-                            <p>Juros podem ser amigos ou inimigos; entender seu papel é fundamental para a saúde financeira.</p>
-                            <a href="Paginas_Educacionais\juros.php" class="btn">Saiba Mais</a>
-                        </div>
-
-                    </div>
+                    <section id="dicas">
+                        <h2>Dicas para Maximizar os Benefícios do Cartão de Crédito</h2>
+                        <p>Confira algumas dicas para aproveitar ao máximo seu cartão de crédito:</p>
+                        <ol>
+                            <li>Escolha um cartão com recompensas adequadas às suas necessidades.</li>
+                            <li>Aproveite programas de cashback.</li>
+                            <li>Construa um bom histórico de crédito.</li>
+                        </ol>
+                    </section>
                 </body>
+
+                </html>
+
+
                 <!-- conteudo/ cartões -->
 
                 <!-- Overlay -->

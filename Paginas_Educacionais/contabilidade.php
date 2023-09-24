@@ -22,10 +22,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="css/demo.css" />
-    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="../css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../css/demo.css" />
+    <link rel="stylesheet" href="../css/cards.css">
 
 
 
@@ -207,93 +207,94 @@
 
                 <!-- conteudo/ cartões -->
 
-                <body>
-                    <div class="container">
-                        <div class="card">
-                            <h3>Cartão de Crédito</h3>
-                            <img src="img/card.svg" alt="">
-                            <p>Domine a educação financeira e faça do cartão de crédito seu aliado para conquistar seus objetivos.</p>
-                            <a href="Paginas_Educacionais\CartaoCredito.php" class="btn">Saiba Mais</a>
-                        </div>
-                        <div class="card">
-                            <h3>Impostos</h3>
-                            <img src="img/impostos.svg" alt="">
-                            <p>Os impostos financiam serviços públicos vitais, garantindo nosso bem-estar e desenvolvimento</p>
-                            <a href="Paginas_Educacionais\impostos.php" class="btn">Saiba Mais</a>
-                        </div>
+                <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Contabilidade</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
 
-                        <div class="card">
-                            <h3>Poupança</h3>
-                            <img src="img/poupança.svg" alt="">
-                            <p>A poupança é a base de uma vida financeira segura, permitindo realizar sonhos e enfrentar imprevistos.</p>
-                            <a href="Paginas_Educacionais\poupanca.php" class="btn">Saiba Mais</a>
-                        </div>
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-                        <div class="card">
-                            <h3>Consumo conciente</h3>
-                            <img src="img/consumo_conciente.svg" alt="">
-                            <p>O consumo inteligente preserva nosso bolso e o meio ambiente, promovendo uma vida equilibrada</p>
-                            <a href="Paginas_Educacionais\consumoconciente.php" class="btn">Saiba Mais</a>
-                        </div>
+        section {
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px;
+        }
 
-                        <div class="card">
-                            <h3>Seguros</h3>
-                            <img src="img/seguro.svg" alt="">
-                            <p>Seguros são a proteção que proporcionam tranquilidade financeira em tempos de incerteza</p>
-                            <a href="Paginas_Educacionais\seguros.php" class="btn">Saiba Mais</a>
-                        </div>
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
 
-                        <div class="card">
-                            <h3>Dívidas</h3>
-                            <img src="img/dividas.svg" alt="">
-                            <p>Gerenciar dívidas com sabedoria é o caminho para a liberdade financeira e o futuro tranquilo.</p>
-                            <a href="Paginas_Educacionais\dividas.php" class="btn">Saiba Mais</a>
-                        </div>
+        /* Estilos para links */
+        a {
+            text-decoration: none;
+            color: #0078d4;
+        }
 
-                        <div class="card">
-                            <h3>Contabilidade</h3>
-                            <img src="img/contabilidade.svg" alt="">
-                            <p>A contabilidade é a linguagem dos negócios, revelando insights cruciais para o sucesso empresarial.</p>
-                            <a href="Paginas_Educacionais\contabilidade.php" class="btn">Saiba Mais</a>
-                        </div>
+        a:hover {
+            text-decoration: underline;
+        }
 
-                        <div class="card">
-                            <h3>Controle de Despesas</h3>
-                            <img src="img/controledispesas.svg" alt="">
-                            <p>Controlar despesas é o alicerce para uma vida financeira saudável e próspera</p>
-                            <a href="Paginas_Educacionais\controlededespesas.php" class="btn">Saiba Mais</a>
-                        </div>
+        /* Estilos para títulos */
+        h1 {
+            color: #333;
+        }
 
-                        <div class="card">
-                            <h3>Inflação</h3>
-                            <img src="img/inflacao2.svg" alt="">
-                            <p>A inflação impacta o poder de compra, tornando o planejamento financeiro essencial para a estabilidade.</p>
-                            <a href="Paginas_Educacionais\inflacao.php" class="btn">Saiba Mais</a>
-                        </div>
+        h2 {
+            color: #0078d4;
+        }
+    </style>
+</head>
+<body>
 
-                        <div class="card">
-                            <h3>Economia</h3>
-                            <img src="img/economia.svg" alt="">
-                            <p>A economia é o motor que impulsiona o progresso, influenciando nossas vidas e o futuro do mundo</p>
-                            <a href="Paginas_Educacionais\economia.php" class="btn">Saiba Mais</a>
-                        </div>
 
-                        <div class="card">
-                            <h3>Bitcoin</h3>
-                            <img src="img/bitcon.svg" alt="">
-                            <p>O Bitcoin é uma revolução financeira, transformando a forma como realizamos transações digitais.</p>
-                            <a href="Paginas_Educacionais\bitcoin.php" class="btn">Saiba Mais</a>
-                        </div>
+    <section id="introducao">
+        <h2>O que é Contabilidade?</h2>
+        <p>A contabilidade é a prática de registrar, organizar e analisar transações financeiras de uma empresa para tomar decisões informadas sobre suas finanças.</p>
+    </section>
 
-                        <div class="card">
-                            <h3>Juros</h3>
-                            <img src="img/jurus.svg" alt="">
-                            <p>Juros podem ser amigos ou inimigos; entender seu papel é fundamental para a saúde financeira.</p>
-                            <a href="Paginas_Educacionais\juros.php" class="btn">Saiba Mais</a>
-                        </div>
+    <section id="principios">
+        <h2>Princípios Contábeis</h2>
+        <p>Os princípios contábeis incluem a consistência, a materialidade e a prudência, entre outros, que orientam a prática contábil.</p>
+    </section>
 
-                    </div>
-                </body>
+    <section id="demonstracoes-financeiras">
+        <h2>Demonstrações Financeiras</h2>
+        <p>As demonstrações financeiras, como o balanço patrimonial e a demonstração de resultados, são usadas para comunicar a saúde financeira de uma empresa.</p>
+    </section>
+
+    <section id="gestao-financeira">
+        <h2>Gestão Financeira</h2>
+        <p>A gestão financeira envolve o planejamento, controle e tomada de decisões financeiras para garantir a sustentabilidade e o crescimento da empresa.</p>
+    </section>
+
+
+</body>
+</html>
+
+
+
+
                 <!-- conteudo/ cartões -->
 
                 <!-- Overlay -->

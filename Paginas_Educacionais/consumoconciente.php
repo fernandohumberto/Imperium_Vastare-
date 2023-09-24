@@ -22,10 +22,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="css/demo.css" />
-    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="../css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../css/demo.css" />
+    <link rel="stylesheet" href="../css/cards.css">
 
 
 
@@ -207,93 +207,82 @@
 
                 <!-- conteudo/ cartões -->
 
-                <body>
-                    <div class="container">
-                        <div class="card">
-                            <h3>Cartão de Crédito</h3>
-                            <img src="img/card.svg" alt="">
-                            <p>Domine a educação financeira e faça do cartão de crédito seu aliado para conquistar seus objetivos.</p>
-                            <a href="Paginas_Educacionais\CartaoCredito.php" class="btn">Saiba Mais</a>
-                        </div>
-                        <div class="card">
-                            <h3>Impostos</h3>
-                            <img src="img/impostos.svg" alt="">
-                            <p>Os impostos financiam serviços públicos vitais, garantindo nosso bem-estar e desenvolvimento</p>
-                            <a href="Paginas_Educacionais\impostos.php" class="btn">Saiba Mais</a>
-                        </div>
 
-                        <div class="card">
-                            <h3>Poupança</h3>
-                            <img src="img/poupança.svg" alt="">
-                            <p>A poupança é a base de uma vida financeira segura, permitindo realizar sonhos e enfrentar imprevistos.</p>
-                            <a href="Paginas_Educacionais\poupanca.php" class="btn">Saiba Mais</a>
-                        </div>
 
-                        <div class="card">
-                            <h3>Consumo conciente</h3>
-                            <img src="img/consumo_conciente.svg" alt="">
-                            <p>O consumo inteligente preserva nosso bolso e o meio ambiente, promovendo uma vida equilibrada</p>
-                            <a href="Paginas_Educacionais\consumoconciente.php" class="btn">Saiba Mais</a>
-                        </div>
+                <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo Consciente</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
 
-                        <div class="card">
-                            <h3>Seguros</h3>
-                            <img src="img/seguro.svg" alt="">
-                            <p>Seguros são a proteção que proporcionam tranquilidade financeira em tempos de incerteza</p>
-                            <a href="Paginas_Educacionais\seguros.php" class="btn">Saiba Mais</a>
-                        </div>
+        /* Estilos para as seções de conteúdo */
+        section {
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px;
+        }
 
-                        <div class="card">
-                            <h3>Dívidas</h3>
-                            <img src="img/dividas.svg" alt="">
-                            <p>Gerenciar dívidas com sabedoria é o caminho para a liberdade financeira e o futuro tranquilo.</p>
-                            <a href="Paginas_Educacionais\dividas.php" class="btn">Saiba Mais</a>
-                        </div>
+        /* Estilos para links */
+        a {
+            text-decoration: none;
+            color: #0078d4;
+        }
 
-                        <div class="card">
-                            <h3>Contabilidade</h3>
-                            <img src="img/contabilidade.svg" alt="">
-                            <p>A contabilidade é a linguagem dos negócios, revelando insights cruciais para o sucesso empresarial.</p>
-                            <a href="Paginas_Educacionais\contabilidade.php" class="btn">Saiba Mais</a>
-                        </div>
+        a:hover {
+            text-decoration: underline;
+        }
 
-                        <div class="card">
-                            <h3>Controle de Despesas</h3>
-                            <img src="img/controledispesas.svg" alt="">
-                            <p>Controlar despesas é o alicerce para uma vida financeira saudável e próspera</p>
-                            <a href="Paginas_Educacionais\controlededespesas.php" class="btn">Saiba Mais</a>
-                        </div>
+        /* Estilos para títulos */
+        h1 {
+            color: #333;
+        }
 
-                        <div class="card">
-                            <h3>Inflação</h3>
-                            <img src="img/inflacao2.svg" alt="">
-                            <p>A inflação impacta o poder de compra, tornando o planejamento financeiro essencial para a estabilidade.</p>
-                            <a href="Paginas_Educacionais\inflacao.php" class="btn">Saiba Mais</a>
-                        </div>
+        h2 {
+            color: #0078d4;
+        }
+    </style>
+</head>
+<body>
+    <section id="inicio">
+        <h1>Consumo Consciente</h1>
+        <p>Bem-vindo ao nosso guia informativo sobre consumo consciente.</p>
+    </section>
 
-                        <div class="card">
-                            <h3>Economia</h3>
-                            <img src="img/economia.svg" alt="">
-                            <p>A economia é o motor que impulsiona o progresso, influenciando nossas vidas e o futuro do mundo</p>
-                            <a href="Paginas_Educacionais\economia.php" class="btn">Saiba Mais</a>
-                        </div>
+    <section id="o-que-e">
+        <h2>O que é Consumo Consciente?</h2>
+        <p>O consumo consciente é uma abordagem de compra que considera os impactos sociais e ambientais dos produtos, promovendo decisões de compra mais informadas e responsáveis.</p>
+    </section>
 
-                        <div class="card">
-                            <h3>Bitcoin</h3>
-                            <img src="img/bitcon.svg" alt="">
-                            <p>O Bitcoin é uma revolução financeira, transformando a forma como realizamos transações digitais.</p>
-                            <a href="Paginas_Educacionais\bitcoin.php" class="btn">Saiba Mais</a>
-                        </div>
+    <section id="beneficios">
+        <h2>Benefícios do Consumo Consciente</h2>
+        <p>Os benefícios do consumo consciente incluem a redução do desperdício, a promoção da sustentabilidade e a contribuição para um mundo melhor.</p>
+    </section>
 
-                        <div class="card">
-                            <h3>Juros</h3>
-                            <img src="img/jurus.svg" alt="">
-                            <p>Juros podem ser amigos ou inimigos; entender seu papel é fundamental para a saúde financeira.</p>
-                            <a href="Paginas_Educacionais\juros.php" class="btn">Saiba Mais</a>
-                        </div>
+    <section id="dicas">
+        <h2>Dicas para Praticar o Consumo Consciente</h2>
+        <p>Confira algumas dicas para incorporar o consumo consciente em sua vida:</p>
+        <ul>
+            <li>Compre produtos duráveis e de qualidade.</li>
+            <li>Reduza o consumo de plástico e embalagens descartáveis.</li>
+            <li>Informe-se sobre as práticas das marcas e empresas.</li>
+        </ul>
+    </section>
+</body>
+</html>
 
-                    </div>
-                </body>
+
                 <!-- conteudo/ cartões -->
 
                 <!-- Overlay -->
