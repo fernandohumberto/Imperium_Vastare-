@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="alternativas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0; 
+        }
+
+        .caixa {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 80%; /* Ajuste a largura da caixa conforme necessário */
+            max-width: 600px; /* Largura máxima para manter a legibilidade */
+            margin: 0 auto; 
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+            text-align: center; 
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+        input {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: #3498db;
+            vertical-align: middle;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .bottom-button {
+            width: 80%; 
+            padding: 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            margin: 20px auto; 
+            display: block; 
+        }
+
+        .bottom-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="caixa">
+        <fieldset>
+            <legend>Qual é a sua faixa de renda ?</legend>
+            <label for="opcao1_1">
+                <input type="radio" id="opcao1_1" name="opcao1">
+                Abaixo de R$ 1000,00
+            </label>
+
+            <label for="opcao1_2">
+                <input type="radio" id="opcao1_2" name="opcao1">
+                Entre R$1000,00 a 2000,00
+            </label>
+
+            <label for="opcao1_3">
+                <input type="radio" id="opcao1_3" name="opcao1">
+                Entre R$2000,00 a R$4000,00
+            </label>
+
+            <label for="opcao4_1">
+                <input type="radio" id="opcao1_4" name="opcao1">
+                Acima de R$4000,00
+            </label>
+        </fieldset>
+    </div>
+
+    <div class="caixa">
+        <fieldset>
+            <legend>Qual o seu objetivo financeiro com esse aplicativo?</legend>
+            <label for="opcao2_1">
+                <input type="radio" id="opcao2_1" name="opcao2">
+                Aprender sobre investimetos.
+            </label>
+
+            <label for="opcao2_2">
+                <input type="radio" id="opcao2_2" name="opcao2">
+                Ter um melhor controle dos gastos
+            </label>
+
+            <label for="opcao2_3">
+                <input type="radio" id="opcao2_3" name="opcao2">
+                Planejar a aposentadoria e garantir um futuro confortável.
+            </label>
+
+            <label for="opcao4_1">
+                <input type="radio" id="opcao2_4" name="opcao2">
+                Melhorar meu estilo de vida e alcançar a independência financeira.
+            </label>
+        </fieldset>
+    </div>
+
+    <div class="caixa">
+        <fieldset>
+            <legend>Quais são seus hábitos de consumo?</legend>
+            <label for="opcao3_1">
+                <input type="radio" id="opcao3_1" name="opcao3">
+               Pouco consumo
+            </label>
+
+            <label for="opcao3_2">
+                <input type="radio" id="opcao3_2" name="opcao3">
+                Consumo excessivo 
+            </label>
+
+            <label for="opcao3_3">
+                <input type="radio" id="opcao3_3" name="opcao3">
+                Tenho consumo moderado 
+            </label>
+
+            <label for="opcao4_1">
+                <input type="radio" id="opcao3_4" name="opcao3">
+                Não tenho controle dos meus gastos
+            </label>
+        </fieldset>
+    </div>
+
+    <div class="caixa">
+        <fieldset>
+            <legend>Quantas pessoas moram com você?</legend>
+            <label for="opcao4_1">
+                <input type="radio" id="opcao4_1" name="opcao4">
+                Somente eu 
+            </label>
+
+            <label for="opcao4_2">
+                <input type="radio" id="opcao4_2" name="opcao4">
+                2 á 3 pessoas
+            </label>
+
+            <label for="opcao4_3">
+                <input type="radio" id="opcao4_3" name="opcao4">
+                3 á 4 pessoas
+            </label>
+
+            <label for="opcao4_1">
+                <input type="radio" id="opcao4_4" name="opcao4">
+                5 pessoas ou mais
+            </label>
+        </fieldset>
+    </div>
+
+    <div class="caixa">
+        <fieldset>
+            <legend>Qual seu gasto médio com itens essenciais durante o mês? </legend>
+            <label for="opcao4_1">
+                <input type="radio" id="opcao4_1" name="opcao5">
+                Até R$ 500,00 por mês.
+            </label>
+
+            <label for="opcao4_2">
+                <input type="radio" id="opcao4_2" name="opcao5">
+                Entre R$ 500,00 a R$ 1000,00 por mês.
+            </label>
+
+            <label for="opcao4_3">
+                <input type="radio" id="opcao4_3" name="opcao5">
+                Entre R$ 1000,00 a R$ 2000,00 por mês.
+            </label>
+
+            <label for="opcao4_1">
+                <input type="radio" id="opcao4_4" name="opcao5">
+                Mais de R$ 2000,00 por mês.
+            </label>
+        </fieldset>
+    </div>
+
+    <div class="caixa">
+        <fieldset>
+            <legend>quanto você gasta com itens não essências?</legend>
+            <label for="opcao4_1">
+                <input type="radio" id="opcao4_1" name="opcao6">
+                Até R$200,00 por mês
+            </label>
+
+            <label for="opcao4_2">
+                <input type="radio" id="opcao4_2" name="opcao6">
+                Entre R$ 200,00 a R$ 500,00 por mês.
+            </label>
+
+            <label for="opcao4_3">
+                <input type="radio" id="opcao4_3" name="opcao6">
+                Entre R$ 500,00 a R$ 1000,00 por mês
+            </label>
+
+            <label for="opcao4_1">
+                <input type="radio" id="opcao4_4" name="opcao6">
+                Mais de R$ 1000,00 por mês.
+            </label>
+        </fieldset>
+    </div>
+    <div class="content">
+    </div>
+    <button class="bottom-button">Continuar</button>
+</body>
+
+</html>
