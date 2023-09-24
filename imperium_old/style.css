@@ -18,7 +18,6 @@ li {
 :root {
 	--poppins: 'Poppins', sans-serif;
 	--lato: 'Lato', sans-serif;
-
 	--light: #8ebbd0;
 	--blue: #0080ff;
 	--light-blue: #CFE8FF;
@@ -30,8 +29,6 @@ li {
 	--light-yellow: #7c6e99;
 	--orange: #FD7238;
 	--light-orange: #FFE0D3;
-
-
 
 }
 
@@ -47,7 +44,7 @@ body.dark {
 }
 
 
-body{
+body {
 	background: var(--grey);
 	overflow-x: hidden;
 }
@@ -387,7 +384,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	background-color: #000000;
-	
+
 
 }
 
@@ -418,8 +415,32 @@ body{
 	color: var(--dark);
 }
 
+.button {
+	padding: 10px 20px;
+	font-size: 18px;
+	background:var(--blue);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 2%;
+	left: 200px;
+	color: var(--grey);
+	
+}
+.container_button{
+	position: static;
+	padding-left: 65%;
+	padding-top: 60
+}
 
-
+/* Efeito de transição quando o cursor passa sobre o botão */
+.button:hover {
+	transform: scale(1.05); /* Aumenta um pouco o tamanho */
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombreamento mais pronunciado */
+}
 
 
 #content main .table-data {
@@ -509,10 +530,6 @@ body{
 
 }
 
-
-
-
-
 @media screen and (max-width: 768px) {
 	#sidebar {
 		width: 200px;
@@ -527,12 +544,6 @@ body{
 		display: none;
 	}
 }
-
-
-
-
-
-
 @media screen and (max-width: 576px) {
 	#content nav form .form-input input {
 		display: none;
@@ -552,7 +563,10 @@ body{
 	}
 
 	#content nav form.show .form-input button {
-		width: 36px;
+	#content nav form.show~.profile {
+		display: none;
+	}
+	width: 36px;
 		height: 100%;
 		border-radius: 0 36px 36px 0;
 		color: var(--light);
@@ -560,10 +574,7 @@ body{
 	}
 
 	#content nav form.show~.notification,
-	#content nav form.show~.profile {
-		display: none;
-	}
-
+	
 	#content main .box-info {
 		grid-template-columns: 1fr;
 		background-color: #000000;

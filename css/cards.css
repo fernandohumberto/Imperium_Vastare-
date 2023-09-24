@@ -1,0 +1,88 @@
+ /* Estilo do conteúdo */
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+img{
+    position: relative;
+    padding-left: 10%;
+
+    position: relative;
+    width: 220px;
+    height: 320px;
+
+}
+ /* Estilo dos cartões */
+ .card {
+     background-color: #f4f4f4;
+     border: none;
+     /* Remove completamente as bordas */
+     border-radius: 5px;
+     padding: 20px;
+     margin: 10px;
+     width: 300px;
+     /* Largura fixa em pixels */
+     color: #333;
+     /* Cor padrão do texto */
+     position: relative;
+ }
+
+ /* Estilo dos botões */
+ .btn {
+     background-color: #888888;
+     /* Cor cinza */
+     color: #fff;
+     padding: 10px 20px;
+     /* Tamanho original */
+     text-decoration: none;
+     border-radius: 5px;
+     overflow: hidden;
+     z-index: 1;
+     /* Aumentar a ordem z do botão */
+     position: relative;
+     border: none;
+ }
+
+ /* Efeito de hover para os botões */
+ .btn::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #007BFF;
+     /* Cor azul */
+     transform: scaleX(0);
+     /* Inicialmente, não visível */
+     transform-origin: left;
+     z-index: -1;
+     /* Reduzir a ordem z para estar abaixo do botão */
+     transition: transform 0.3s ease;
+ }
+
+ .btn:hover::before {
+     transform: scaleX(1);
+     /* Torna visível com transição de largura */
+ }
+
+ /* Cor do texto no estado de hover */
+ .btn:hover {
+     color: #fff;
+     /* Cor do texto do botão quando em hover */
+ }
+
+ /* Estilos de responsividade */
+ @media screen and (max-width: 768px) {
+     .card {
+         width: 100%;
+         /* Cartões ocupam a largura total em telas menores */
+     }
+ }

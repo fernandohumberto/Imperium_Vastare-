@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha de Gastos</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="date"], input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo para destacar o total */
+        .total {
+            font-weight: bold;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Planilha de Gastos</h1>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="gastos-list">
+                <!-- Aqui serão inseridos os gastos do localStorage -->
+            </tbody>
+        </table>
+        <div class="form">
+            <input type="date" id="data" placeholder="Data" required>
+            <input type="text" id="descricao" placeholder="Descrição" required>
+            <input type="number" id="valor" placeholder="Valor" required>
+            <button id="adicionar">Adicionar</button>
+        </div>
+        <!-- Exibição do total -->
+        <p id="total" class="total">Total: R$ 0.00</p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dataInput = document.getElementById("data");
+            const descricaoInput = document.getElementById("descricao");
+            const valorInput = document.getElementById("valor");
+            const adicionarButton = document.getElementById("adicionar");
+            const gastosList = document.getElementById("gastos-list");
+            const totalElement = document.getElementById("total");
+
+            let totalGastos = 0;
+            let gastos = JSON.parse(localStorage.getItem("gastos")) || [];
+
+            // Atualizar a tabela com os gastos existentes
+            function atualizarTabela() {
+                gastosList.innerHTML = ""; // Limpar a tabela
+                gastos.forEach((gasto, index) => {
+                    const newRow = document.createElement("tr");
+                    newRow.innerHTML = `
+                        <td>${gasto.data}</td>
+                        <td>${gasto.descricao}</td>
+                        <td>R$ ${gasto.valor.toFixed(2)}</td>
+                        <td><button class="remover" data-index="${index}">Remover</button></td>
+                    `;
+                    gastosList.appendChild(newRow);
+                    totalGastos += gasto.valor;
+                });
+            }
+
+            atualizarTabela();
+
+            totalElement.textContent = `Total: R$ ${totalGastos.toFixed(2)}`;
+
+            adicionarButton.addEventListener("click", function() {
+                const data = dataInput.value;
+                const descricao = descricaoInput.value;
+                const valor = parseFloat(valorInput.value);
+
+                if (!data || !descricao || isNaN(valor) || valor <= 0) {
+                    alert("Por favor, preencha todos os campos corretamente.");
+                    return;
+                }
+
+                // Adicionar o novo gasto à lista
+                const novoGasto = { data, descricao, valor };
+                gastos.push(novoGasto);
+
+                // Atualizar a tabela
+                atualizarTabela();
+
+                // Atualizar o total
+                totalGastos += valor;
+                totalElement.textContent = `Total: R$ ${totalGastos.toFixed(2)}`;
+
+                // Limpar os campos de entrada
+                dataInput.value = "";
+                descricaoInput.value = "";
+                valorInput.value = "";
+
+                // Salvar os gastos no localStorage
+                localStorage.setItem("gastos", JSON.stringify(gastos));
+            });
+
+            // Adicionar um evento de remoção para os botões de remoção
+            gastosList.addEventListener("click", function(e) {
+                if (e.target.classList.contains("remover")) {
+                    const index = e.target.getAttribute("data-index");
+                    const gastoRemovido = gastos[index];
+
+                    // Remover o gasto da lista
+                    gastos.splice(index, 1);
+
+                    // Atualizar o total e a tabela
+                    totalGastos -= gastoRemovido.valor;
+                    totalElement.textContent = `Total: R$ ${totalGastos.toFixed(2)}`;
+                    atualizarTabela();
+
+                    // Atualizar o localStorage
+                    localStorage.setItem("gastos", JSON.stringify(gastos));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
