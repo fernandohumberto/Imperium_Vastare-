@@ -47,6 +47,7 @@ img{
      z-index: 1;
      /* Aumentar a ordem z do botão */
      position: relative;
+     border: none;
  }
 
  /* Efeito de hover para os botões */
