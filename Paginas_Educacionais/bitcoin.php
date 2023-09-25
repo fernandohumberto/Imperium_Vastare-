@@ -208,49 +208,25 @@
 
                 <!-- conteudo/ cartões -->
 
-                <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia sobre Bitcoin</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Guia sobre Bitcoin</h1>
-        <p>Descubra tudo o que você precisa saber sobre Bitcoin.</p>
-    </header>
+                <section id="introducao">
+                    <h2>O que é Bitcoin?</h2>
+                    <p>O Bitcoin é uma criptomoeda digital descentralizada que permite a realização de transações financeiras de forma segura e anônima.</p>
+                </section>
 
-    <section id="introducao">
-        <h2>O que é Bitcoin?</h2>
-        <p>O Bitcoin é uma criptomoeda digital descentralizada que permite a realização de transações financeiras de forma segura e anônima.</p>
-    </section>
+                <section id="como-funciona">
+                    <h2>Como Funciona o Bitcoin?</h2>
+                    <p>O Bitcoin utiliza tecnologia blockchain para registrar todas as transações. É minerado por computadores que resolvem complexos problemas matemáticos.</p>
+                </section>
 
-    <section id="como-funciona">
-        <h2>Como Funciona o Bitcoin?</h2>
-        <p>O Bitcoin utiliza tecnologia blockchain para registrar todas as transações. É minerado por computadores que resolvem complexos problemas matemáticos.</p>
-    </section>
+                <section id="vantagens">
+                    <h2>Vantagens do Bitcoin</h2>
+                    <p>O Bitcoin oferece benefícios como transações rápidas, baixas taxas, segurança e a possibilidade de ser usado globalmente.</p>
+                </section>
 
-    <section id="vantagens">
-        <h2>Vantagens do Bitcoin</h2>
-        <p>O Bitcoin oferece benefícios como transações rápidas, baixas taxas, segurança e a possibilidade de ser usado globalmente.</p>
-    </section>
-
-    <section id="riscos">
-        <h2>Riscos e Considerações</h2>
-        <p>Embora o Bitcoin tenha suas vantagens, também existem riscos, incluindo volatilidade de preços e preocupações regulatórias.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Guia sobre Bitcoin</p>
-    </footer>
-</body>
-</html>
-
-
-
-
+                <section id="riscos">
+                    <h2>Riscos e Considerações</h2>
+                    <p>Embora o Bitcoin tenha suas vantagens, também existem riscos, incluindo volatilidade de preços e preocupações regulatórias.</p>
+                </section>
                 <!-- conteudo/ cartões -->
 
                 <!-- Overlay -->

@@ -1,25 +1,19 @@
  /* Estilo do conteúdo */
- body {
-     font-family: Arial, sans-serif;
-     margin: 0;
-     padding: 0;
- }
-
  .container {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
  }
-img{
+
+.img_card{
     position: relative;
     padding-left: 10%;
-
     position: relative;
     width: 220px;
     height: 320px;
-
 }
  /* Estilo dos cartões */
+
  .card {
      background-color: #f4f4f4;
      border: none;
@@ -32,7 +26,9 @@ img{
      color: #333;
      /* Cor padrão do texto */
      position: relative;
+    
  }
+
 
  /* Estilo dos botões */
  .btn {
@@ -48,6 +44,9 @@ img{
      /* Aumentar a ordem z do botão */
      position: relative;
      border: none;
+     padding-bottom: 5px ;
+     padding-top: 5px;
+     
  }
 
  /* Efeito de hover para os botões */
