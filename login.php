@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Imperium Vastare - Entre em uma conta</title>
-    </head>
+</head>
 
 <body>
     <div class="container">
@@ -23,6 +23,10 @@
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
                         <input type="password" name="senha" placeholder="Senha" />
+                    </div>
+
+                    <div class="">
+                        <a href="recuperaSenha.php"><span>Esqueceu a Senha?</span></a>
                     </div>
                     <input type="submit" value="Login" class="btn solid" />
                 </form>
