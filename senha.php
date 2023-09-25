@@ -17,7 +17,7 @@
 
             <div class="alert alert-success "  role="alert" style="width: 50%; margin-left: 25% !important;">
                <center>
-                Sua nova senha foi enviada com sucesso!!!<br>
+                Sua nova senha foi enviada com sucesso<br>
                 <a href="login.php">
                 <button class="btn"  href="login.php">Login</button>
                 </a>
