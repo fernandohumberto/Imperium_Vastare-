@@ -170,6 +170,31 @@ include_once ('config.php') ;
 
                 <!-- / Navbar -->
 
+
+    <!-- Conteúdo da Página -->
+    <div class="container mt-5">
+        <h1 class="mb-4">Suporte ao Usuário</h1>
+        
+        <!-- Formulário de Contato -->
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Endereço de Email</label>
+                <input type="email" class="form-control" id="email" placeholder="seu.email@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+    </div>
+
+    <!-- Adicione os links para os arquivos JavaScript do Bootstrap 5 aqui -->
+</body>
     
 
         <!-- Overlay -->
