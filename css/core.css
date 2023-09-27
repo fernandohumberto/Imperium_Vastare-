@@ -84,6 +84,16 @@ body {
   -webkit-tap-highlight-color: rgba(67, 89, 113, 0);
 }
 
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: var(--bs-indigo);
+}
+
 hr {
   margin: 1rem 0;
   color: #d9dee3;
@@ -14953,7 +14963,9 @@ body {
   width: 0.375rem !important;
 }
 
+
 .menu-inner {
+  background-color: var();
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;

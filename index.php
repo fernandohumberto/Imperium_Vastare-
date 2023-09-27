@@ -10,7 +10,7 @@ include_once ('config.php') ;
         <div class="layout-container">
             <!-- Menu -->
 
-            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme  animate__animated animate__fadeInRight">
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
                         <span class="app-brand-logo demo">
@@ -177,7 +177,7 @@ include_once ('config.php') ;
                 <div class="content-wrapper">
                     <!-- Content -->
 
-                    <div class="container-xxl flex-grow-1 container-p-y">
+                    <div class="container-xxl flex-grow-1 container-p-y    animate__animated animate__fadeInUp">
                         <div class="row">
                             <div class="col-lg-8 mb-4 order-0">
                                 <div class="card">
@@ -245,7 +245,7 @@ include_once ('config.php') ;
                                 <div class="card">
                                     <div class="row row-bordered g-0">
                                         <div class="col-md-12">
-                                            <h5 class="card-header m-0 me-2 pb-3">Último Conteúdo Visto</h5>
+                                            <h5 class="card-header m-0 me-2 pb-3">Conteúdo Sugerido Nessa Semana</h5>
                                             <div id="totalRevenueChart" class="px-2">
                                                 <div class="cartao">
                                                 <center><iframe id="tamanho-do-video" width="560" height="315" src="https://www.youtube.com/embed/bQp0HQ1nQTg?si=54QNO82TDn3QsYT_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
