@@ -92,19 +92,14 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Suporte</span></li>
+                    
                     <li class="menu-item active">
                         <a href="suporte.php" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a href="faq.php" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-file"></i>
-                            <div data-i18n="Documentation">FAQ</div>
-                        </a>
-                    </li>
+                    
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -151,6 +146,7 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                                                 </div>
                                                 <div class="flex-grow-1">
                                                     <span class="fw-semibold d-block"><?php echo $_SESSION['user'] ?></span>
+                                                    <small class="text-muted">Usuário</small>
 
                                                 </div>
                                             </div>

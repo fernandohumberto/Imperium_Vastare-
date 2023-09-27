@@ -92,6 +92,7 @@ body {
 ::-webkit-scrollbar-thumb {
   width: 10px;
   background-color: var(--bs-indigo);
+  border-radius: 25px;
 }
 
 hr {

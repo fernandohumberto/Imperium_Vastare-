@@ -74,17 +74,11 @@ include_once ('config.php') ;
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Suporte</span></li>
+                    
                     <li class="menu-item">
                         <a href="suporte.php" target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="faq.php" target="_blank" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-file"></i>
-                            <div data-i18n="Documentation">FAQ</div>
                         </a>
                     </li>
                 </ul>
@@ -133,6 +127,7 @@ include_once ('config.php') ;
                                                 </div>
                                                 <div class="flex-grow-1">
                                                     <span class="fw-semibold d-block"><?php echo $_SESSION['user'] ?></span>
+                                                    <small class="text-muted">Usuário</small>
 
                                                 </div>
                                             </div>
