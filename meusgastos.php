@@ -1,5 +1,14 @@
 <?php
 include_once('config.php');
+include_once('config/conexao.php');
+
+$idUser = $_SESSION['id'];
+$sql = "SELECT * FROM `meusgastos` where idUser = $idUser ";
+
+$resposta = mysqli_query($conn, $sql);
+$results = mysqli_fetch_all($resposta);
+
+
 
 ?>
 
@@ -169,11 +178,11 @@ include_once('config.php');
                 <form class="row g-3" action="config/cadastraDespesa.php" method="POST">
                     <div class="row">
                         <div class="col-4 py-3">
-                            <input class="form-control" type="text" placeholder="Despesa" name="despesa" >
+                            <input class="form-control" type="text" placeholder="Despesa" name="despesa">
                         </div>
-                        <input type="hidden" value="<?php  echo $_SESSION['id'] ?>" name="idUser">
+                        <input type="hidden" value="<?php echo $_SESSION['id'] ?>" name="idUser">
                         <div class="col-4 py-3">
-                            <input class="form-control" type="text" placeholder="Valor" name="valor" >
+                            <input class="form-control" type="text" placeholder="Valor" name="valor">
                         </div>
                         <div class="col-3 py-3">
                             <button type="submit" class="btn btn-primary mb-3">Adicionar Gasto</button>
@@ -190,15 +199,10 @@ include_once('config.php');
                 google.charts.setOnLoadCallback(drawChart);
 
                 function drawChart() {
-
                     var data = google.visualization.arrayToDataTable([
                         ['Task', 'Hours per Day'],
-                        ['Cartão de Crédito', 350],
-                        ['Comida', 250],
-                        ['Investimnetos', 120],
-                        ['Streaming', 55],
-                        ['Gastos Imprevistos', 200],
-                        ['Saldo Restante', 325]
+                        <?php foreach ($results as $linha) : ?>['<?= $linha[1] ?>', <?= $linha[2] ?>],
+                        <?php endforeach; ?>
                     ]);
 
                     var options = {

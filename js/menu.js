@@ -5,8 +5,7 @@ function adicionarClasse() {
   // Adiciona a classe desejada
   minhaDiv.classList.add("light-style", "layout-menu-fixed", "layout-menu-expanded");
 
-  // Você também pode remover a classe, se necessário:
-  // minhaDiv.classList.remove("minhaClasse");
+  
 }
 
 function removeClasse() {
@@ -16,8 +15,7 @@ function removeClasse() {
   // Adiciona a classe desejada
   minhaDiv.classList.remove("light-style", "layout-menu-fixed", "layout-menu-expanded");
 
-  // Você também pode remover a classe, se necessário:
-  // minhaDiv.classList.remove("minhaClasse");
+  
 }
 
 
