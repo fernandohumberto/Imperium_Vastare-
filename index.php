@@ -10,7 +10,7 @@ include_once ('config.php') ;
         <div class="layout-container">
             <!-- Menu -->
 
-            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+            <aside id="layout-menu"  class="layout-menu menu-vertical menu bg-menu-theme ">
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
                         <span class="app-brand-logo demo">
@@ -19,7 +19,7 @@ include_once ('config.php') ;
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">Imperium <br>Vastare </span>
                     </a>
 
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none" onclick="removeClasse()">
                         <i class="bx bx-chevron-left bx-sm align-middle"></i>
                     </a>
                 </div>
@@ -93,7 +93,7 @@ include_once ('config.php') ;
 
                 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)"  onclick="adicionarClasse()">
                             <i class="bx bx-menu bx-sm"></i>
                         </a>
                     </div>
@@ -397,10 +397,7 @@ include_once ('config.php') ;
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
     <script src="js/bostap.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/perfect-scrollbar/perfect-scrollbar.js"></script>
 
     <script src="js/menu.js"></script>
     <!-- endbuild -->
