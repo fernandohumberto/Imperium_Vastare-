@@ -26,10 +26,6 @@
     <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="css/demo.css" />
     <link rel="stylesheet" href="css/cards.css">
- 
-
-
-
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
@@ -115,12 +111,7 @@
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a href="faq.php" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-file"></i>
-                            <div data-i18n="Documentation">FAQ</div>
-                        </a>
-                    </li>
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -191,7 +182,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                    <a class="dropdown-item" href="config/sair.php">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Sair</span>
                                         </a>

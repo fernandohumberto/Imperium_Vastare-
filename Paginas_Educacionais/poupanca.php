@@ -208,8 +208,7 @@
     <title>Uso Inteligente da Poupança</title>
     <style>
         /* Estilos gerais */
-        body {
-            font-family: 'Arial', sans-serif;
+        body {  
             margin: 0;
             padding: 0;
             background-color: #f3f3f3;
@@ -232,7 +231,7 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         /* Estilos para títulos */

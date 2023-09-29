@@ -247,6 +247,7 @@ a {
 }
 a:hover {
   color: #5f61e6;
+  
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -9925,7 +9926,7 @@ button.list-group-item-gray.active {
 }
 
 .fw-bolder {
-  font-weight: 900 !important;
+  font-weight: 700 !important;
 }
 
 .lh-1 {

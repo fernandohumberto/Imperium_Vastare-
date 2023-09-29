@@ -60,7 +60,7 @@
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
                     <li class="menu-item">
-                        <a href="index.php" class="menu-link">
+                        <a href="../index.php" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Página Inicial</div>
                         </a>
@@ -70,31 +70,31 @@
                         <span class="menu-header-text">Páginas</span>
                     </li>
                     <li class="menu-item active">
-                        <a href="conteudo.php" class="menu-link menu-toggle">
+                        <a href="../conteudo.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-dock-top"></i>
                             <div data-i18n="Account Settings">Conteúdos</div>
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="meusgastos.php" class="menu-link">
+                                <a href="../meusgastos.php" class="menu-link">
                                     <div data-i18n="Account">Meus Gastos</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="forum.php" class="menu-link">
+                                <a href="../forum.php" class="menu-link">
                                     <div data-i18n="Notifications">Fórum</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="meusgastos.php" class="menu-link menu-toggle">
+                        <a href="../meusgastos.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
                             <div data-i18n="Authentications">Meus Gastos</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="forum.php" class="menu-link menu-toggle">
+                        <a href="../forum.php" class="menu-link menu-toggle">
                             <patch><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1920 1792">
                                     <path fill="currentColor" d="M593 896q-162 5-265 128H194q-82 0-138-40.5T0 865q0-353 124-353q6 0 43.5 21t97.5 42.5T384 597q67 0 133-23q-5 37-5 66q0 139 81 256zm1071 637q0 120-73 189.5t-194 69.5H523q-121 0-194-69.5T256 1533q0-53 3.5-103.5t14-109T300 1212t43-97.5t62-81t85.5-53.5T602 960q10 0 43 21.5t73 48t107 48t135 21.5t135-21.5t107-48t73-48t43-21.5q61 0 111.5 20t85.5 53.5t62 81t43 97.5t26.5 108.5t14 109t3.5 103.5zM640 256q0 106-75 181t-181 75t-181-75t-75-181t75-181T384 0t181 75t75 181zm704 384q0 159-112.5 271.5T960 1024T688.5 911.5T576 640t112.5-271.5T960 256t271.5 112.5T1344 640zm576 225q0 78-56 118.5t-138 40.5h-134q-103-123-265-128q81-117 81-256q0-29-5-66q66 23 133 23q59 0 119-21.5t97.5-42.5t43.5-21q124 0 124 353zm-128-609q0 106-75 181t-181 75t-181-75t-75-181t75-181t181-75t181 75t75 181z" />
                                 </svg></patch>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -102,14 +102,14 @@
                         </a>
 
                     <li class="menu-item">
-                        <a href="equipe.php" class="menu-link menu-toggle">
+                        <a href="../equipe.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-cube-alt"></i>
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
                     
                     <li class="menu-item">
-                        <a href="suporte.php" class="menu-link menu-toggle">
+                        <a href="../suporte.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
@@ -210,7 +210,6 @@
     <style>
         /* Estilos gerais */
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f3f3f3;
@@ -233,7 +232,7 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         /* Estilos para títulos */

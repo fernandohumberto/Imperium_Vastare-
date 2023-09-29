@@ -211,7 +211,7 @@
     <style>
         /* Estilos gerais */
         body {
-            font-family: 'Arial', sans-serif;
+
             margin: 0;
             padding: 0;
             background-color: #f3f3f3;
@@ -233,7 +233,7 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         /* Estilos para títulos */
