@@ -62,7 +62,7 @@
                 <div class="content">
                     <h3>Novo usuário?</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Venha e faça parte do nosso time.
                     </p>
                     <button class="btn transparent" id="sign-up-btn">
                         Crie uma Conta
@@ -74,7 +74,7 @@
                 <div class="content">
                     <h3>Já faz parte do nosso time?</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Efetue o log-in para desfrutar melhor do seu dinheiro.
                     </p>
                     <button class="btn transparent" id="sign-in-btn">
                         Entrar
