@@ -201,7 +201,113 @@
 
                  <!-- conteudo do site -->
 
+                 <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos das seções de conteúdo */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .content h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Seções de Conteúdo -->
+        <div class="container">
+    <!-- Seções de Conteúdo -->
+    <style>
+        #sub {
+            margin-left: 10px;
+        }
+
+        #subtxt {
+            margin-left: 22px;
+        }
+    </style>
+    <div class="content">
+        <h1>O Papel da Economia em Nossas Vidas</h1>
+        <p>A economia desempenha um papel fundamental em nossas vidas, afetando decisões financeiras, padrões de consumo e bem-estar geral. Entender os princípios econômicos pode ajudar a tomar decisões informadas e melhorar a qualidade de vida.</p>
+    </div>
+    <div class="content">
+        <h1>Princípios Econômicos Básicos</h1>
+        <p>A economia é uma disciplina complexa, mas alguns princípios básicos são essenciais para compreender como ela funciona:</p>
+
+        <ul>
+            <li>
+                <p id="sub"><strong>Oferta e Demanda:</strong> A interação entre oferta (bens e serviços disponíveis) e demanda (desejo de consumir) determina preços e quantidades de produtos.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Custos de Oportunidade:</strong> Ao fazer escolhas econômicas, sempre há custos de oportunidade - o que você renuncia ao escolher uma alternativa em vez de outra.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Ciclos Econômicos:</strong> A economia passa por ciclos de expansão e recessão, afetando empregos, inflação e crescimento econômico.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Política Monetária e Fiscal:</strong> O governo usa políticas monetárias e fiscais para influenciar a economia, incluindo taxas de juros e gastos públicos.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Globalização:</strong> A economia globalizada significa que eventos econômicos em um país podem ter impacto em todo o mundo.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Aplicando Conceitos Econômicos</h1>
+        <p>Entender a economia pode ajudar a tomar decisões financeiras mais sólidas, como investir, economizar para aposentadoria e gerenciar dívidas. Além disso, também é relevante para entender políticas governamentais e eventos econômicos.</p>
+    </div>
+</div>
+
+
+    <script>
+        // JavaScript para animar as divs após o carregamento da página
+        window.onload = function() {
+            const contentDivs = document.querySelectorAll('.content');
+
+            contentDivs.forEach((div, index) => {
+                setTimeout(() => {
+                    div.style.opacity = '1';
+                    div.style.transform = 'translateY(0)';
+                }, 300 * (index + 1));
+            });
+        };
+    </script>
+</body>
 
 
 

@@ -107,14 +107,14 @@
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    
+
                     <li class="menu-item">
                         <a href="../suporte.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -199,99 +199,173 @@
 
                 <!-- / Navbar -->
 
-                 <!-- conteudo do site -->
-                    <style>
-                        /* Estilos gerais */
-                        body {
-                            margin: 0;
-                            padding: 0;
-                            background-color: #f3f3f3;
-                            color: #333;
-                        }
+                <!-- conteudo do site -->
+                <style>
+                    /* Reset de estilos */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
 
-                        /* Estilos para as seções de conteúdo */
-                        section {
-                            padding: 40px;
-                            background-color: white;
-                            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-                            border-radius: 5px;
-                            margin: 20px;
-                        }
+                    /* Estilos gerais */
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f0f0f0;
+                        margin: 0;
+                    }
 
-                        /* Estilos para links */
-                        a {
-                            text-decoration: none;
-                            color: #0078d4;
-                        }
+                    .container {
+                        max-width: 960px;
+                        margin: 0 auto;
+                        padding: 20px;
+                    }
 
-                        a:hover {
-                            text-decoration: none;
-                        }
+                    /* Estilos das seções de conteúdo */
+                    .content {
+                        background-color: #fff;
+                        padding: 20px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        opacity: 0;
+                        transform: translateY(20px);
+                        transition: opacity 0.5s ease, transform 0.5s ease;
+                    }
 
-                        /* Estilos para formulário de contato */
-                        form label,
-                        form textarea,
-                        form input,
-                        form button {
-                            display: block;
-                            margin-bottom: 10px;
-                        }
+                    .content h2 {
+                        color: #333;
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
 
-                        button {
-                            background-color: #0078d4;
-                            color: white;
-                            border: none;
-                            padding: 10px 20px;
-                            border-radius: 5px;
-                            cursor: pointer;
-                        }
-
-                        button:hover {
-                            background-color: #0056b3;
-                        }
-
-                        /* Estilos para títulos */
-                        h1 {
-                            color: #333;
-                        }
-
-                        h2 {
-                            color: #0078d4;
-                        }
-                    </style>
+                    .content p {
+                        color: #666;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                </style>
                 </head>
 
                 <body>
-                    <section id="inicio">
-                        <h1>Guia de Uso Responsável do Cartão de Crédito</h1>
-                        <p>Bem-vindo ao nosso guia informativo sobre como usar seu cartão de crédito de forma responsável.</p>
-                    </section>
+                    <div class="container">
+                        <!-- Seções de Conteúdo -->
+                        <style>
+                                #sub {
+                                    margin-left: 10px;
+                                }
 
-                    <section id="como-usar">
-                        <h2>Como Usar seu Cartão de Crédito de Forma Responsável</h2>
-                        <p>Aqui estão algumas dicas importantes para utilizar seu cartão de crédito de maneira responsável:</p>
-                        <ul>
-                            <li>Não gaste mais do que pode pagar.</li>
-                            <li>Pague suas faturas em dia.</li>
-                            <li>Mantenha um registro de seus gastos.</li>
-                        </ul>
-                    </section>
+                                #subtxt {
+                                    margin-left: 22px;
+                                }
+                            </style>
+                        <div class="content">
+                            <h1>Facilidade do uso de cartão do credito</h1>
+                            <p>Como o cartão de crédito permite que você compre agora e pague depois, ele oferece uma grande conveniência para suas compras cotidianas e emergenciais.</p>
+                            <p>A facilidade de pagamento com cartão de crédito é uma das principais vantagens desse método de pagamento. Permite que os consumidores façam compras sem precisar
+                                pagar imediatamente com dinheiro ou fundos disponíveis em sua conta bancária. Aqui estão alguns aspectos importantes relacionados à facilidade de pagamento com
+                                cartão de crédito:</p>
+                        </div>
+                        <div class="content">
+                            <h1>Recompensas e benefícios</h1>
+                            <p>Os programas de recompensas e benefícios são uma das características mais atrativas dos cartões de crédito modernos. Esses programas oferecem aos titulares de cartões
+                                a oportunidade de ganhar recompensas valiosas por suas despesas diárias, tornando o uso do cartão de crédito não apenas conveniente, mas também gratificante. Aqui está
+                                um texto detalhando os principais aspectos desses programas:</p>
 
-                    <section id="dicas">
-                        <h2>Dicas para Maximizar os Benefícios do Cartão de Crédito</h2>
-                        <p>Confira algumas dicas para aproveitar ao máximo seu cartão de crédito:</p>
-                        <ol>
-                            <li>Escolha um cartão com recompensas adequadas às suas necessidades.</li>
-                            <li>Aproveite programas de cashback.</li>
-                            <li>Construa um bom histórico de crédito.</li>
-                        </ol>
-                    </section>
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Pontos de Recompensa:</strong> Os titulares ganham pontos com base nas compras, que podem ser trocados por viagens, produtos ou dinheiro.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Milhas Aéreas:</strong> Cartões de crédito de companhias aéreas acumulam milhas que podem ser usadas para voos ou upgrades.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Cashback:</strong> Reembolso de uma porcentagem das compras diretamente na fatura ou na conta bancária do titular.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Descontos em Compras:</strong> Ofertas especiais ou descontos em lojas, restaurantes e serviços selecionados.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Benefícios de Viagem:</strong> Acesso a salas VIP, seguro de viagem e créditos para despesas de viagem.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Recompensas Personalizadas:</strong> Escolha categorias de gastos favoritas para recompensas mais altas.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Proteção de Compra:</strong> Garantia estendida e seguro contra danos ou roubo de produtos comprados.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Acesso a Eventos Exclusivos:</strong> Oportunidades exclusivas para eventos esportivos, concertos e experiências culturais.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Programas de Fidelidade:</strong> Benefícios adicionais para clientes leais, como status de elite e tratamento preferencial.</p>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                        <div class="content">
+                            <h1>Melhores modos de uso</h1>
+                            <p>O cartão de crédito é uma ferramenta financeira incrivelmente conveniente, mas seu uso responsável é crucial para evitar armadilhas financeiras. Quando utilizado de forma sábia,
+                                o cartão de crédito pode proporcionar inúmeras vantagens e benefícios, além de ajudar a construir um histórico de crédito sólido. </p>
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Estabeleça um Orçamento:</strong> Antes de usar o cartão, crie um orçamento para determinar o quanto pode gastar de forma responsável.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Pague o Valor Total da Fatura:</strong> Sempre que possível, pague o valor total da fatura para evitar juros.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Evite o Pagamento Mínimo:</strong> Pagar apenas o mínimo acumula juros altos; pague sempre mais do que o mínimo.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Controle de Gastos:</strong> Registre todas as despesas para manter o controle do orçamento e evitar surpresas na fatura.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Conheça os Termos do Cartão:</strong> Leia e compreenda os termos e condições, incluindo taxas e datas de vencimento.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Evite Compras Impulsivas:</strong> Use o cartão com responsabilidade e evite compras por impulso.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Evite Saques em Dinheiro:</strong> Evite saques em dinheiro devido às altas taxas e juros envolvidos.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Proteja Suas Informações:</strong> Mantenha o cartão seguro e não compartilhe informações pessoais.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Mantenha o Uso do Crédito Baixo:</strong> Tente manter o uso do cartão abaixo de 30% do limite para preservar sua pontuação de crédito.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Pagamento Pontual:</strong> Certifique-se de pagar pelo menos o mínimo até a data de vencimento para evitar multas.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Construa um Bom Histórico de Crédito:</strong> O uso responsável ajuda a construir um histórico de crédito positivo, valioso para empréstimos futuros.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <script>
+                        // JavaScript para animar as divs após o carregamento da página
+                        window.onload = function() {
+                            const contentDivs = document.querySelectorAll('.content');
+
+                            contentDivs.forEach((div, index) => {
+                                setTimeout(() => {
+                                    div.style.opacity = '1';
+                                    div.style.transform = 'translateY(0)';
+                                }, 300 * (index + 1));
+                            });
+                        };
+                    </script>
                 </body>
 
-                </html>
 
 
-                 <!-- conteudo do site -->
+
+                <!-- conteudo do site -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>

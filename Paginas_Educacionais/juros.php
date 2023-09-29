@@ -202,7 +202,83 @@
                 <!-- conteudo do site -->
 
 
+                <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos das seções de conteúdo */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .content h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Seções de Conteúdo -->
+        <div class="content">
+            <h2>Facilidade de Pagamento</h2>
+            <p>Como o cartão de crédito permite que você compre agora e pague depois, ele oferece uma grande conveniência para suas compras cotidianas e emergenciais.</p>
+        </div>
+        <div class="content">
+            <h2>Facilidade de Pagamento</h2>
+            <p>Como o cartão de crédito permite que você compre agora e pague depois, ele oferece uma grande conveniência para suas compras cotidianas e emergenciais.</p>
+        </div>
+        <div class="content">
+            <h2>Facilidade de Pagamento</h2>
+            <p>Como o cartão de crédito permite que você compre agora e pague depois, ele oferece uma grande conveniência para suas compras cotidianas e emergenciais.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para animar as divs após o carregamento da página
+        window.onload = function() {
+            const contentDivs = document.querySelectorAll('.content');
+
+            contentDivs.forEach((div, index) => {
+                setTimeout(() => {
+                    div.style.opacity = '1';
+                    div.style.transform = 'translateY(0)';
+                }, 300 * (index + 1));
+            });
+        };
+    </script>
+</body>
 
 
                  <!-- conteudo do site -->

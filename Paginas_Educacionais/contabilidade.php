@@ -201,90 +201,113 @@
 
                  <!-- conteudo do site -->
 
-                <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de Contabilidade</title>
-    <style>
-        /* Estilos gerais */
-        body {
-            
+                 <style>
+        /* Reset de estilos */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f3f3f3;
-            color: #333;
+            box-sizing: border-box;
         }
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
         }
 
-        section {
-            padding: 40px;
-            background-color: white;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos das seções de conteúdo */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            margin: 20px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        /* Estilos para links */
-        a {
-            text-decoration: none;
-            color: #0078d4;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        /* Estilos para títulos */
-        h1 {
+        .content h2 {
             color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        h2 {
-            color: #0078d4;
+        .content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <!-- Seções de Conteúdo -->
+        <div class="container">
+    <!-- Seções de Conteúdo -->
+    <style>
+        #sub {
+            margin-left: 10px;
+        }
+
+        #subtxt {
+            margin-left: 22px;
+        }
+    </style>
+    <div class="content">
+        <h1>Importância da Contabilidade</h1>
+        <p>A contabilidade é uma disciplina essencial em qualquer organização, desempenhando um papel crucial na gestão financeira e na tomada de decisões. Aqui estão alguns motivos que destacam a importância da contabilidade:</p>
+    </div>
+    <div class="content">
+        <h1>Benefícios da Contabilidade</h1>
+        <p>A contabilidade oferece uma série de benefícios fundamentais para empresas e indivíduos:</p>
+
+        <ul>
+            <li>
+                <p id="sub"><strong>Gestão Financeira:</strong> Ajuda as empresas a controlar suas finanças, acompanhar receitas e despesas, e manter a solidez financeira.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Tributação:</strong> Facilita o cumprimento das obrigações fiscais, garantindo que os impostos sejam calculados e pagos corretamente.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Tomada de Decisões:</strong> Fornece informações financeiras precisas que orientam a tomada de decisões estratégicas e investimentos.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Transparência:</strong> Garante transparência nas operações financeiras, o que é importante para ganhar a confiança dos investidores e parceiros de negócios.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Conformidade Regulatória:</strong> Ajuda a cumprir regulamentos contábeis e legais, evitando problemas legais e multas.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Funções da Contabilidade</h1>
+        <p>A contabilidade desempenha várias funções, incluindo a manutenção de registros financeiros, relatórios financeiros e análise de dados para suportar decisões informadas.</p>
+    </div>
+</div>
 
 
-    <section id="introducao">
-        <h2>O que é Contabilidade?</h2>
-        <p>A contabilidade é a prática de registrar, organizar e analisar transações financeiras de uma empresa para tomar decisões informadas sobre suas finanças.</p>
-    </section>
+    <script>
+        // JavaScript para animar as divs após o carregamento da página
+        window.onload = function() {
+            const contentDivs = document.querySelectorAll('.content');
 
-    <section id="principios">
-        <h2>Princípios Contábeis</h2>
-        <p>Os princípios contábeis incluem a consistência, a materialidade e a prudência, entre outros, que orientam a prática contábil.</p>
-    </section>
-
-    <section id="demonstracoes-financeiras">
-        <h2>Demonstrações Financeiras</h2>
-        <p>As demonstrações financeiras, como o balanço patrimonial e a demonstração de resultados, são usadas para comunicar a saúde financeira de uma empresa.</p>
-    </section>
-
-    <section id="gestao-financeira">
-        <h2>Gestão Financeira</h2>
-        <p>A gestão financeira envolve o planejamento, controle e tomada de decisões financeiras para garantir a sustentabilidade e o crescimento da empresa.</p>
-    </section>
-
-
+            contentDivs.forEach((div, index) => {
+                setTimeout(() => {
+                    div.style.opacity = '1';
+                    div.style.transform = 'translateY(0)';
+                }, 300 * (index + 1));
+            });
+        };
+    </script>
 </body>
-</html>
 
                <!-- conteudo do site -->
 

@@ -200,73 +200,133 @@
                 <!-- / Navbar -->
 
                  <!-- conteudo do site -->
-
-                <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendizado sobre Impostos</title>
-    <style>
-        /* Estilos gerais */
-        body {
+                 <style>
+        /* Reset de estilos */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f3f3f3;
-            color: #333;
+            box-sizing: border-box;
         }
 
-        /* Estilos para as seções de conteúdo */
-        section {
-            padding: 40px;
-            background-color: white;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos das seções de conteúdo */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            margin: 20px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        /* Estilos para links */
-        a {
-            text-decoration: none;
-            color: #0078d4;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        /* Estilos para títulos */
-        h1 {
+        .content h2 {
             color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        h2 {
-            color: #0078d4;
+        .content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <section id="inicio">
-        <h1>Aprendizado sobre Impostos</h1>
-        <p>Bem-vindo ao nosso guia informativo sobre o aprendizado sobre impostos.</p>
-    </section>
+    <div class="container">
+    <div class="container">
+    <!-- Seções de Conteúdo -->
+    <style>
+        #sub {
+            margin-left: 10px;
+        }
 
-    <section id="o-que-sao">
-        <h2>O que são Impostos?</h2>
-        <p>Impostos são valores que os cidadãos e empresas pagam ao governo para financiar os serviços públicos, como saúde, educação e infraestrutura.</p>
-    </section>
+        #subtxt {
+            margin-left: 22px;
+        }
+    </style>
+    <div class="content">
+        <h1>Importância dos Impostos</h1>
+        <p>Os impostos desempenham um papel fundamental na sociedade, financiando serviços públicos essenciais, infraestrutura e programas governamentais. Eles são uma parte crucial do sistema financeiro e têm um impacto significativo na vida das pessoas e na economia como um todo. Aqui estão alguns aspectos importantes relacionados à importância dos impostos:</p>
+    </div>
+    <div class="content">
+        <h1>Tipos de Impostos</h1>
+        <p>Existem diversos tipos de impostos, cada um com sua finalidade e forma de arrecadação. Abaixo, descrevemos os principais tipos de impostos que os cidadãos e empresas podem encontrar:</p>
 
-    <section id="tipos-de-impostos">
-        <h2>Tipos de Impostos</h2>
-        <p>Existem vários tipos de impostos, incluindo imposto de renda, imposto sobre vendas, imposto sobre propriedade e muito mais.</p>
-    </section>
+        <ul>
+            <li>
+                <p id="sub"><strong>Imposto de Renda (IR):</strong> Um tributo sobre os ganhos financeiros das pessoas físicas e empresas, usado para financiar programas governamentais.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Imposto sobre o Valor Agregado (IVA):</strong> Um imposto sobre o consumo de bens e serviços, cobrado em cada etapa da cadeia de produção.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Imposto sobre Propriedade:</strong> Cobrado com base na propriedade de bens como imóveis e veículos.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Imposto sobre Transações Financeiras:</strong> Aplicado em transações financeiras como compras com cartão de crédito e transferências bancárias.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Imposto sobre Herança e Doações:</strong> Incide sobre a transferência de patrimônio de uma pessoa para outra, geralmente após uma herança ou doação.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Imposto sobre Empresas (IS):</strong> Um imposto sobre os lucros das empresas, que ajuda a financiar o governo e os serviços públicos.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Planejamento Tributário Inteligente</h1>
+        <p>O planejamento tributário inteligente é fundamental para garantir que os indivíduos e empresas paguem a quantidade adequada de impostos, maximizando ao mesmo tempo seus benefícios financeiros. Aqui estão algumas estratégias importantes:</p>
 
-    <section id="importancia-do-aprendizado">
-        <h2>Importância do Aprendizado sobre Impostos</h2>
-        <p>Compreender como os impostos funcionam é fundamental para tomar decisões financeiras informadas e cumprir suas obrigações fiscais.</p>
-    </section>
+        <ul>
+            <li>
+                <p id="sub"><strong>Conheça suas Deduções:</strong> Esteja ciente das deduções fiscais disponíveis para você, o que pode reduzir sua carga tributária.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Investimentos com Implicações Fiscais:</strong> Avalie os investimentos com base nas implicações fiscais, como contas de aposentadoria com benefícios fiscais.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Consulte um Profissional:</strong> Um consultor fiscal pode ajudar a otimizar seu planejamento tributário, garantindo conformidade com as leis fiscais.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Estabeleça um Plano de Pagamento:</strong> Planeje como você pagará seus impostos para evitar multas e penalidades.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Esteja Atualizado:</strong> Fique informado sobre as mudanças nas leis fiscais para ajustar seu planejamento conforme necessário.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    <script>
+        // JavaScript para animar as divs após o carregamento da página
+        window.onload = function() {
+            const contentDivs = document.querySelectorAll('.content');
+
+            contentDivs.forEach((div, index) => {
+                setTimeout(() => {
+                    div.style.opacity = '1';
+                    div.style.transform = 'translateY(0)';
+                }, 300 * (index + 1));
+            });
+        };
+    </script>
 </body>
-</html>
 
 
                <!-- conteudo do site -->

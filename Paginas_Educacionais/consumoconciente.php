@@ -107,14 +107,14 @@
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    
+
                     <li class="menu-item">
                         <a href="../suporte.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -199,75 +199,135 @@
 
                 <!-- / Navbar -->
 
-               <!-- conteudo do site -->
-    <style>
-        /* Estilos gerais */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
-            color: #333;
-        }
+                <!-- conteudo do site -->
+                <style>
+                    /* Reset de estilos */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
 
-        /* Estilos para as seções de conteúdo */
-        section {
-            padding: 40px;
-            background-color: white;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin: 20px;
-        }
+                    /* Estilos gerais */
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f0f0f0;
+                        margin: 0;
+                    }
 
-        /* Estilos para links */
-        a {
-            text-decoration: none;
-            color: #0078d4;
-        }
+                    .container {
+                        max-width: 960px;
+                        margin: 0 auto;
+                        padding: 20px;
+                    }
 
-        a:hover {
-            text-decoration: none;
-        }
+                    /* Estilos das seções de conteúdo */
+                    .content {
+                        background-color: #fff;
+                        padding: 20px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        opacity: 0;
+                        transform: translateY(20px);
+                        transition: opacity 0.5s ease, transform 0.5s ease;
+                    }
 
-        /* Estilos para títulos */
-        h1 {
-            color: #333;
-        }
+                    .content h2 {
+                        color: #333;
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
 
-        h2 {
-            color: #0078d4;
-        }
-    </style>
-</head>
-<body>
-    <section id="inicio">
-        <h1>Consumo Consciente</h1>
-        <p>Bem-vindo ao nosso guia informativo sobre consumo consciente.</p>
-    </section>
+                    .content p {
+                        color: #666;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                </style>
+                </head>
 
-    <section id="o-que-e">
-        <h2>O que é Consumo Consciente?</h2>
-        <p>O consumo consciente é uma abordagem de compra que considera os impactos sociais e ambientais dos produtos, promovendo decisões de compra mais informadas e responsáveis.</p>
-    </section>
+                <body>
+                    <div class="container">
+                        <!-- Seções de Conteúdo -->
+                        <style>
+                            #sub {
+                                margin-left: 10px;
+                            }
 
-    <section id="beneficios">
-        <h2>Benefícios do Consumo Consciente</h2>
-        <p>Os benefícios do consumo consciente incluem a redução do desperdício, a promoção da sustentabilidade e a contribuição para um mundo melhor.</p>
-    </section>
+                            #subtxt {
+                                margin-left: 22px;
+                            }
+                        </style>
+                        <div class="content">
+                            <h1>Consumo Consciente</h1>
+                            <p>O consumo consciente é uma abordagem responsável para adquirir bens e serviços, levando em consideração não apenas as suas próprias necessidades, mas também o impacto social e ambiental de suas escolhas. Aqui estão alguns aspectos importantes relacionados ao consumo consciente:</p>
+                        </div>
+                        <div class="content">
+                            <h1>Benefícios do Consumo Consciente</h1>
+                            <p>Praticar o consumo consciente oferece uma série de benefícios importantes para indivíduos e para o planeta. Aqui estão alguns dos principais benefícios:</p>
 
-    <section id="dicas">
-        <h2>Dicas para Praticar o Consumo Consciente</h2>
-        <p>Confira algumas dicas para incorporar o consumo consciente em sua vida:</p>
-        <ul>
-            <li>Compre produtos duráveis e de qualidade.</li>
-            <li>Reduza o consumo de plástico e embalagens descartáveis.</li>
-            <li>Informe-se sobre as práticas das marcas e empresas.</li>
-        </ul>
-    </section>
-</body>
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Redução do Impacto Ambiental:</strong> Consumir menos e fazer escolhas sustentáveis ajuda a reduzir a pressão sobre o meio ambiente.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Economia Financeira:</strong> O consumo consciente geralmente resulta em economia de dinheiro, já que evita gastos desnecessários.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Melhoria da Qualidade de Vida:</strong> Ao comprar produtos de melhor qualidade e durabilidade, você obtém maior satisfação e menos desperdício.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Impacto Social Positivo:</strong> Escolher produtos de empresas que valorizam práticas justas de trabalho e ética empresarial apoia um mercado mais justo.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Redução de Resíduos:</strong> O consumo consciente contribui para a redução de resíduos e a conservação de recursos naturais.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h1>Dicas para o Consumo Consciente</h1>
+                            <p>Praticar o consumo consciente requer consciência e ação deliberada. Aqui estão algumas dicas importantes para incorporar o consumo consciente em sua vida:</p>
+
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Reflexão antes da Compra:</strong> Pergunte a si mesmo se você realmente precisa do item antes de comprá-lo.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Escolha Produtos Sustentáveis:</strong> Opte por produtos feitos de materiais sustentáveis e de empresas que adotam práticas ecológicas.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Compre Localmente:</strong> Apoie produtores locais sempre que possível para reduzir a pegada de carbono relacionada ao transporte de produtos.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Reutilize e Recicle:</strong> Dê preferência à reutilização e à reciclagem, evitando o descarte irresponsável de itens.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Eduque-se:</strong> Esteja informado sobre as práticas de empresas e produtos, optando por marcas alinhadas com seus valores.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <script>
+                        // JavaScript para animar as divs após o carregamento da página
+                        window.onload = function() {
+                            const contentDivs = document.querySelectorAll('.content');
+
+                            contentDivs.forEach((div, index) => {
+                                setTimeout(() => {
+                                    div.style.opacity = '1';
+                                    div.style.transform = 'translateY(0)';
+                                }, 300 * (index + 1));
+                            });
+                        };
+                    </script>
+                </body>
 
 
 
-               <!-- conteudo do site -->
+                <!-- conteudo do site -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>

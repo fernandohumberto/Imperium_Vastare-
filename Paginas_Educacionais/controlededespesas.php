@@ -201,7 +201,113 @@
 
                 <!-- conteudo do site -->
 
+                <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos das seções de conteúdo */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .content h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Seções de Conteúdo -->
+        <div class="container">
+    <!-- Seções de Conteúdo -->
+    <style>
+        #sub {
+            margin-left: 10px;
+        }
+
+        #subtxt {
+            margin-left: 22px;
+        }
+    </style>
+    <div class="content">
+        <h1>Importância do Controle de Despesas</h1>
+        <p>O controle de despesas desempenha um papel fundamental na vida financeira de empresas e indivíduos. É uma prática essencial para garantir o uso eficiente dos recursos financeiros. Aqui estão alguns motivos que destacam a importância do controle de despesas:</p>
+    </div>
+    <div class="content">
+        <h1>Benefícios do Controle de Despesas</h1>
+        <p>O controle de despesas oferece uma série de benefícios significativos:</p>
+
+        <ul>
+            <li>
+                <p id="sub"><strong>Gestão Financeira Eficiente:</strong> Permite que empresas e indivíduos acompanhem e gerenciem suas finanças de forma eficaz, evitando gastos excessivos.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Economia de Dinheiro:</strong> Ajuda a identificar áreas onde é possível economizar, resultando em maior economia a longo prazo.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Redução de Dívidas:</strong> Controlar despesas pode auxiliar na redução de dívidas, evitando o acúmulo de juros e encargos.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Planejamento Financeiro:</strong> Facilita o desenvolvimento de um plano financeiro sólido e metas realistas para o futuro.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Tomada de Decisões Informadas:</strong> Fornece informações claras para tomar decisões financeiras bem informadas.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Como Realizar o Controle de Despesas</h1>
+        <p>Para implementar um controle eficaz de despesas, é importante seguir algumas etapas-chave, como o registro detalhado de todas as despesas, a criação de um orçamento mensal e a análise periódica dos gastos.</p>
+    </div>
+</div>
+
+
+    <script>
+        // JavaScript para animar as divs após o carregamento da página
+        window.onload = function() {
+            const contentDivs = document.querySelectorAll('.content');
+
+            contentDivs.forEach((div, index) => {
+                setTimeout(() => {
+                    div.style.opacity = '1';
+                    div.style.transform = 'translateY(0)';
+                }, 300 * (index + 1));
+            });
+        };
+    </script>
+</body>
 
 
 

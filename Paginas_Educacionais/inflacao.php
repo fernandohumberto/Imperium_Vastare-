@@ -201,7 +201,113 @@
                 
                 <!-- conteudo do site -->
 
+                <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos das seções de conteúdo */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .content h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Seções de Conteúdo -->
+        <div class="container">
+    <!-- Seções de Conteúdo -->
+    <style>
+        #sub {
+            margin-left: 10px;
+        }
+
+        #subtxt {
+            margin-left: 22px;
+        }
+    </style>
+    <div class="content">
+        <h1>Como se Proteger dos Efeitos da Inflação</h1>
+        <p>A inflação pode afetar suas finanças pessoais e investimentos, mas você pode tomar medidas para proteger seu poder de compra:</p>
+    </div>
+    <div class="content">
+        <h1>Estratégias para Mitigar a Inflação</h1>
+        <p>Aqui estão algumas estratégias que podem ajudar a minimizar os efeitos da inflação em suas finanças:</p>
+
+        <ul>
+            <li>
+                <p id="sub"><strong>Investir em Ativos que Acompanham a Inflação:</strong> Considere investir em títulos indexados à inflação ou ações de empresas sólidas que podem aumentar preços de produtos junto com a inflação.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Diversificar Investimentos:</strong> Mantenha uma carteira diversificada com uma variedade de ativos para reduzir o risco de perdas devido à inflação.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Manter uma Reserva de Emergência:</strong> Ter uma reserva financeira para despesas inesperadas pode ajudar a evitar recorrer a investimentos em momentos desfavoráveis devido à inflação.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Reavaliar Regularmente:</strong> Revise seus investimentos e estratégias financeiras regularmente para garantir que estejam alinhados com seus objetivos financeiros e com o cenário econômico atual.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Buscar Investimentos com Retornos Reais Positivos:</strong> Procure investimentos que gerem retornos reais (acima da inflação) para garantir que seu dinheiro não perca valor com o tempo.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Conclusão</h1>
+        <p>A inflação é um desafio financeiro, mas com a devida precaução e estratégia, é possível proteger seu poder de compra e alcançar seus objetivos financeiros.</p>
+    </div>
+</div>
+
+
+    <script>
+        // JavaScript para animar as divs após o carregamento da página
+        window.onload = function() {
+            const contentDivs = document.querySelectorAll('.content');
+
+            contentDivs.forEach((div, index) => {
+                setTimeout(() => {
+                    div.style.opacity = '1';
+                    div.style.transform = 'translateY(0)';
+                }, 300 * (index + 1));
+            });
+        };
+    </script>
+</body>
 
 
 

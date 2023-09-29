@@ -106,14 +106,14 @@
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    
+
                     <li class="menu-item">
                         <a href="../suporte.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -201,73 +201,155 @@
                 <!-- conteudo do site-->
 
 
+                <style>
+                    /* Reset de estilos */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
 
-                <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de Seguros</title>
-    <style>
-        /* Estilos gerais */
-        body {
+                    /* Estilos gerais */
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f0f0f0;
+                        margin: 0;
+                    }
 
-            margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
-            color: #333;
-        }
+                    .container {
+                        max-width: 960px;
+                        margin: 0 auto;
+                        padding: 20px;
+                    }
 
-        section {
-            padding: 40px;
-            background-color: white;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin: 20px;
-        }
+                    /* Estilos das seções de conteúdo */
+                    .content {
+                        background-color: #fff;
+                        padding: 20px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        opacity: 0;
+                        transform: translateY(20px);
+                        transition: opacity 0.5s ease, transform 0.5s ease;
+                    }
 
-        /* Estilos para links */
-        a {
-            text-decoration: none;
-            color: #0078d4;
-        }
+                    .content h2 {
+                        color: #333;
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
 
-        a:hover {
-            text-decoration: none;
-        }
+                    .content p {
+                        color: #666;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                </style>
+                </head>
 
-        /* Estilos para títulos */
-        h1 {
-            color: #333;
-        }
+                <body>
+                    <div class="container">
+                        <!-- Seções de Conteúdo -->
+                        <style>
+                            #sub {
+                                margin-left: 10px;
+                            }
 
-        h2 {
-            color: #0078d4;
-        }
-    </style>
-</head>
-<body>
-    <section id="introducao">
-        <h2>O que são Seguros?</h2>
-        <p>Seguros são contratos financeiros que oferecem proteção contra riscos financeiros, como acidentes, doenças, danos a propriedades e muito mais.</p>
-    </section>
+                            #subtxt {
+                                margin-left: 22px;
+                            }
+                        </style>
+                        <div class="content">
+                            <h1>Importância dos Seguros</h1>
+                            <p>Os seguros desempenham um papel fundamental na proteção financeira das pessoas e empresas contra riscos e imprevistos. Eles oferecem paz de espírito, ajudando a enfrentar despesas inesperadas. Aqui estão alguns aspectos importantes relacionados à importância dos seguros:</p>
+                        </div>
+                        <div class="content">
+                            <h1>Tipos de Seguros</h1>
+                            <p>Existem diversos tipos de seguros, cada um projetado para cobrir riscos específicos. Abaixo, descrevemos os principais tipos de seguros que as pessoas e empresas podem adquirir:</p>
 
-    <section id="tipos-de-seguros">
-        <h2>Tipos de Seguros</h2>
-        <p>Existem diversos tipos de seguros, incluindo seguros de vida, automóveis, saúde, residenciais, viagem e responsabilidade civil.</p>
-    </section>
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Seguro de Vida:</strong> Oferece proteção financeira aos beneficiários em caso de morte do segurado.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Seguro de Saúde:</strong> Ajuda a cobrir despesas médicas, hospitalares e odontológicas, proporcionando assistência em momentos de doença ou lesão.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Seguro de Automóvel:</strong> Protege contra danos e perdas relacionados a acidentes de trânsito e outros incidentes envolvendo veículos.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Seguro Residencial:</strong> Oferece cobertura para danos à casa e pertences, bem como responsabilidade civil em caso de acidentes domésticos.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Seguro Empresarial:</strong> Protege empresas contra riscos, incluindo propriedade, responsabilidade civil e interrupção de negócios.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Seguro de Viagem:</strong> Oferece assistência em viagens, incluindo cobertura para cancelamento de viagem, bagagem perdida e despesas médicas no exterior.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h1>Benefícios dos Seguros</h1>
+                            <p>A aquisição de seguros oferece uma série de benefícios importantes. Aqui estão alguns dos principais benefícios dos seguros:</p>
 
-    <section id="beneficios">
-        <h2>Benefícios dos Seguros</h2>
-        <p>Os seguros oferecem benefícios como proteção financeira, tranquilidade e segurança para você, sua família e seus bens.</p>
-    </section>
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Proteção Financeira:</strong> Os seguros ajudam a proteger seu patrimônio e ativos financeiros contra perdas catastróficas.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Redução de Riscos Financeiros:</strong> Ao transferir riscos para uma seguradora, você reduz o impacto financeiro de eventos imprevisíveis.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Segurança da Família:</strong> Seguros de vida e saúde garantem o bem-estar financeiro da família em caso de tragédias.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Conformidade Legal:</strong> Alguns seguros, como o seguro automóvel, são obrigatórios por lei em muitos lugares.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Paz de Espírito:</strong> Saber que você está protegido contra eventos imprevistos proporciona tranquilidade.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h1>Escolhendo o Seguro Certo</h1>
+                            <p>Selecionar o seguro adequado requer consideração cuidadosa das suas necessidades e circunstâncias. Aqui estão algumas dicas para escolher o seguro certo:</p>
 
-    <section id="como-escolher">
-        <h2>Como Escolher um Seguro</h2>
-        <p>Escolher o seguro certo envolve avaliar suas necessidades, comparar opções e entender os termos e condições do contrato.</p>
-    </section>
-</body>
-</html>
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Avalie suas Necessidades:</strong> Determine quais riscos você deseja proteger e quais são as prioridades em sua vida ou negócios.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Compare Opções:</strong> Pesquise e compare várias seguradoras para obter as melhores taxas e coberturas.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Leia as Condições:</strong> Leia e entenda as condições e cláusulas do contrato de seguro antes de assinar.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Considere o Custo e o Benefício:</strong> Avalie o custo do prêmio em relação à cobertura oferecida pelo seguro.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Consulte um Corretor:</strong> Se necessário, consulte um corretor de seguros para obter orientação especializada.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <script>
+                        // JavaScript para animar as divs após o carregamento da página
+                        window.onload = function() {
+                            const contentDivs = document.querySelectorAll('.content');
+
+                            contentDivs.forEach((div, index) => {
+                                setTimeout(() => {
+                                    div.style.opacity = '1';
+                                    div.style.transform = 'translateY(0)';
+                                }, 300 * (index + 1));
+                            });
+                        };
+                    </script>
+                </body>
 
 
                 <!-- conteudo do site-->

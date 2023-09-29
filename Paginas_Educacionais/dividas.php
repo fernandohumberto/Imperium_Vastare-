@@ -107,14 +107,14 @@
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    
+
                     <li class="menu-item">
                         <a href="../suporte.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -200,79 +200,141 @@
                 <!-- / Navbar -->
 
                 <!-- conteudo do site -->
+                <style>
+                    /* Reset de estilos */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
 
-                <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia sobre Dívidas</title>
-    <style>
-        /* Estilos gerais */
-        body {        
-            margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
-            color: #333;
-        }
+                    /* Estilos gerais */
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f0f0f0;
+                        margin: 0;
+                    }
 
-        section {
-            padding: 40px;
-            background-color: white;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin: 20px;
-        }
+                    .container {
+                        max-width: 960px;
+                        margin: 0 auto;
+                        padding: 20px;
+                    }
 
-        /* Estilos para links */
-        a {
-            text-decoration: none;
-            color: #0078d4;
-        }
+                    /* Estilos das seções de conteúdo */
+                    .content {
+                        background-color: #fff;
+                        padding: 20px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        opacity: 0;
+                        transform: translateY(20px);
+                        transition: opacity 0.5s ease, transform 0.5s ease;
+                    }
 
-        a:hover {
-            text-decoration: none;
-        }
+                    .content h2 {
+                        color: #333;
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
 
-        /* Estilos para títulos */
-        h1 {
-            color: #333;
-        }
+                    .content p {
+                        color: #666;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                </style>
+                </head>
 
-        h2 {
-            color: #0078d4;
-        }
-    </style>
-</head>
-<body>
+                <body>
+                    <div class="container">
+                        <!-- Seções de Conteúdo -->
+                        <style>
+                            #sub {
+                                margin-left: 10px;
+                            }
 
-    <section id="introducao">
-        <h2>O que são Dívidas?</h2>
-        <p>Dívidas são valores que você deve a credores e que precisam ser pagos dentro de um determinado período de tempo.</p>
-    </section>
+                            #subtxt {
+                                margin-left: 22px;
+                            }
+                        </style>
+                        <div class="content">
+                            <h1>Como Evitar Dívidas</h1>
+                            <p>A evitação de dívidas é fundamental para manter a saúde financeira pessoal. Evitar dívidas desnecessárias pode ajudá-lo a economizar dinheiro e reduzir o estresse financeiro. Aqui estão alguns aspectos importantes sobre como evitar dívidas:</p>
+                        </div>
+                        <div class="content">
+                            <h1>Práticas para Evitar Dívidas</h1>
+                            <p>Existem várias práticas financeiras que podem ajudar a prevenir dívidas indesejadas e gerenciar suas finanças de forma responsável. Aqui estão algumas delas:</p>
 
-    <section id="tipos-de-dividas">
-        <h2>Tipos de Dívidas</h2>
-        <p>Existem diversos tipos de dívidas, incluindo dívidas de cartão de crédito, empréstimos pessoais, hipotecas e dívidas estudantis.</p>
-    </section>
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Crie um Orçamento:</strong> Estabeleça um orçamento mensal que inclua todas as suas despesas e limite seus gastos de acordo com sua renda.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Pague suas Contas a Tempo:</strong> Certifique-se de pagar todas as contas, como aluguel, contas de serviços públicos e empréstimos, antes do prazo de vencimento.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Economize para Emergências:</strong> Mantenha uma reserva de emergência para cobrir despesas inesperadas, como reparos em casa ou despesas médicas.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Evite Compras por Impulso:</strong> Pense duas vezes antes de fazer compras impulsivas e avalie se um item é realmente necessário.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Reduza Dívidas Existentes:</strong> Concentre-se em pagar dívidas existentes antes de contrair novas. Isso reduzirá a carga financeira.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Evite o Uso Excessivo de Crédito:</strong> Use cartões de crédito com responsabilidade e evite acumular saldos em cartões com juros elevados.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Negocie Taxas e Termos:</strong> Se você tem dívidas, negocie com os credores para obter taxas de juros mais baixas ou planos de pagamento acessíveis.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h1>Estabelecendo Metas Financeiras</h1>
+                            <p>Definir metas financeiras claras pode ajudá-lo a manter o foco e evitar dívidas. Aqui estão algumas metas financeiras comuns que você pode considerar:</p>
 
-    <section id="consequencias">
-        <h2>Consequências das Dívidas</h2>
-        <p>As dívidas podem ter consequências financeiras e emocionais, como juros elevados, cobranças e estresse financeiro.</p>
-    </section>
+                            <ul>
+                                <li>
+                                    <p id="sub"><strong>Criar um Fundo de Emergência:</strong> Estabeleça um fundo de emergência que cubra pelo menos três a seis meses de despesas básicas.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Pagar Dívidas:</strong> Defina metas para pagar dívidas existentes, como cartões de crédito ou empréstimos estudantis.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Economizar para a Aposentadoria:</strong> Comece a economizar para a aposentadoria o mais cedo possível para garantir um futuro financeiro seguro.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Investir em Educação:</strong> Invista em seu desenvolvimento pessoal e profissional, o que pode aumentar seu potencial de ganhos.</p>
+                                </li>
+                                <li>
+                                    <p id="sub"><strong>Economizar para Metas de Curto Prazo:</strong> Estabeleça metas para economizar para compras planejadas, como férias ou um novo carro.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <section id="gerenciamento">
-        <h2>Gerenciamento de Dívidas</h2>
-        <p>Gerenciar dívidas envolve criar um plano de pagamento, negociar com credores e buscar soluções para liquidar as dívidas.</p>
-    </section>
 
-</body>
-</html>
+                    <script>
+                        // JavaScript para animar as divs após o carregamento da página
+                        window.onload = function() {
+                            const contentDivs = document.querySelectorAll('.content');
+
+                            contentDivs.forEach((div, index) => {
+                                setTimeout(() => {
+                                    div.style.opacity = '1';
+                                    div.style.transform = 'translateY(0)';
+                                }, 300 * (index + 1));
+                            });
+                        };
+                    </script>
+                </body>
 
 
 
 
-                 <!-- conteudo do site -->
+                <!-- conteudo do site -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>

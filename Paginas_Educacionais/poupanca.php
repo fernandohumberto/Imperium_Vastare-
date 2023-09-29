@@ -209,78 +209,129 @@
 
                 <!-- conteudo do site-->
 
-                <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso Inteligente da Poupança</title>
-    <style>
-        /* Estilos gerais */
-        body {  
+                <style>
+        /* Reset de estilos */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f3f3f3;
-            color: #333;
+            box-sizing: border-box;
         }
 
-        /* Estilos para as seções de conteúdo */
-        section {
-            padding: 40px;
-            background-color: white;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos das seções de conteúdo */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            margin: 20px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        /* Estilos para links */
-        a {
-            text-decoration: none;
-            color: #0078d4;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        /* Estilos para títulos */
-        h1 {
+        .content h2 {
             color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        h2 {
-            color: #0078d4;
+        .content p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <section id="inicio">
-        <h1>Uso Inteligente da Poupança</h1>
-        <p>Bem-vindo ao nosso guia informativo sobre como usar a poupança de forma inteligente.</p>
-    </section>
+<div class="container">
+    <!-- Seções de Conteúdo -->
+    <style>
+        #sub {
+            margin-left: 10px;
+        }
 
-    <section id="o-que-e">
-        <h2>O que é a Poupança?</h2>
-        <p>A poupança é uma forma segura de economizar dinheiro em uma conta bancária, geralmente com juros baixos, mas oferece liquidez imediata.</p>
-    </section>
+        #subtxt {
+            margin-left: 22px;
+        }
+    </style>
+    <div class="content">
+        <h1>A Importância da Poupança</h1>
+        <p>A poupança é uma prática financeira fundamental que ajuda as pessoas a construir um futuro financeiro seguro. Ela envolve reservar uma parte do seu dinheiro regularmente para atender a metas financeiras e lidar com imprevistos. Aqui estão alguns aspectos importantes relacionados à importância da poupança:</p>
+    </div>
+    <div class="content">
+        <h1>Benefícios da Poupança</h1>
+        <p>Economizar dinheiro regularmente oferece uma série de benefícios importantes. Aqui estão alguns dos principais benefícios da poupança:</p>
 
-    <section id="beneficios">
-        <h2>Benefícios da Poupança</h2>
-        <p>Os benefícios da poupança incluem a facilidade de acesso aos fundos, segurança e a possibilidade de economizar para metas de curto prazo.</p>
-    </section>
-
-    <section id="dicas">
-        <h2>Dicas para Usar a Poupança de Forma Eficiente</h2>
-        <p>Confira algumas dicas para aproveitar ao máximo sua conta poupança:</p>
         <ul>
-            <li>Estabeleça metas de economia.</li>
-            <li>Automatize suas economias.</li>
-            <li>Monitore seu progresso regularmente.</li>
+            <li>
+                <p id="sub"><strong>Reserva de Emergência:</strong> Ter uma poupança de emergência pode ajudar a lidar com despesas inesperadas, como contas médicas ou reparos em casa.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Realização de Metas Financeiras:</strong> A poupança permite que você atinja metas financeiras, como comprar uma casa, fazer uma viagem ou pagar a educação dos filhos.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Segurança Financeira:</strong> Poupar dinheiro oferece uma sensação de segurança financeira, reduzindo o estresse relacionado a problemas financeiros.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Independência Financeira:</strong> A poupança pode ajudá-lo a alcançar a independência financeira, permitindo que você alcance um estado em que seus investimentos gerem renda suficiente para cobrir suas despesas.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Preparação para a Aposentadoria:</strong> Economizar para a aposentadoria é essencial para garantir um futuro financeiro confortável e sem preocupações.</p>
+            </li>
         </ul>
-    </section>
-</body>
-</html>
+    </div>
+    <div class="content">
+        <h1>Dicas para Economizar com Eficiência</h1>
+        <p>Economizar dinheiro de forma eficiente requer planejamento e disciplina. Aqui estão algumas dicas importantes para ajudá-lo a poupar com eficiência:</p>
 
+        <ul>
+            <li>
+                <p id="sub"><strong>Crie um Orçamento:</strong> Estabeleça um orçamento mensal que inclua uma porcentagem dedicada à poupança.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Pague-se Primeiro:</strong> Faça com que a poupança seja uma prioridade, reservando uma parte do seu salário assim que o receber.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Automatize suas Economias:</strong> Configure transferências automáticas para uma conta de poupança, facilitando a economia regular.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Evite Dívidas Desnecessárias:</strong> Evite acumular dívidas de cartão de crédito e juros elevados, que podem prejudicar seus esforços de poupança.</p>
+            </li>
+            <li>
+                <p id="sub"><strong>Revise e Ajuste Regularmente:</strong> Revise seu progresso e faça ajustes em seu plano de poupança conforme necessário.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    <script>
+        // JavaScript para animar as divs após o carregamento da página
+        window.onload = function() {
+            const contentDivs = document.querySelectorAll('.content');
+
+            contentDivs.forEach((div, index) => {
+                setTimeout(() => {
+                    div.style.opacity = '1';
+                    div.style.transform = 'translateY(0)';
+                }, 300 * (index + 1));
+            });
+        };
+    </script>
+</body>
 
 
                 <!-- conteudo do site-->
