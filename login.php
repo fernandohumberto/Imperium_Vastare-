@@ -18,11 +18,11 @@
                     <h2 class="title">Entrar</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="user" placeholder="Usuário" />
+                        <input type="text" name="user" placeholder="Usuário"  required/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="senha" placeholder="Senha" />
+                        <input type="password" name="senha" placeholder="Senha"  required/>
                     </div>
 
                     <div class="">

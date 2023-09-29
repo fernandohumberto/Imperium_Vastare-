@@ -178,18 +178,19 @@ $results = mysqli_fetch_all($resposta);
                 <form class="row g-3" action="config/cadastraDespesa.php" method="POST">
                     <div class="row">
                         <div class="col-4 py-3">
-                            <input class="form-control" type="text" placeholder="Despesa" name="despesa">
+                            <input class="form-control" type="text" placeholder="Despesa" name="despesa" required>
                         </div>
-                        <input type="hidden" value="<?php echo $_SESSION['id'] ?>" name="idUser">
+                        <input type="hidden" value="<?php echo $_SESSION['id'] ?>" name="idUser" required>
                         <div class="col-4 py-3">
                             <input class="form-control" type="text" placeholder="Valor" name="valor">
                         </div>
                         <div class="col-3 py-3">
-                            <button type="submit" class="btn btn-primary mb-3">Adicionar Gasto</button>
+                            <button type="submit" class="btn btn-outline-primary">Adicionar Gasto</button>
                         </div>
                     </div>
                 </form>
             </section>
+
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
             <script type="text/javascript">

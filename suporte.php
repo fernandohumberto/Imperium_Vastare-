@@ -92,14 +92,14 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    
+
                     <li class="menu-item active">
                         <a href="suporte.php" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -171,7 +171,7 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                    <a class="dropdown-item" href="config/sair.php">
+                                        <a class="dropdown-item" href="config/sair.php">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Sair</span>
                                         </a>
@@ -213,32 +213,34 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                             <label for="mensagem" class="form-label">Mensagem</label>
                             <textarea class="form-control" name="message" id="mensagem" required rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        <button type="submit" class="btn btn-sm btn-outline-primary">Enviar Mensagem</button>
                     </form>
                 </div>
                 <hr>
                 <h1 class="mt-2 text-center">Acompanhe seus suportes</h1>
                 <!-- chamados aberto danger - 1 / chamados processando primary - 2 / atendidos suceess -3  -->
-                <?php
-                $cor = "";
-                foreach ($rowSuportes as $linha) {
-                    if ($linha[5] == 1) {
-                        $cor = 'danger';
-                    } elseif ($linha[5] == 2) {
-                        $cor = 'primary';
-                    } else {
-                        $cor = 'success';
-                    }
 
-                    echo ' <div class="alert alert-' . $cor . '" role="alert">
-                            <p>Olá,' . $linha[2] . ' | ' . $linha[3] . '</p>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8">
+                        <?php
+                        $cor = "";
+                        foreach ($rowSuportes as $linha) {
+                            if ($linha[5] == 1) {
+                                $cor = 'danger';
+                            } elseif ($linha[5] == 2) {
+                                $cor = 'primary';
+                            } else {
+                                $cor = 'success';
+                            }
+
+                            echo ' <div class="alert alert-' . $cor . '" role="alert">
+                            <p>Olá,' . $linha[1] . ' | ' . $linha[3] . '</p>
                         </div>';
-                }
+                        }
 
-                ?>
-
-
-
+                        ?>
+                    </div>
+                </div>
                 <!-- Adicione os links para os arquivos JavaScript do Bootstrap 5 aqui -->
 </body>
 

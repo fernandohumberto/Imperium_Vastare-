@@ -1,3 +1,15 @@
+<?php
+session_start();
+if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
+    unset($_SESSION['id']);
+    header("location: login.php");
+} elseif (isset($_SESSION['id'])) {
+}
+
+ 
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
@@ -157,7 +169,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['nome'] ?></span>
+                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['user'] ?></span>
                                                     <small class="text-muted">Usuário</small>
                                                 </div>
                                             </div>
