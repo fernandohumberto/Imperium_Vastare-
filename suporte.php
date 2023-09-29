@@ -258,7 +258,7 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
 
                     if (isset($_GET['m']) == 1) {
                         echo '<div class="alert alert-success text-center" role="alert">
-                                        <b>Suporte cadastrado com sucesso!!!</b>
+                                        <b>Suporte cadastrado com sucesso</b>
                                       </div>
                                       ';
                     }
