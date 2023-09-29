@@ -199,16 +199,7 @@
 
                 <!-- / Navbar -->
 
-                <!-- conteudo/ cartões -->
-
-
-
-                <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consumo Consciente</title>
+               <!-- conteudo do site -->
     <style>
         /* Estilos gerais */
         body {
@@ -273,10 +264,10 @@
         </ul>
     </section>
 </body>
-</html>
 
 
-                <!-- conteudo/ cartões -->
+
+               <!-- conteudo do site -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>

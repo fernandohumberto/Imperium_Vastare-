@@ -3,6 +3,7 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
+     
  }
 
 .img_card{
@@ -26,6 +27,7 @@
      color: #333;
      /* Cor padrão do texto */
      position: relative;
+     
     
  }
 
@@ -85,3 +87,22 @@
          /* Cartões ocupam a largura total em telas menores */
      }
  }
+ 
+ /* Defina a classe de animação */
+/* Defina a classe de animação */
+@keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplique a animação a todos os cards */
+  .card {
+    animation: slide-up 0.7s ease-in-out;
+  }
+  

@@ -199,7 +199,7 @@
 
                 <!-- / Navbar -->
 
-                <!-- conteudo/ cartões -->
+                 <!-- conteudo do site -->
                     <style>
                         /* Estilos gerais */
                         body {
@@ -291,7 +291,7 @@
                 </html>
 
 
-                <!-- conteudo/ cartões -->
+                 <!-- conteudo do site -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>

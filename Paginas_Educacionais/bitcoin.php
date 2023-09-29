@@ -199,7 +199,7 @@
 
                 <!-- / Navbar -->
 
-                <!-- conteudo/ cartões -->
+                 <!-- conteudo do site -->
 
                 <section id="introducao">
                     <h2>O que é Bitcoin?</h2>
@@ -220,7 +220,7 @@
                     <h2>Riscos e Considerações</h2>
                     <p>Embora o Bitcoin tenha suas vantagens, também existem riscos, incluindo volatilidade de preços e preocupações regulatórias.</p>
                 </section>
-                <!-- conteudo/ cartões -->
+                 <!-- conteudo do site -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>

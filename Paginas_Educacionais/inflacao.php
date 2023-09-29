@@ -107,14 +107,14 @@
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    
+
                     <li class="menu-item">
                         <a href="../suporte.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -198,14 +198,15 @@
                 </nav>
 
                 <!-- / Navbar -->
-
-                <!-- conteudo/ cartões -->
-
-
+                
+                <!-- conteudo do site -->
 
 
 
-                <!-- conteudo/ cartões -->
+
+
+
+                <!-- conteudo do site -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>

@@ -199,7 +199,7 @@
 
                 <!-- / Navbar -->
 
-                <!-- conteudo/ cartões -->
+                <!-- conteudo do site -->
 
                 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -272,7 +272,7 @@
 
 
 
-                <!-- conteudo/ cartões -->
+                 <!-- conteudo do site -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>
