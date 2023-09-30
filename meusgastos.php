@@ -171,6 +171,7 @@ $results = mysqli_fetch_all($resposta);
           
 
         </ul>-->
+        
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
                         <!-- Search -->
                         <div class="navbar-nav align-items-center">
@@ -180,6 +181,7 @@ $results = mysqli_fetch_all($resposta);
                             </div>
                         </div>
                         <!-- /Search -->
+                        
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
 
@@ -237,6 +239,25 @@ $results = mysqli_fetch_all($resposta);
                         </ul>
                     </div>
                 </nav>
+                
+                <!--Danilo-->
+                <table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Valor</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($results as $linha) : ?>
+            <tr>
+                <td><?= '<strong>Despesa:</strong> ' . $nomesAleatorios[array_rand($nomesAleatorios)] ?></td>
+                <td><?= '<strong>Valor:</strong> R$ ' . number_format($linha[2], 2, ',', '.') ?></td>
+                <td><?= '<strong>Data:</strong> ' . $linha[3] ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
 
 
 
@@ -256,6 +277,7 @@ $results = mysqli_fetch_all($resposta);
                     </div>
                 </form>
             </section>
+            
 
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
