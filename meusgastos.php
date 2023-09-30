@@ -35,7 +35,7 @@ $results = mysqli_fetch_all($resposta);
 
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="index.php" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Página Inicial</div>
@@ -63,7 +63,7 @@ $results = mysqli_fetch_all($resposta);
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item  active">
                         <a href="meusgastos.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
                             <div data-i18n="Authentications">Meus Gastos</div>

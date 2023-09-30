@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Set-2023 às 20:01
--- Versão do servidor: 10.4.28-MariaDB
--- versão do PHP: 8.2.4
+-- Tempo de geração: 30-Set-2023 às 16:00
+-- Versão do servidor: 10.4.25-MariaDB
+-- versão do PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,7 @@ CREATE TABLE `meusgastos` (
   `despesa` varchar(255) NOT NULL,
   `valor` int(11) NOT NULL,
   `idUser` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `meusgastos`
@@ -46,8 +46,6 @@ INSERT INTO `meusgastos` (`id`, `despesa`, `valor`, `idUser`) VALUES
 (5, 'Gastos Imprevistos', 200, 1),
 (6, 'Saldo Restante', 325, 1),
 (7, 'Gasto do usuario 2 ', 2500, 3),
-(8, 'Pipoca', 1200, 1),
-(9, 'Camisinha', 24, 1),
 (10, 'Netflix', 55, 3),
 (11, 'Luz', 500, 3);
 
@@ -65,18 +63,16 @@ CREATE TABLE `suporte` (
   `idUser` int(11) NOT NULL,
   `status` int(11) NOT NULL DEFAULT 1,
   `ativo` tinyint(1) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `suporte`
 --
 
 INSERT INTO `suporte` (`id`, `nome`, `email`, `message`, `idUser`, `status`, `ativo`) VALUES
-(15, 'Kinho du Brega', 'kinhodubrega@gmail.com', '', 1, 1, 1),
-(16, 'Kinho du Brega', 'kinhodubrega@gmail.com', '', 1, 2, 1),
-(17, 'Kinho du Brega', 'kinhodubrega@gmail.com', 'isso e um teste 3', 1, 3, 1),
-(18, 'Kinho du Brega', 'kinhodubrega@gmail.com', 'Teu cu', 1, 1, 1),
-(19, 'Kinho du Brega', '', 'aa', 1, 1, 1);
+(15, 'Kinho', 'kinhodubrega@gmail.com', 'Estou tendo um problema na tela de conteúdos, não consigo acessar.', 1, 1, 1),
+(16, 'Kinho', 'kinhodubrega@gmail.com', 'Não consigo acessar minha tela de perfil.', 1, 2, 1),
+(17, 'Kinho', 'kinhodubrega@gmail.com', 'Gostaria que entrasse um conteúdo sobre bitcoin.', 1, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -90,14 +86,14 @@ CREATE TABLE `user` (
   `senha` varchar(255) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `user`
 --
 
 INSERT INTO `user` (`id`, `user`, `senha`, `nome`, `email`) VALUES
-(1, 'Kinho', '0123456789', 'Kinho du Brega', 'kinhodubrega@gmail.com'),
+(1, 'Kinho', '0123456789', 'Kinho Arranca Diu', 'kinho@gmail.com'),
 (3, 'Luiz ', '0123456789', 'Ferreira da Silva', 'nando1176@gmail.com'),
 (4, 'fulano', '0123456789', 'Lulanin', '1@2.com');
 
@@ -139,7 +135,7 @@ ALTER TABLE `meusgastos`
 -- AUTO_INCREMENT de tabela `suporte`
 --
 ALTER TABLE `suporte`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de tabela `user`

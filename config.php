@@ -36,7 +36,6 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
     <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="css/demo.css" />
-    <link rel="stylesheet" href="css/cards.css">
 
     <!-- Animações CSS -->
 

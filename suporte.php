@@ -2,7 +2,7 @@
 include_once('config.php');
 include_once('config/conexao.php');
 
-$sql =  "SELECT * FROM `user` WHERE id = " . $_SESSION['id'] . "";
+$sql = "SELECT * FROM `user` WHERE id = " . $_SESSION['id'] . "";
 $query = mysqli_query($conn, $sql);
 
 /* guarda valores do banco */
@@ -35,7 +35,8 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">Imperium <br>Vastare </span>
                     </a>
 
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                    <a href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
                         <i class="bx bx-chevron-left bx-sm align-middle"></i>
                     </a>
                 </div>
@@ -80,8 +81,10 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                     </li>
                     <li class="menu-item">
                         <a href="forum.php" class="menu-link menu-toggle">
-                            <patch><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1920 1792">
-                                    <path fill="currentColor" d="M593 896q-162 5-265 128H194q-82 0-138-40.5T0 865q0-353 124-353q6 0 43.5 21t97.5 42.5T384 597q67 0 133-23q-5 37-5 66q0 139 81 256zm1071 637q0 120-73 189.5t-194 69.5H523q-121 0-194-69.5T256 1533q0-53 3.5-103.5t14-109T300 1212t43-97.5t62-81t85.5-53.5T602 960q10 0 43 21.5t73 48t107 48t135 21.5t135-21.5t107-48t73-48t43-21.5q61 0 111.5 20t85.5 53.5t62 81t43 97.5t26.5 108.5t14 109t3.5 103.5zM640 256q0 106-75 181t-181 75t-181-75t-75-181t75-181T384 0t181 75t75 181zm704 384q0 159-112.5 271.5T960 1024T688.5 911.5T576 640t112.5-271.5T960 256t271.5 112.5T1344 640zm576 225q0 78-56 118.5t-138 40.5h-134q-103-123-265-128q81-117 81-256q0-29-5-66q66 23 133 23q59 0 119-21.5t97.5-42.5t43.5-21q124 0 124 353zm-128-609q0 106-75 181t-181 75t-181-75t-75-181t75-181t181-75t181 75t75 181z" />
+                            <patch><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 1920 1792">
+                                    <path fill="currentColor"
+                                        d="M593 896q-162 5-265 128H194q-82 0-138-40.5T0 865q0-353 124-353q6 0 43.5 21t97.5 42.5T384 597q67 0 133-23q-5 37-5 66q0 139 81 256zm1071 637q0 120-73 189.5t-194 69.5H523q-121 0-194-69.5T256 1533q0-53 3.5-103.5t14-109T300 1212t43-97.5t62-81t85.5-53.5T602 960q10 0 43 21.5t73 48t107 48t135 21.5t135-21.5t107-48t73-48t43-21.5q61 0 111.5 20t85.5 53.5t62 81t43 97.5t26.5 108.5t14 109t3.5 103.5zM640 256q0 106-75 181t-181 75t-181-75t-75-181t75-181T384 0t181 75t75 181zm704 384q0 159-112.5 271.5T960 1024T688.5 911.5T576 640t112.5-271.5T960 256t271.5 112.5T1344 640zm576 225q0 78-56 118.5t-138 40.5h-134q-103-123-265-128q81-117 81-256q0-29-5-66q66 23 133 23q59 0 119-21.5t97.5-42.5t43.5-21q124 0 124 353zm-128-609q0 106-75 181t-181 75t-181-75t-75-181t75-181t181-75t181 75t75 181z" />
                                 </svg></patch>&nbsp;&nbsp;&nbsp;&nbsp;
                             <div data-i18n="Misc">Fórum</div>
                         </a>
@@ -108,13 +111,14 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
             <div class="layout-page">
                 <!-- Navbar -->
 
-                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                    id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)"  onclick="adicionarClasse()">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)" onclick="adicionarClasse()">
                             <i class="bx bx-menu bx-sm"></i>
                         </a>
                     </div>
-<!-- <ul class="navbar-nav flex-row align-items-center ms-auto">
+                    <!-- <ul class="navbar-nav flex-row align-items-center ms-auto">
 
           
          Style Switcher
@@ -186,7 +190,8 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                         <div class="navbar-nav align-items-center">
                             <div class="nav-item d-flex align-items-center">
                                 <i class="bx bx-search fs-4 lh-0"></i>
-                                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search..." />
+                                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..."
+                                    aria-label="Search..." />
                             </div>
                         </div>
                         <!-- /Search -->
@@ -196,7 +201,8 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
 
                             <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
                                         <img src="img/fotodeperfilbase.svg" alt class="w-px-40 h-auto rounded-circle" />
                                     </div>
@@ -207,11 +213,14 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="img/fotodeperfilbase.svg" alt class="w-px-40 h-auto rounded-circle" />
+                                                        <img src="img/fotodeperfilbase.svg" alt
+                                                            class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['user'] ?></span>
+                                                    <span class="fw-semibold d-block">
+                                                        <?php echo $_SESSION['user'] ?>
+                                                    </span>
                                                     <small class="text-muted">Usuário</small>
                                                 </div>
                                             </div>
@@ -267,11 +276,13 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                     <form method="POST" action="config/criarSuporte.php">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" name="nome" value="<?php echo $row['nome'] ?>">
+                            <input type="text" class="form-control" id="nome" name="nome"
+                                value="<?php echo $row['nome'] ?>">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Endereço de Email</label>
-                            <input type="email" class="form-control" name="email" id="email" value="<?php echo $row['email'] ?>">
+                            <input type="email" class="form-control" name="email" id="email"
+                                value="<?php echo $row['email'] ?>">
                         </div>
                         <input type="hidden" name="idUser" value="<?php echo $row['id'] ?>">
                         <div class="mb-3">
@@ -281,6 +292,21 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                         <button type="submit" class="btn btn-sm btn-outline-primary">Enviar Mensagem</button>
                     </form>
                 </div>
+                <hr>
+
+                <div class="container mt-5">
+                    <h3 class="mt-2">Legenda</h3>
+                    <div class="alert alert-danger" role="alert">
+                        Enviado
+                    </div>
+                    <div class="alert alert-primary" role="primary">
+                        Processando
+                    </div>
+                    <div class="alert alert-success" role="success">
+                        Solucionado
+                    </div>
+                </div>
+
                 <hr>
                 <h1 class="mt-2 text-center">Acompanhe seus suportes</h1>
                 <!-- chamados aberto danger - 1 / chamados processando primary - 2 / atendidos suceess -3  -->
