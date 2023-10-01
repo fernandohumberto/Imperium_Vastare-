@@ -9,7 +9,6 @@ $resposta = mysqli_query($conn, $sql);
 $results = mysqli_fetch_all($resposta);
 
 
-
 ?>
 
 <!-- Layout wrapper -->
@@ -180,7 +179,10 @@ $results = mysqli_fetch_all($resposta);
                                 <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search..." />
                             </div>
                         </div>
+
+                        
                         <!-- /Search -->
+                        
                         
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
@@ -240,24 +242,170 @@ $results = mysqli_fetch_all($resposta);
                     </div>
                 </nav>
                 
+
+
+
+
                 <!--Danilo-->
-                <table class="table">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Valor</th>
-            <th>Data</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($results as $linha) : ?>
-            <tr>
-                <td><?= '<strong>Despesa:</strong> ' . $nomesAleatorios[array_rand($nomesAleatorios)] ?></td>
-                <td><?= '<strong>Valor:</strong> R$ ' . number_format($linha[2], 2, ',', '.') ?></td>
-                <td><?= '<strong>Data:</strong> ' . $linha[3] ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos e Tabela de Gastos</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- ... (seu conteúdo existente) ... -->
+
+            <!-- Div para o gráfico -->
+            <div class="content-wrapper">
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <div class="row">
+                        <div id="piechart" style="width: 900px; height: 500px;"></div>
+                    </div>
+
+                    <!-- Inputs para Despesa, Valor e Adicionar Gasto -->
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <input class="form-control" type="text" placeholder="Despesa" id="despesa" required>
+                        </div>
+                        <input type="hidden" value="<?php echo $_SESSION['id'] ?>" name="idUser" required>
+                        <div class="col-4">
+                            <input class="form-control" type="text" placeholder="Valor" id="valor">
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-outline-primary" onclick="adicionarGasto()">Adicionar Gasto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela para mostrar as informações -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+                <div class="row">
+                    <table id="tabelaGastos" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Valor</th>
+                                <th>Data</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($results as $linha) : ?>
+                                <tr>
+                                    <td><?= $linha[1] ?></td>
+                                    <td>R$ <?= number_format($linha[2], 2, ',', '.') ?></td>
+                                    <td><?= $linha[3] ?></td>
+                                    <td>
+                                        <button class="btn btn-danger" onclick="excluirLinha(this)">Excluir</button>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                <?php foreach ($results as $linha) : ?>['<?= $linha[1] ?>', <?= $linha[2] ?>],
+                <?php endforeach; ?>
+            ]);
+
+            var options = {
+                title: 'Cronograma de Gastos - (Gastos em R$)'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+
+        function excluirLinha(button) {
+            var row = button.closest('tr');
+            row.remove();
+        }
+
+        function adicionarGasto() {
+            var despesa = document.getElementById('despesa').value;
+            var valor = document.getElementById('valor').value;
+
+            if (!despesa || !valor) {
+                alert("Preencha todos os campos.");
+                return;
+            }
+
+            var tabela = document.getElementById('tabelaGastos').getElementsByTagName('tbody')[0];
+
+            var novaLinha = tabela.insertRow(tabela.rows.length);
+            var cell1 = novaLinha.insertCell(0);
+            var cell2 = novaLinha.insertCell(1);
+            var cell3 = novaLinha.insertCell(2);
+            var cell4 = novaLinha.insertCell(3);
+
+            cell1.innerHTML = despesa;
+            cell2.innerHTML = 'R$ ' + parseFloat(valor).toFixed(2);
+            cell3.innerHTML = new Date().toLocaleDateString();
+            cell4.innerHTML = '<button class="btn btn-danger" onclick="excluirLinha(this)">Excluir</button>';
+
+            document.getElementById('despesa').value = '';
+            document.getElementById('valor').value = '';
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
+
+    <script type="text/javascript">
+        // código do gráfico
+
+        // Esta função está simplificada para o exemplo, ajuste conforme necessário.
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                <?php foreach ($results as $linha) : ?>[<?= $linha[1] ?>, <?= $linha[2] ?>, <?= $linha[3] ?>],
+                <?php endforeach; ?>
+            ]);
+
+            var options = {
+                title: 'Cronograma de Gastos - (Gastos em R$)'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+    <!-- ... (seus scripts restantes) ... -->
+
+</body>
+
+</html>
+
+                
+    
+        
+    
 
 
 
@@ -265,18 +413,19 @@ $results = mysqli_fetch_all($resposta);
                 <form class="row g-3" action="config/cadastraDespesa.php" method="POST">
                     <div class="row">
                         <div class="col-4 py-3">
-                            <input class="form-control" type="text" placeholder="Despesa" name="despesa" required>
+                            <!--<input class="form-control" type="text" placeholder="Despesa" name="despesa" required>-->
                         </div>
                         <input type="hidden" value="<?php echo $_SESSION['id'] ?>" name="idUser" required>
                         <div class="col-4 py-3">
-                            <input class="form-control" type="text" placeholder="Valor" name="valor">
+                         <!--<input class="form-control" type="text" placeholder="Valor" name="valor">-->
                         </div>
                         <div class="col-3 py-3">
-                            <button type="submit" class="btn btn-outline-primary">Adicionar Gasto</button>
+                        <!-- <button type="submit" class="btn btn-outline-primary">Adicionar Gasto</button>-->
                         </div>
                     </div>
                 </form>
             </section>
+            
             
 
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -290,7 +439,7 @@ $results = mysqli_fetch_all($resposta);
                 function drawChart() {
                     var data = google.visualization.arrayToDataTable([
                         ['Task', 'Hours per Day'],
-                        <?php foreach ($results as $linha) : ?>['<?= $linha[1] ?>', <?= $linha[2] ?>],
+                        <?php foreach ($results as $linha) : ?>['<?= $linha[1] ?>', <?= $linha[2] ?>], /*Mudar Data*/ 
                         <?php endforeach; ?>
                     ]);
 
@@ -314,6 +463,7 @@ $results = mysqli_fetch_all($resposta);
                     </div>
                 </div>
             </div>
+            
 
 
             <!-- Core JS -->
