@@ -247,7 +247,7 @@ $results = mysqli_fetch_all($resposta);
 
 
                 <!--Danilo-->
-<!DOCTYPE html>
+                <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -258,9 +258,17 @@ $results = mysqli_fetch_all($resposta);
 </head>
 
 <body>
+    <?php
+        include_once('config.php');
+        include_once('config/conexao.php');
+
+        $idUser = $_SESSION['id'];
+        $sql = "SELECT * FROM `meusgastos` where idUser = $idUser ";
+        $resposta = mysqli_query($conn, $sql);
+        $results = mysqli_fetch_all($resposta);
+    ?>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <!-- ... (seu conteúdo existente) ... -->
 
             <!-- Div para o gráfico -->
             <div class="content-wrapper">
@@ -286,7 +294,7 @@ $results = mysqli_fetch_all($resposta);
             </div>
 
             <!-- Tabela para mostrar as informações -->
-            <div class="container-xxl flex-grow-1 container-p-y">
+            <<div class="container-xxl flex-grow-1 container-p-y">
                 <div class="row">
                     <table id="tabelaGastos" class="table table-bordered">
                         <thead>
@@ -314,7 +322,6 @@ $results = mysqli_fetch_all($resposta);
             </div>
         </div>
     </div>
-
     <script type="text/javascript">
         google.charts.load('current', {
             'packages': ['corechart']
@@ -366,41 +373,19 @@ $results = mysqli_fetch_all($resposta);
 
             document.getElementById('despesa').value = '';
             document.getElementById('valor').value = '';
-        }
-    </script>
-</body>
 
-</html>
-</body>
-
-</html>
-
-    <script type="text/javascript">
-        // código do gráfico
-
-        // Esta função está simplificada para o exemplo, ajuste conforme necessário.
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                <?php foreach ($results as $linha) : ?>[<?= $linha[1] ?>, <?= $linha[2] ?>, <?= $linha[3] ?>],
-                <?php endforeach; ?>
-            ]);
-
-            var options = {
-                title: 'Cronograma de Gastos - (Gastos em R$)'
-            };
-
+            // Adicione o novo gasto ao gráfico
             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
+            var data = chart.getDataTable();
+            data.addRow([despesa, parseFloat(valor)]);
             chart.draw(data, options);
         }
     </script>
-
-    <!-- ... (seus scripts restantes) ... -->
-
 </body>
 
 </html>
+
+
 
                 
     
