@@ -293,33 +293,7 @@ $results = mysqli_fetch_all($resposta);
                 </div>
             </div>
 
-            <!-- Tabela para mostrar as informações -->
-            <<div class="container-xxl flex-grow-1 container-p-y">
-                <div class="row">
-                    <table id="tabelaGastos" class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Valor</th>
-                                <th>Data</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($results as $linha) : ?>
-                                <tr>
-                                    <td><?= $linha[1] ?></td>
-                                    <td>R$ <?= number_format($linha[2], 2, ',', '.') ?></td>
-                                    <td><?= $linha[3] ?></td>
-                                    <td>
-                                        <button class="btn btn-danger" onclick="excluirLinha(this)">Excluir</button>
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            
         </div>
     </div>
     <script type="text/javascript">
@@ -381,6 +355,35 @@ $results = mysqli_fetch_all($resposta);
             chart.draw(data, options);
         }
     </script>
+
+
+<!-- Tabela para mostrar as informações -->
+<div class="container-xxl flex-grow-1 container-p-y">
+                <div class="row">
+                    <table id="tabelaGastos" class="table table-striped table-responsive">
+                        <thead>
+                            <tr class="table-primary">
+                                <th class="">Nome</th>
+                                <th>Valor</th>
+                                <th>Data</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($results as $linha) : ?>
+                                <tr>
+                                    <td><?= $linha[1] ?></td>
+                                    <td>R$ <?= number_format($linha[2], 2, ',', '.') ?></td>
+                                    <td><?= $linha[3] ?></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary" onclick="excluirLinha(this)">Excluir</button>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 </body>
 
 </html>
