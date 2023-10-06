@@ -1,0 +1,13 @@
+{
+    "name": "imperium/vastare",
+    "description": "Controle de gastos",
+    "require": {
+        "doctrine/orm": "^2.16",
+        "symfony/cache": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Imperium\\": "src/"
+        }
+    }
+}

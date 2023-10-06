@@ -32,7 +32,7 @@
                 </form>
 
 
-                <form action="config/criarUser.php" class="sign-up-form" method="POST">
+                <form action="public/index.php/usuario/criar" class="sign-up-form" method="POST">
                     <h2 class="title">Crie Sua Nova Conta</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
