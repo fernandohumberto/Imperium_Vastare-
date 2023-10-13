@@ -2,11 +2,15 @@
 
 namespace Imperium\Model;
 
-use Doctrine\ORM\Mapping\Column;
-use Doctrine\ORM\Mapping\Entity;
-use Doctrine\ORM\Mapping\GeneratedValue;
-use Doctrine\ORM\Mapping\Id;
-use Doctrine\ORM\Mapping\Table;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping\{
+    Column,
+    Entity,
+    GeneratedValue,
+    Id,
+    OneToMany,
+    Table
+};
 
 #[Entity]
 #[Table(name:"user")]
@@ -25,6 +29,12 @@ class User {
 
     #[Column(type: "string")]
     private string $email;
+
+    #[OneToMany(targetEntity: "Gasto", mappedBy:"users")]
+    private ArrayCollection $gastos;
+
+    #[OneToMany(targetEntity: "Suporte", mappedBy:"suporte")]
+    private ArrayCollection $suportes;
 
     public function __construct($user, $nome, $email, $senha)
     {
@@ -104,5 +114,93 @@ class User {
         $this->email = $email;
 
         return $this;
+    }
+
+    /**
+     * Get the value of gastos
+     */ 
+    public function getGastos() : ArrayCollection
+    {
+        return $this->gastos;
+    }
+
+    /**
+     * Set the value of gastos
+     *
+     * @return  self
+     */ 
+    public function setGastos($gastos)
+    {
+        $this->gastos = $gastos;
+
+        return $this;
+    }
+
+    /**
+     * Adiciona um gasto à coleção
+     * @param Gastos $gasto
+     */
+    public function addGasto(Gasto $gasto) : void
+    {
+        $this->gastos->add($gasto);
+    }
+
+    /**v
+     * Remove um gasto da coleção a partir de ima chave
+     * @param int $id
+     */
+    public function removeGasto(int $id) : void
+    {
+        $this->gastos->remove($id);    
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of suportes
+     */ 
+    public function getSuportes()
+    {
+        return $this->suportes;
+    }
+
+    /**
+     * Set the value of suportes
+     *
+     * @return  self
+     */ 
+    public function setSuportes($suportes)
+    {
+        $this->suportes = $suportes;
+
+        return $this;
+    }
+
+    public function addSuporte(Suporte $suporte) : void 
+    {
+        $this->suportes->add($suporte);
+    }
+
+    public function removeSuporte(int $id) : void
+    {
+        $this->suportes->remove($id);
     }
 }

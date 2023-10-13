@@ -12,7 +12,7 @@ class UserController extends Controller {
 
     public function listar(){
         $users=$this->repositorio->findAll();
-        require 'c:\xampp\htdocs\Imperium_Vastare-\views\teste.php';
+        $this->view("user/listar");
     }
 
     public function criar($paramentros){
@@ -21,4 +21,12 @@ class UserController extends Controller {
         $this->entitymanager->persist($user);
         $this->entitymanager->flush();
     }
+
+    public function mostrar(int $id)
+    {
+        $user = $this->repositorio->find($id);
+        $this->view("user/mostrar");
+    }
+
+
 }
