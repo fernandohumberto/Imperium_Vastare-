@@ -298,7 +298,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
                         <div class="card">
                             <h3>Poupança</h3>
                             <img  class="img_card" src="img/poupança.svg" alt="">
-                            <p>A poupança é a base de uma vida financeira segura, permitindo realizar sonhos e enfrentar imprevistos.</p>
+                            <p>A Poupança é a base de uma vida financeira segura, permitindo realizar sonhos</p>
                             <a href="Paginas_Educacionais\poupanca.php" class="btn">Saiba Mais</a>
                         </div>
 

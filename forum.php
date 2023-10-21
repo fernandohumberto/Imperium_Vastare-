@@ -231,7 +231,7 @@ include_once ('config.php') ;
 
                 <!-- / Navbar -->
 
-    
+   
 
         <!-- Overlay -->
         <div class="layout-overlay layout-menu-toggle"></div>
