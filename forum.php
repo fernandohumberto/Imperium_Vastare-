@@ -231,7 +231,114 @@ include_once ('config.php') ;
 
                 <!-- / Navbar -->
 
-   
+   <!-- conteudo do site -->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos CSS */
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .question {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .question h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .answer {
+            background-color: #e9e9e9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .answer h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fórum de Perguntas e Respostas sobre Educação Financeira</h1>
+        
+        <!-- Pergunta 1 -->
+        <div class="question">
+            <h2>Qual é a importância de um orçamento financeiro?</h2>
+            <p>Um orçamento financeiro é fundamental para controlar suas finanças, ajudando a planejar gastos, economizar dinheiro e evitar dívidas desnecessárias.</p>
+        </div>
+        <div class="answer">
+            <h3>Resposta:</h3>
+            <p>Um orçamento financeiro é uma ferramenta que permite acompanhar o dinheiro que entra e sai de sua vida. Ele ajuda a identificar áreas de gastos excessivos, definir metas de economia e manter suas finanças sob controle.</p>
+        </div>
+        
+        <!-- Pergunta 2 -->
+        <div class="question">
+            <h2>Como evitar dívidas e viver dentro das suas possibilidades?</h2>
+            <p>Evitar dívidas e viver dentro das suas possibilidades é essencial para a saúde financeira.</p>
+        </div>
+        <div class="answer">
+            <h3>Resposta:</h3>
+            <p>Para evitar dívidas, crie um orçamento, economize para despesas inesperadas, evite empréstimos desnecessários e mantenha um fundo de emergência. Viver dentro de suas possibilidades significa gastar menos do que você ganha e ser consciente das suas despesas.</p>
+        </div>
+        
+        <!-- Pergunta 3 -->
+        <div class="question">
+            <h2>Qual é a diferença entre investimentos de curto e longo prazo?</h2>
+            <p>Entender as diferenças entre investimentos de curto e longo prazo é importante para tomar decisões financeiras adequadas.</p>
+        </div>
+        <div class="answer">
+            <h3>Resposta:</h3>
+            <p>Investimentos de curto prazo são normalmente menos arriscados, mas oferecem retornos menores. Eles são adequados para objetivos financeiros de curto prazo, como uma viagem. Investimentos de longo prazo tendem a ser mais arriscados, mas podem render mais ao longo do tempo, sendo apropriados para objetivos como a aposentadoria.</p>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question">
+            <h2>Como construir um histórico de crédito sólido?</h2>
+            <p>Ter um bom histórico de crédito é importante para obter empréstimos e financiamentos com boas taxas de juros.</p>
+        </div>
+        <div class="answer">
+            <h3>Resposta:</h3>
+            <p>Para construir um histórico de crédito sólido, pague suas contas pontualmente, evite acumular dívidas em cartões de crédito e mantenha um saldo baixo em relação ao seu limite de crédito. Também é útil ter um mix de tipos de crédito, como cartões de crédito e empréstimos.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+   <!-- conteudo do site -->
 
         <!-- Overlay -->
         <div class="layout-overlay layout-menu-toggle"></div>
