@@ -197,7 +197,7 @@ $results = mysqli_fetch_all($resposta);
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
-                                        <a class="dropdown-item" href="meuperfil.php">
+                                        <a class="dropdown-item" href="#">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
@@ -215,13 +215,13 @@ $results = mysqli_fetch_all($resposta);
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="meuperfil.php">
+                                        <a class="dropdown-item" href="#">
                                             <i class="bx bx-user me-2"></i>
                                             <span class="align-middle">Meu Perfil </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="meuperfil.php">
+                                        <a class="dropdown-item" href="#">
                                             <i class="bx bx-cog me-2"></i>
                                             <span class="align-middle">Configurações</span>
                                         </a>
@@ -254,8 +254,30 @@ $results = mysqli_fetch_all($resposta);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráficos e Tabela de Gastos</title>
+    <!-- Adicionando a biblioteca Google Charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
 </head>
+<style>
+  .btn-excluir-container {
+    width: 100px; /* Defina o tamanho desejado para os botões de exclusão aqui */
+    text-align: center; /* Centralize o conteúdo dos botões horizontalmente */
+  }
+
+  .btn-excluir {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 4px; /* Borda arredondada */
+    display: inline-block;
+  }
+
+  .btn-excluir i {
+    margin-right: 5px; /* Espaçamento à direita do ícone */
+  }
+</style>
+
 
 <body>
     <?php
@@ -293,7 +315,6 @@ $results = mysqli_fetch_all($resposta);
                 </div>
             </div>
 
-            
         </div>
     </div>
     <script type="text/javascript">
@@ -321,6 +342,8 @@ $results = mysqli_fetch_all($resposta);
         function excluirLinha(button) {
             var row = button.closest('tr');
             row.remove();
+            // Após excluir a linha, atualize o gráfico chamando drawChart novamente
+            drawChart();
         }
 
         function adicionarGasto() {
@@ -348,45 +371,110 @@ $results = mysqli_fetch_all($resposta);
             document.getElementById('despesa').value = '';
             document.getElementById('valor').value = '';
 
-            // Adicione o novo gasto ao gráfico
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            var data = chart.getDataTable();
-            data.addRow([despesa, parseFloat(valor)]);
-            chart.draw(data, options);
+            // Após adicionar o novo gasto à tabela, atualize o gráfico chamando drawChart novamente
+            drawChart();
         }
+        
     </script>
 
-
-<!-- Tabela para mostrar as informações -->
-<div class="container-xxl flex-grow-1 container-p-y">
-                <div class="row">
-                    <table id="tabelaGastos" class="table table-striped table-responsive">
-                        <thead>
-                            <tr class="table-primary">
-                                <th class="">Nome</th>
-                                <th>Valor</th>
-                                <th>Data</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($results as $linha) : ?>
-                                <tr>
-                                    <td><?= $linha[1] ?></td>
-                                    <td>R$ <?= number_format($linha[2], 2, ',', '.') ?></td>
-                                    <td><?= $linha[3] ?></td>
-                                    <td>
-                                        <button class="btn btn-sm btn-outline-primary" onclick="excluirLinha(this)">Excluir</button>
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <!-- Tabela para mostrar as informações -->
+    <div class="container-xxl flex-grow-1 container-p-y">
+    <div class="row">
+        <div class="col-12">
+            <table id="tabelaGastos" class="table table-striped table-responsive">
+                <thead>
+                    <tr class="table-primary">
+                        <th class="">Nome</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Ações</th>
+                </thead>
+                <tbody>
+                <?php foreach ($results as $linha) : ?>
+                       <tr>
+    <td><?= $linha[1] ?></td>
+    <td>R$ <?= number_format($linha[2], 2, ',', '.') ?></td>
+    <td><?= $linha[3] ?></td>
+    <td>
+        <div class="btn-excluir-container">
+            <button class="btn-excluir" onclick="excluirLinha(this)">
+                <i class="bi bi-trash"></i> Excluir
+            </button>
+        </div>
+    </td>
+                                </button>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
+<script type="text/javascript">
+    function updateChartWithData() {
+        var tabela = document.getElementById('tabelaGastos').getElementsByTagName('tbody')[0];
+        var rows = tabela.getElementsByTagName('tr');
+
+        var data = [['Task', 'Hours per Day']];
+
+        for (var i = 0; i < rows.length; i++) {
+            var cells = rows[i].getElementsByTagName('td');
+            var despesa = cells[0].textContent;
+            var valor = parseFloat(cells[1].textContent.replace('R$', '').replace(',', '.'));
+
+            data.push([despesa, valor]);
+        }
+
+        var chartData = google.visualization.arrayToDataTable(data);
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var options = {
+            title: 'Cronograma de Gastos - (Gastos em R$)'
+        };
+
+        chart.draw(chartData, options);
+    }
+
+    // Chame a função para atualizar o gráfico depois de adicionar ou excluir linhas
+    function excluirLinha(button) {
+        var row = button.closest('tr');
+        row.remove();
+        updateChartWithData();
+    }
+
+    function adicionarGasto() {
+        var despesa = document.getElementById('despesa').value;
+        var valor = document.getElementById('valor').value;
+
+        if (!despesa || !valor) {
+            alert("Preencha todos os campos.");
+            return;
+        }
+
+        var tabela = document.getElementById('tabelaGastos').getElementsByTagName('tbody')[0];
+
+        var novaLinha = tabela.insertRow(tabela.rows.length);
+        var cell1 = novaLinha.insertCell(0);
+        var cell2 = novaLinha.insertCell(1);
+        var cell3 = novaLinha.insertCell(2);
+        var cell4 = novaLinha.insertCell(3);
+
+        cell1.innerHTML = despesa;
+        cell2.innerHTML = 'R$ ' + parseFloat(valor).toFixed(2);
+        cell3.innerHTML = new Date().toLocaleDateString();
+        cell4.innerHTML = '<button class="btn btn-danger" onclick="excluirLinha(this)">Excluir</button>';
+
+        document.getElementById('despesa').value = '';
+        document.getElementById('valor').value = '';
+
+        updateChartWithData();
+    }
+</script>
 
 </html>
+
+<!--Final danilo-->
+
 
 
 
