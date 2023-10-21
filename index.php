@@ -186,7 +186,7 @@ include_once('config.php');
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="meuperfil.php">
                                         <div class="d-flex">
                                             <div class="flex-shrink-0 me-3">
                                                 <div class="avatar avatar-online">
@@ -204,13 +204,13 @@ include_once('config.php');
                                     <div class="dropdown-divider"></div>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="meuperfil.php">
                                         <i class="bx bx-user me-2"></i>
                                         <span class="align-middle">Meu Perfil </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="meuperfil.php">
                                         <i class="bx bx-cog me-2"></i>
                                         <span class="align-middle">Configurações</span>
                                     </a>
