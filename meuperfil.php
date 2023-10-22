@@ -296,7 +296,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
                                 <input type="email" class="form-control" id="email" value="<?php echo $_SESSION['email'] ?>" readonly>
                             </div>
                             <button type="button" class="btn btn-sm btn-outline-primary" id="editarPerfil">Editar</button>
-                            <button type="button" class="btn btn-sm btn-outline-primary" id="editarPerfil">Salvar</button>
+                            <button type="button" class="btn btn-sm btn-outline-primary" id="salvarPerfil">Salvar</button>
                         </form>
                     </div>
                 </div>
