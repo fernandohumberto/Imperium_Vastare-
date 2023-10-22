@@ -209,6 +209,7 @@ include_once('config.php');
                                         <span class="align-middle">Meu Perfil </span>
                                     </a>
                                 </li>
+                                
                                 <li>
                                     <a class="dropdown-item" href="meuperfil.php">
                                         <i class="bx bx-cog me-2"></i>

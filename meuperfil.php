@@ -291,7 +291,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
                                 <label for="usuario">Usuário:</label>
                                 <input type="text" class="form-control" id="usuario" value="<?php echo $_SESSION['user'] ?>" readonly>
                             </div>
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-3">  
                                 <label for="email">E-mail:</label>
                                 <input type="email" class="form-control" id="email" value="<?php echo $_SESSION['email'] ?>" readonly>
                             </div>
