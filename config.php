@@ -6,7 +6,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
 } elseif (isset($_SESSION['id'])) {
 }
 
- 
+
 
 ?>
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
 
     <!-- Animações CSS -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
