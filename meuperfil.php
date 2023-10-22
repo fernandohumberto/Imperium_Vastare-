@@ -274,18 +274,35 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
                     </div>
                 </nav>
 
-                <!-- / Navbar -->
-
-                <!-- conteudo/ cartões -->
-
-     
-                <!-- conteudo/ cartões -->
-
-                <!-- Overlay -->
-                <div class="layout-overlay layout-menu-toggle"></div>
+                <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Meu Perfil</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" value="<?php echo $_SESSION['nome'] ?>" readonly>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="usuario">Usuário:</label>
+                                <input type="text" class="form-control" id="usuario" value="<?php echo $_SESSION['user'] ?>" readonly>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" value="<?php echo $_SESSION['email'] ?>" readonly>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-primary" id="editarPerfil">Editar</button>
+                            <button type="button" class="btn btn-sm btn-outline-primary" id="editarPerfil">Salvar</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <!-- / Layout wrapper -->
-
+        </div>
+    </div>
 
             <!-- Core JS -->
             <!-- build:js assets/vendor/js/core.js -->

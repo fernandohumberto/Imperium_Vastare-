@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/10/2023 às 20:09
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.0.28
+-- Tempo de geração: 22-Out-2023 às 16:39
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `meusgastos`
+-- Estrutura da tabela `meusgastos`
 --
 
 CREATE TABLE `meusgastos` (
@@ -32,10 +32,10 @@ CREATE TABLE `meusgastos` (
   `despesa` varchar(255) NOT NULL,
   `valor` int(11) NOT NULL,
   `idUser` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `meusgastos`
+-- Extraindo dados da tabela `meusgastos`
 --
 
 INSERT INTO `meusgastos` (`id`, `despesa`, `valor`, `idUser`) VALUES
@@ -51,12 +51,13 @@ INSERT INTO `meusgastos` (`id`, `despesa`, `valor`, `idUser`) VALUES
 (16, 'Comida', 500, 5),
 (17, 'água', 50, 5),
 (18, 'água', 200, 5),
-(19, 'água', 10, 5);
+(19, 'Netflix', 55, 10),
+(21, 'Cartão de Crédito', 275, 10);
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `suporte`
+-- Estrutura da tabela `suporte`
 --
 
 CREATE TABLE `suporte` (
@@ -67,10 +68,10 @@ CREATE TABLE `suporte` (
   `idUser` int(11) NOT NULL,
   `status` int(11) NOT NULL DEFAULT 1,
   `ativo` tinyint(1) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `suporte`
+-- Extraindo dados da tabela `suporte`
 --
 
 INSERT INTO `suporte` (`id`, `nome`, `email`, `message`, `idUser`, `status`, `ativo`) VALUES
@@ -86,7 +87,7 @@ INSERT INTO `suporte` (`id`, `nome`, `email`, `message`, `idUser`, `status`, `at
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `user`
+-- Estrutura da tabela `user`
 --
 
 CREATE TABLE `user` (
@@ -95,10 +96,10 @@ CREATE TABLE `user` (
   `senha` varchar(255) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `user`
+-- Extraindo dados da tabela `user`
 --
 
 INSERT INTO `user` (`id`, `user`, `senha`, `nome`, `email`) VALUES
@@ -107,41 +108,42 @@ INSERT INTO `user` (`id`, `user`, `senha`, `nome`, `email`) VALUES
 (4, 'fulano', '0123456789', 'Lulanin', '1@2.com'),
 (5, 'nando', '123', 'nando', '123@gmail.com'),
 (6, 'Fernando', '123456', 'Fernando', 'fernando@gmail.com'),
-(7, 'Fernando', '0123', 'Fernando', 'fernandohsmj2@gmail.com');
+(7, 'Fernando', '0123', 'Fernando', 'fernandohsmj2@gmail.com'),
+(10, 'marco03', 'marco99da', 'marco03', 'marcodavi@gmail.com');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `meusgastos`
+-- Índices para tabela `meusgastos`
 --
 ALTER TABLE `meusgastos`
   ADD PRIMARY KEY (`id`),
   ADD KEY `idUser` (`idUser`);
 
 --
--- Índices de tabela `suporte`
+-- Índices para tabela `suporte`
 --
 ALTER TABLE `suporte`
   ADD PRIMARY KEY (`id`),
   ADD KEY `idUser` (`idUser`);
 
 --
--- Índices de tabela `user`
+-- Índices para tabela `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
 -- AUTO_INCREMENT de tabela `meusgastos`
 --
 ALTER TABLE `meusgastos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de tabela `suporte`
@@ -153,20 +155,20 @@ ALTER TABLE `suporte`
 -- AUTO_INCREMENT de tabela `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- Restrições para tabelas despejadas
+-- Restrições para despejos de tabelas
 --
 
 --
--- Restrições para tabelas `meusgastos`
+-- Limitadores para a tabela `meusgastos`
 --
 ALTER TABLE `meusgastos`
   ADD CONSTRAINT `meusgastos_ibfk_1` FOREIGN KEY (`idUser`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Restrições para tabelas `suporte`
+-- Limitadores para a tabela `suporte`
 --
 ALTER TABLE `suporte`
   ADD CONSTRAINT `suporte_ibfk_1` FOREIGN KEY (`idUser`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;

@@ -370,13 +370,13 @@ include_once('config.php');
                                 document.write(new Date().getFullYear());
                             </script>
                             , feito com ❤️ by
-                            <a href="" target="_blank" class="footer-link fw-bolder">ADS 6º M</a>
+                            <a href="equipe.php" target="" class="footer-link fw-bolder">ADS 6º M</a>
                         </div>
                         <div>
 
                             <a href="" target="_blank" class="footer-link me-4">Documentação</a>
 
-                            <a href="" target="_blank" class="footer-link me-4">Suporte</a>
+                            <a href="suporte.php" target="" class="footer-link me-4">Suporte</a>
                         </div>
                     </div>
                 </footer>

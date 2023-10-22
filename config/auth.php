@@ -8,6 +8,8 @@ include_once('conexao.php');
 
 $user = filter_input(INPUT_POST, 'user');
 $senha = filter_input(INPUT_POST, 'senha');
+$nome = filter_input(INPUT_POST, 'nome');
+$email = filter_input(INPUT_POST, 'email');
 
 
 /* codifica a senha em md5 */
@@ -28,6 +30,9 @@ $resposta = mysqli_num_rows($query);
 if ($resposta > 0) {
     $_SESSION['id'] = $row['id'];
     $_SESSION['user'] = $row['user'];
+    $_SESSION['nome'] = $row['nome'];
+    $_SESSION['email'] = $row['email'];
+
    
     header('Location:../index.php');
 } else {
