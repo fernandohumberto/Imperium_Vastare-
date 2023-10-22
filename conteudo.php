@@ -347,7 +347,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
                         <div class="card">
                             <h3>Economia</h3>
                             <img  class="img_card" src="img/economia.svg" alt="">
-                            <p>A economia é o motor que impulsiona o progresso, influenciando nossas vidas e o futuro do mundo</p>
+                            <p>A economia é o motor que impulsiona o progresso, influenciando nossas vidas e o futuro</p>
                             <a href="Paginas_Educacionais\economia.php" class="btn">Saiba Mais</a>
                         </div>
 
