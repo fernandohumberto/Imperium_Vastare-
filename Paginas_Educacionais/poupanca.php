@@ -49,7 +49,7 @@
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">Imperium <br>Vastare </span>
                     </a>
 
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none" onclick="removeClasse()">
                         <i class="bx bx-chevron-left bx-sm align-middle"></i>
                     </a>
                 </div>
