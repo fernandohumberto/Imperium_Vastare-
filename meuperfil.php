@@ -6,7 +6,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
 } elseif (isset($_SESSION['id'])) {
 }
 
- 
+
 
 ?>
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
     <link rel="stylesheet" href="css/demo.css" />
     <!-- Animações CSS -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -47,6 +47,8 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Inclua o jQuery aqui -->
+    <script src="js/liberaEditar.js"></script>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
@@ -118,7 +120,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    
+
                     <li class="menu-item">
                         <a href="suporte.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-support"></i>
@@ -136,11 +138,11 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
 
                 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)"  onclick="adicionarClasse()">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)" onclick="adicionarClasse()">
                             <i class="bx bx-menu bx-sm"></i>
                         </a>
                     </div>
-<!-- <ul class="navbar-nav flex-row align-items-center ms-auto">
+                    <!-- <ul class="navbar-nav flex-row align-items-center ms-auto">
 
           
          Style Switcher
@@ -275,54 +277,54 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
                 </nav>
 
                 <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Meu Perfil</h3>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group mb-3">
-                                <label for="nome">Nome:</label>
-                                <input type="text" class="form-control" id="nome" value="<?php echo $_SESSION['nome'] ?>" readonly>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>Meu Perfil</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group mb-3">
+                                            <label for="nome">Nome:</label>
+                                            <input type="text" name="nome" class="form-control" id="removerBotao" value="<?php echo $_SESSION['nome'] ?>" readonly>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="usuario">Usuário:</label>
+                                            <input type="text" name="user" class="form-control adicionar editar" id="usuario" value="<?php echo $_SESSION['user'] ?>" readonly>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="email">E-mail:</label>
+                                            <input type="email" name="email" class="form-control adicionar editar" id="email" value="<?php echo $_SESSION['email'] ?>" readonly>
+                                        </div>
+                                        <button type="button" class="btn btn-sm btn-outline-primary" id='btnEditar'>Editar</button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary" id="salvarPerfil">Salvar</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="form-group mb-3">
-                                <label for="usuario">Usuário:</label>
-                                <input type="text" class="form-control" id="usuario" value="<?php echo $_SESSION['user'] ?>" readonly>
-                            </div>
-                            <div class="form-group mb-3">  
-                                <label for="email">E-mail:</label>
-                                <input type="email" class="form-control" id="email" value="<?php echo $_SESSION['email'] ?>" readonly>
-                            </div>
-                            <button type="button" class="btn btn-sm btn-outline-primary" id="editarPerfil">Editar</button>
-                            <button type="button" class="btn btn-sm btn-outline-primary" id="salvarPerfil">Salvar</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-            <!-- Core JS -->
-            <!-- build:js assets/vendor/js/core.js -->
-            <script src="js/jquery.js"></script>
-            <script src="js/popper.js"></script>
-            <script src="js/bostap.js"></script>
-            <script src="js/bootstrap.js"></script>
-            <script src="js/perfect-scrollbar/perfect-scrollbar.js"></script>
+                <!-- Core JS -->
+                <!-- build:js assets/vendor/js/core.js -->
+                <script src="js/jquery.js"></script>
+                <script src="js/popper.js"></script>
+                <script src="js/bostap.js"></script>
+                <script src="js/bootstrap.js"></script>
+                <script src="js/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-            <script src="js/menu.js"></script>
-            <!-- endbuild -->
+                <script src="js/menu.js"></script>
+                <!-- endbuild -->
 
 
 
-            <!-- Main JS -->
-            <script src="js/main.js"></script>
+                <!-- Main JS -->
+                <script src="js/main.js"></script>
 
 
-            <!-- Place this tag in your head or just before your close body tag. -->
-            <script async defer src="https://buttons.github.io/buttons.js"></script>
+                <!-- Place this tag in your head or just before your close body tag. -->
+                <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
