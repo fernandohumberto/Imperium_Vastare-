@@ -5,7 +5,14 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
     header("location: login.php");
 } elseif (isset($_SESSION['id'])) {
 }
+include_once('config/conexao.php');
+// codigo que traz os dados do user
+$id = $_SESSION['id'];
 
+$sqls = "SELECT * FROM `user` WHERE id = $id";
+
+$query = mysqli_query($conn, $sqls);
+$row = mysqli_fetch_assoc($query);
  
 
 ?>
@@ -239,7 +246,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['user'] ?></span>
+                                                    <span class="fw-semibold d-block"><?php echo $row['user'] ?></span>
                                                     <small class="text-muted">Usuário</small>
                                                 </div>
                                             </div>

@@ -219,7 +219,7 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                                                 </div>
                                                 <div class="flex-grow-1">
                                                     <span class="fw-semibold d-block">
-                                                        <?php echo $_SESSION['user'] ?>
+                                                        <?php echo $row['user'] ?>
                                                     </span>
                                                     <small class="text-muted">Usuário</small>
                                                 </div>

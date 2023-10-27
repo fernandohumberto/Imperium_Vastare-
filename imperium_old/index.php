@@ -82,7 +82,7 @@ if ($_SESSION['id'] == '' || $_SESSION['id'] == NULL) {
             </li>
             <hr style="color:yellow">
             <li>
-                <b style="color: white">Bem vindo,&nbsp;&nbsp;<?php echo $_SESSION['user']  ?></b>
+                <b style="color: white">Bem vindo,&nbsp;&nbsp;<?php echo $row['user']  ?></b>
             </li>
         </ul>
     </section>

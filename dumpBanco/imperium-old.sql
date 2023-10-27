@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27-Out-2023 às 20:11
--- Versão do servidor: 10.4.28-MariaDB
--- versão do PHP: 8.2.4
+-- Tempo de geração: 22-Out-2023 às 16:39
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,32 +31,28 @@ CREATE TABLE `meusgastos` (
   `id` int(11) NOT NULL,
   `despesa` varchar(255) NOT NULL,
   `valor` int(11) NOT NULL,
-  `idUser` int(11) NOT NULL,
-  `data` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `idUser` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `meusgastos`
 --
 
-INSERT INTO `meusgastos` (`id`, `despesa`, `valor`, `idUser`, `data`) VALUES
-(2, 'Comida', 250, 1, NULL),
-(3, 'Cartão de Credito', 350, 1, NULL),
-(4, 'Investimentos', 120, 1, NULL),
-(5, 'Gastos Imprevistos', 200, 1, NULL),
-(7, 'Gasto do usuario 2 ', 2500, 3, NULL),
-(10, 'Netflix', 55, 3, NULL),
-(11, 'Luz', 500, 3, NULL),
-(14, 'Mercado', 200, 1, NULL),
-(15, 'Comida', 50, 5, NULL),
-(16, 'Comida', 500, 5, NULL),
-(17, 'água', 50, 5, NULL),
-(18, 'água', 200, 5, NULL),
-(19, 'Netflix', 55, 10, NULL),
-(21, 'Cartão de Crédito', 275, 10, NULL),
-(22, 'Net', 2500, 10, '2023-10-27'),
-(23, 'Net', 2500, 10, '2023-10-27'),
-(24, 'Net', 2500, 10, '2023-10-26');
+INSERT INTO `meusgastos` (`id`, `despesa`, `valor`, `idUser`) VALUES
+(2, 'Comida', 250, 1),
+(3, 'Cartão de Credito', 350, 1),
+(4, 'Investimentos', 120, 1),
+(5, 'Gastos Imprevistos', 200, 1),
+(7, 'Gasto do usuario 2 ', 2500, 3),
+(10, 'Netflix', 55, 3),
+(11, 'Luz', 500, 3),
+(14, 'Mercado', 200, 1),
+(15, 'Comida', 50, 5),
+(16, 'Comida', 500, 5),
+(17, 'água', 50, 5),
+(18, 'água', 200, 5),
+(19, 'Netflix', 55, 10),
+(21, 'Cartão de Crédito', 275, 10);
 
 -- --------------------------------------------------------
 
@@ -72,7 +68,7 @@ CREATE TABLE `suporte` (
   `idUser` int(11) NOT NULL,
   `status` int(11) NOT NULL DEFAULT 1,
   `ativo` tinyint(1) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `suporte`
@@ -100,7 +96,7 @@ CREATE TABLE `user` (
   `senha` varchar(255) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `user`
@@ -147,7 +143,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de tabela `meusgastos`
 --
 ALTER TABLE `meusgastos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de tabela `suporte`
