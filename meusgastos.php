@@ -16,7 +16,6 @@ $sqls = "SELECT * FROM `user` WHERE id = $id";
 $query = mysqli_query($conn, $sqls);
 $row = mysqli_fetch_assoc($query);
 
-
 ?>
 
 <!-- Layout wrapper -->
