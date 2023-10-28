@@ -23,9 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        echo "<table class='table table-striped table-responsive'><tr><th>ID</th><th>Despesa</th><th>Valor</th><th>ID do Usuário</th><th>Data</th></tr>";
+        echo "<table class='table table-striped table-responsive'><tr class="."table-primary"."><th>ID</th><th>Despesa</th><th>Valor</th><th>Data</th></tr>";
         while($row = $result->fetch_assoc()) {
-            echo "<tr><td>" . $row["id"] . "</td><td>" . $row["despesa"] . "</td><td>" . $row["valor"] . "</td><td>" . $row["idUser"] . "</td><td>" . $row["data"] . "</td></tr>";
+            echo "<tr><td>" . $row["id"] . "</td><td>" . $row["despesa"] . "</td><td>" . $row["valor"] . "</td><td>" . $row["data"] . "</td></tr>";
         }
         echo "</table>";
     } else {

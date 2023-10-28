@@ -298,10 +298,10 @@ $row = mysqli_fetch_assoc($query);
                     <form method="post" id="filtroForm">
                         <label for="mes">Selecione o mês:</label>
                         <input type="date" id="mes" name="mes">
-                        <input type="submit" value="Filtrar">
+                        <button type="submit" class="btn btn-sm btn-outline-primary">Filtrar</button>
                     </form>
 
-                    <div id="resultado"></div>
+                    <div class="mt-2" id="resultado"></div>
 
                     <script>
                         document.getElementById('filtroForm').addEventListener('submit', function(e) {
