@@ -210,12 +210,7 @@ include_once('config.php');
                                     </a>
                                 </li>
                                 
-                                <li>
-                                    <a class="dropdown-item" href="meuperfil.php">
-                                        <i class="bx bx-cog me-2"></i>
-                                        <span class="align-middle">Configurações</span>
-                                    </a>
-                                </li>
+       
                                 <li>
                                     <div class="dropdown-divider"></div>
                                 </li>
@@ -273,7 +268,7 @@ include_once('config.php');
                                             </div>
                                             <span class="fw-semibold d-block mb-1">Inflação Real</span>
                                             <h3 class="card-title mb-2">0,12%</h3>
-                                            <small class="text-danger fw-semibold"><i class="bx bx-up-arrow-alt"></i> +4,61%</small>
+                                           <!--  <small class="text-danger fw-semibold"><i class="bx bx-up-arrow-alt"></i> +4,61%</small> -->
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +290,7 @@ include_once('config.php');
                                             </div>
                                             <span class="fw-semibold d-block mb-1">Economia</span>
                                             <h3 class="card-title text-nowrap mb-1">$4,679</h3>
-                                            <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +10,50%</small>
+                                           <!--  <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +10,50%</small> -->
                                         </div>
                                     </div>
                                 </div>
@@ -335,8 +330,8 @@ include_once('config.php');
                                                 </div>
                                             </div>
                                             <span class="fw-semibold d-block mb-1">Valor do Dólar</span>
-                                            <h3 class="card-title text-nowrap mb-2">$4,28</h3>
-                                            <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -1,38%</small>
+                                            <h3 class="card-title text-nowrap mb-2"><p id="usd-to-brl"></p></h3>
+                                      <!--       <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -1,38%</small> -->
                                         </div>
                                     </div>
                                 </div>
@@ -351,7 +346,7 @@ include_once('config.php');
                                             <span class="fw-semibold d-block mb-1">Taxa Selic</span>
                                             <h3 class="card-title mb-2">12,75%
                                             </h3>
-                                            <small class="text-success fw-semibold"><i class="bx bx-down-arrow-alt"></i> -0,50%</small>
+                                            <!-- <small class="text-success fw-semibold"><i class="bx bx-down-arrow-alt"></i> -0,50%</small> -->
                                         </div>
                                     </div>
                                 </div>
@@ -397,7 +392,8 @@ include_once('config.php');
 <script src="js/menu.js"></script>
 <!-- endbuild -->
 
-
+<!-- API dolar -->
+<script src="js/dolar.js"></script>
 
 <!-- Main JS -->
 <script src="js/main.js"></script>
