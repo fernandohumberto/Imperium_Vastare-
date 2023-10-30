@@ -235,12 +235,7 @@ $rowSuportes = mysqli_fetch_all($querySuporte);
                                             <span class="align-middle">Meu Perfil </span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a class="dropdown-item" href="meuperfil.php">
-                                            <i class="bx bx-cog me-2"></i>
-                                            <span class="align-middle">Configurações</span>
-                                        </a>
-                                    </li>
+                    
                                     <li>
                                         <div class="dropdown-divider"></div>
                                     </li>
