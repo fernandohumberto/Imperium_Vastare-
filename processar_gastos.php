@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mes_selecionado = date('m', strtotime($mes_selecionado));
 
     $sql = "SELECT * FROM meusgastos WHERE YEAR(data) = $ano_selecionado AND MONTH(data) = $mes_selecionado";
+    
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

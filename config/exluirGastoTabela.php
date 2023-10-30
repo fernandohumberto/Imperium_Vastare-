@@ -14,7 +14,6 @@ $sql = "UPDATE `meusgastos` SET `deletado`=0 WHERE id =" . $id . " ";
 // faz a interação com banco
 $query = mysqli_query($conn, $sql);
 
-
 if ($query == true) {
 
 
