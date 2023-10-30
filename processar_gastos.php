@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         echo "</table>";
     } else {
-        echo "Nenhum resultado encontrado para o mês selecionado.";  
+        echo "Nenhum resultado encontrado para o mês selecionado.";
     }
 }
 
