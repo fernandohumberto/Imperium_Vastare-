@@ -244,14 +244,16 @@ $row = mysqli_fetch_assoc($query);
                 <form class="row g-3" action="config/cadastraDespesa.php" method="POST">
                     <div class="row">
                         <div class="col-4 py-3">
-                            <input class="form-control" type="text" placeholder="Despesa" name="despesa" required>
+                            <input class="form-control" type="text" placeholder="Despesa" name="despesa" id="valorAlfa" required>
+                            <span id="mensagemErroAlfa" style="color: red;"></span>
                         </div>
                         <input type="hidden" value="<?php echo $_SESSION['id'] ?>" name="idUser" required>
                         <div class="col-4 py-3">
-                            <input class="form-control" type="text" placeholder="Valor" name="valor">
+                            <input class="form-control" type="text" placeholder="Valor" name="valor" id="valor"> <!--Inserir valor do R$, função apenas números e função de mascaras de dinheiro-->
+                            <span id="mensagemErro" style="color: red;"></span>
                         </div>
                         <div class="col-4 py-3">
-                            <input class="form-control" type="date" id="dataGasto" name="data">
+                            <input class="form-control" type="date" id="dataGasto" name="data" required>
                         </div>
                         <div class="col-3 py-3">
                             <button type="submit" class="btn btn-outline-primary">Adicionar Gasto</button>

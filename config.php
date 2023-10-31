@@ -48,10 +48,11 @@ $row = mysqli_fetch_assoc($query);
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="js/config.js"></script>
+    <script src="js/validador.js"></script>
 </head>
 
 <body>
