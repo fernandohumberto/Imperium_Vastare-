@@ -1,11 +1,5 @@
 <?php
-// Conexão com o banco de dados
-
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "imperium";
+include_once('conexao.php');
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

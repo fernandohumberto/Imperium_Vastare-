@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Out-2023 às 00:02
+-- Tempo de geração: 01-Nov-2023 às 17:56
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -32,7 +32,7 @@ CREATE TABLE `meusgastos` (
   `despesa` varchar(255) NOT NULL,
   `valor` int(11) NOT NULL,
   `idUser` int(11) NOT NULL,
-  `data` date DEFAULT NULL,
+  `data` date NOT NULL,
   `deletado` int(11) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -41,23 +41,8 @@ CREATE TABLE `meusgastos` (
 --
 
 INSERT INTO `meusgastos` (`id`, `despesa`, `valor`, `idUser`, `data`, `deletado`) VALUES
-(2, 'Comida', 250, 1, NULL, 1),
-(3, 'Cartão de Credito', 350, 1, NULL, 1),
-(4, 'Investimentos', 120, 1, NULL, 1),
-(5, 'Gastos Imprevistos', 200, 1, NULL, 1),
-(7, 'Gasto do usuario 2 ', 2500, 3, NULL, 1),
-(10, 'Netflix', 55, 3, NULL, 1),
-(11, 'Luz', 500, 3, NULL, 1),
-(14, 'Mercado', 200, 1, NULL, 1),
-(15, 'Comida', 50, 5, NULL, 1),
-(16, 'Comida', 500, 5, NULL, 1),
-(17, 'água', 50, 5, NULL, 1),
-(18, 'água', 200, 5, NULL, 1),
-(19, 'Netflix', 55, 10, NULL, 1),
-(21, 'Cartão de Crédito', 275, 10, NULL, 1),
-(22, 'Net', 2500, 10, '2023-10-27', 1),
-(23, 'Net', 2500, 10, '2023-10-27', 1),
-(24, 'Net', 2500, 10, '2023-10-26', 1);
+(3, 'Netflix', 55, 10, '2023-10-30', 1),
+(4, 'Ifood', 45, 10, '2023-10-29', 1);
 
 -- --------------------------------------------------------
 
@@ -114,7 +99,8 @@ INSERT INTO `user` (`id`, `user`, `senha`, `nome`, `email`) VALUES
 (5, 'nando', '123', 'nando', '123@gmail.com'),
 (6, 'Fernando', '123456', 'Fernando', 'fernando@gmail.com'),
 (7, 'Fernando', '0123', 'Fernando', 'fernandohsmj2@gmail.com'),
-(10, 'marco03', 'marco99da', 'Marco Davi', 'marcodavi@gmail.com');
+(10, 'marco03', 'marco99da', 'Marco Davi', 'marcodavi@gmail.com'),
+(11, 'teste1', 'teste', 'teste1', 'teste@teste.com');
 
 --
 -- Índices para tabelas despejadas
@@ -148,7 +134,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de tabela `meusgastos`
 --
 ALTER TABLE `meusgastos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `suporte`
@@ -160,7 +146,7 @@ ALTER TABLE `suporte`
 -- AUTO_INCREMENT de tabela `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Restrições para despejos de tabelas
