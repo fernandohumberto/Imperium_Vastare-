@@ -329,7 +329,7 @@ include_once('config.php');
                 Fernando Humberto
             </div>
             <div class="team-member-role">
-                Desenvolvedor Full-Stack
+                Desenvolvedor Front-End
             </div>
             <div class="team-member-social">
                 <a href="#"><i class="fab fa-instagram"></i></a>

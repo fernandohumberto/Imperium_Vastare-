@@ -250,7 +250,7 @@ include_once('config.php');
                         padding: 20px;
                         width: 90%;
                         max-width: 800px;
-                        margin: 0 auto;
+                        margin: 30px auto;
                         position: relative;
                     }
 

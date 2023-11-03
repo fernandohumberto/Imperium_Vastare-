@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
+<html lang="en" class="light-style layout-menu-fixed" id="minhaDiv" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
 
 <head>
     <meta charset="utf-8" />
@@ -11,8 +11,8 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
-
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="shortcut icon" href="../img/favicon-aba.svg">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,13 +26,15 @@
     <link rel="stylesheet" href="../css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="../css/demo.css" />
     <link rel="stylesheet" href="../css/cards.css">
-    <link rel="stylesheet" href="contabilidade.php">
 
+    <!-- Animações CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="js/config.js"></script>
+    <script src="../js/config.js"></script>
 </head>
 
 <body>
@@ -69,7 +71,7 @@
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Páginas</span>
                     </li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="../conteudo.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-dock-top"></i>
                             <div data-i18n="Account Settings">Conteúdos</div>
@@ -107,14 +109,14 @@
                             <div data-i18n="Misc">Equipe</div>
                         </a>
 
-                    
+
                     <li class="menu-item">
                         <a href="../suporte.php" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-support"></i>
                             <div data-i18n="Support">Suporte</div>
                         </a>
                     </li>
-                    
+
                 </ul>
             </aside>
             <!-- / Menu -->
@@ -125,11 +127,77 @@
 
                 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)" onclick="adicionarClasse()">
                             <i class="bx bx-menu bx-sm"></i>
                         </a>
                     </div>
+                    <!-- <ul class="navbar-nav flex-row align-items-center ms-auto">
 
+          
+         Style Switcher
+          <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+            <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+              <i class="bx bx-sm bx-moon"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+            <li class="menu-item active">
+                        <a href="index.php" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                            <div data-i18n="Analytics">Página Inicial</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Páginas</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="conteudo.php" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                            <div data-i18n="Account Settings">Conteúdos</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="meusgastos.php" class="menu-link">
+                                    <div data-i18n="Account">Meus Gastos</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="forum.php" class="menu-link">
+                                    <div data-i18n="Notifications">Fórum</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="meusgastos.php" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                            <div data-i18n="Authentications">Meus Gastos</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="forum.php" class="menu-link menu-toggle">
+                            <patch><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1920 1792">
+                                    <path fill="currentColor" d="M593 896q-162 5-265 128H194q-82 0-138-40.5T0 865q0-353 124-353q6 0 43.5 21t97.5 42.5T384 597q67 0 133-23q-5 37-5 66q0 139 81 256zm1071 637q0 120-73 189.5t-194 69.5H523q-121 0-194-69.5T256 1533q0-53 3.5-103.5t14-109T300 1212t43-97.5t62-81t85.5-53.5T602 960q10 0 43 21.5t73 48t107 48t135 21.5t135-21.5t107-48t73-48t43-21.5q61 0 111.5 20t85.5 53.5t62 81t43 97.5t26.5 108.5t14 109t3.5 103.5zM640 256q0 106-75 181t-181 75t-181-75t-75-181t75-181T384 0t181 75t75 181zm704 384q0 159-112.5 271.5T960 1024T688.5 911.5T576 640t112.5-271.5T960 256t271.5 112.5T1344 640zm576 225q0 78-56 118.5t-138 40.5h-134q-103-123-265-128q81-117 81-256q0-29-5-66q66 23 133 23q59 0 119-21.5t97.5-42.5t43.5-21q124 0 124 353zm-128-609q0 106-75 181t-181 75t-181-75t-75-181t75-181t181-75t181 75t75 181z" />
+                                </svg></patch>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div data-i18n="Misc">Fórum</div>
+                        </a>
+
+                    <li class="menu-item">
+                        <a href="equipe.php" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                            <div data-i18n="Misc">Equipe</div>
+                        </a>
+
+                    
+                    <li class="menu-item">
+                        <a href="suporte.php" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-support"></i>
+                            <div data-i18n="Support">Suporte</div>
+                        </a>
+                    </li>
+          
+
+        </ul>-->
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
                         <!-- Search -->
                         <div class="navbar-nav align-items-center">
@@ -152,16 +220,16 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
-                                        <a class="dropdown-item" href="meuperfil.php">
+                                        <a class="dropdown-item" href="../meuperfil.php">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="../img/fotodeperfilbase.svg" alt class="w-px-40 h-auto rounded-circle" />
+                                                        <img src="../img/fotodeperfil.svg" alt class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block"><?php echo $_SESSION['nome'] ?></span>
-
+                                                    <span class="fw-semibold d-block"><?php echo $row['user'] ?></span>
+                                                    <small class="text-muted">Usuário</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -170,15 +238,9 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="meuperfil.php">
+                                        <a class="dropdown-item" href="../meuperfil.php">
                                             <i class="bx bx-user me-2"></i>
                                             <span class="align-middle">Meu Perfil </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="meuperfil.php">
-                                            <i class="bx bx-cog me-2"></i>
-                                            <span class="align-middle">Configurações</span>
                                         </a>
                                     </li>
                                     <li>
@@ -198,120 +260,115 @@
                 </nav>
 
                 <!-- / Navbar -->
+                <!-- conteudo/ cartões -->
+                <style>
+                    /* Reset de estilos */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
 
-                 <!-- conteudo do site -->
+                    /* Estilos gerais */
+                    body {
+                        background-color: #f0f0f0;
+                        margin: 0;
+                    }
 
-                 <style>
-        /* Reset de estilos */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+                    .container {
+                        max-width: 960px;
+                        margin: 0 auto;
+                        padding: 20px;
+                    }
 
-        /* Estilos gerais */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-        }
+                    /* Estilos das seções de conteúdo */
+                    .content {
+                        background-color: #fff;
+                        padding: 20px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        opacity: 0;
+                        transform: translateY(20px);
+                        transition: opacity 0.5s ease, transform 0.5s ease;
+                    }
 
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+                    .content h2 {
+                        color: #333;
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
 
-        /* Estilos das seções de conteúdo */
-        .content {
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
+                    .content p {
+                        color: #666;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                </style>
+                </head>
 
-        .content h2 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+                <body>
+                    <div class="container">
+                        <!-- Seções de Conteúdo -->
+                        <div class="container">
+                            <!-- Seções de Conteúdo -->
+                            <style>
+                                #sub {
+                                    margin-left: 10px;
+                                }
 
-        .content p {
-            color: #666;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Seções de Conteúdo -->
-        <div class="container">
-    <!-- Seções de Conteúdo -->
-    <style>
-        #sub {
-            margin-left: 10px;
-        }
+                                #subtxt {
+                                    margin-left: 22px;
+                                }
+                            </style>
+                            <div class="content">
+                                <h1>Importância da Contabilidade</h1>
+                                <p>A contabilidade é uma disciplina essencial em qualquer organização, desempenhando um papel crucial na gestão financeira e na tomada de decisões. Aqui estão alguns motivos que destacam a importância da contabilidade:</p>
+                            </div>
+                            <div class="content">
+                                <h1>Benefícios da Contabilidade</h1>
+                                <p>A contabilidade oferece uma série de benefícios fundamentais para empresas e indivíduos:</p>
 
-        #subtxt {
-            margin-left: 22px;
-        }
-    </style>
-    <div class="content">
-        <h1>Importância da Contabilidade</h1>
-        <p>A contabilidade é uma disciplina essencial em qualquer organização, desempenhando um papel crucial na gestão financeira e na tomada de decisões. Aqui estão alguns motivos que destacam a importância da contabilidade:</p>
-    </div>
-    <div class="content">
-        <h1>Benefícios da Contabilidade</h1>
-        <p>A contabilidade oferece uma série de benefícios fundamentais para empresas e indivíduos:</p>
-
-        <ul>
-            <li>
-                <p id="sub"><strong>Gestão Financeira:</strong> Ajuda as empresas a controlar suas finanças, acompanhar receitas e despesas, e manter a solidez financeira.</p>
-            </li>
-            <li>
-                <p id="sub"><strong>Tributação:</strong> Facilita o cumprimento das obrigações fiscais, garantindo que os impostos sejam calculados e pagos corretamente.</p>
-            </li>
-            <li>
-                <p id="sub"><strong>Tomada de Decisões:</strong> Fornece informações financeiras precisas que orientam a tomada de decisões estratégicas e investimentos.</p>
-            </li>
-            <li>
-                <p id="sub"><strong>Transparência:</strong> Garante transparência nas operações financeiras, o que é importante para ganhar a confiança dos investidores e parceiros de negócios.</p>
-            </li>
-            <li>
-                <p id="sub"><strong>Conformidade Regulatória:</strong> Ajuda a cumprir regulamentos contábeis e legais, evitando problemas legais e multas.</p>
-            </li>
-        </ul>
-    </div>
-    <div class="content">
-        <h1>Funções da Contabilidade</h1>
-        <p>A contabilidade desempenha várias funções, incluindo a manutenção de registros financeiros, relatórios financeiros e análise de dados para suportar decisões informadas.</p>
-    </div>
-</div>
+                                <ul>
+                                    <li>
+                                        <p id="sub"><strong>Gestão Financeira:</strong> Ajuda as empresas a controlar suas finanças, acompanhar receitas e despesas, e manter a solidez financeira.</p>
+                                    </li>
+                                    <li>
+                                        <p id="sub"><strong>Tributação:</strong> Facilita o cumprimento das obrigações fiscais, garantindo que os impostos sejam calculados e pagos corretamente.</p>
+                                    </li>
+                                    <li>
+                                        <p id="sub"><strong>Tomada de Decisões:</strong> Fornece informações financeiras precisas que orientam a tomada de decisões estratégicas e investimentos.</p>
+                                    </li>
+                                    <li>
+                                        <p id="sub"><strong>Transparência:</strong> Garante transparência nas operações financeiras, o que é importante para ganhar a confiança dos investidores e parceiros de negócios.</p>
+                                    </li>
+                                    <li>
+                                        <p id="sub"><strong>Conformidade Regulatória:</strong> Ajuda a cumprir regulamentos contábeis e legais, evitando problemas legais e multas.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content">
+                                <h1>Funções da Contabilidade</h1>
+                                <p>A contabilidade desempenha várias funções, incluindo a manutenção de registros financeiros, relatórios financeiros e análise de dados para suportar decisões informadas.</p>
+                            </div>
+                        </div>
 
 
-    <script>
-        // JavaScript para animar as divs após o carregamento da página
-        window.onload = function() {
-            const contentDivs = document.querySelectorAll('.content');
+                        <script>
+                            // JavaScript para animar as divs após o carregamento da página
+                            window.onload = function() {
+                                const contentDivs = document.querySelectorAll('.content');
 
-            contentDivs.forEach((div, index) => {
-                setTimeout(() => {
-                    div.style.opacity = '1';
-                    div.style.transform = 'translateY(0)';
-                }, 300 * (index + 1));
-            });
-        };
-    </script>
-</body>
-
-               <!-- conteudo do site -->
-
-               
+                                contentDivs.forEach((div, index) => {
+                                    setTimeout(() => {
+                                        div.style.opacity = '1';
+                                        div.style.transform = 'translateY(0)';
+                                    }, 300 * (index + 1));
+                                });
+                            };
+                        </script>
+                </body>
+                <!-- conteudo/ cartões -->
 
                 <!-- Overlay -->
                 <div class="layout-overlay layout-menu-toggle"></div>
@@ -321,19 +378,19 @@
 
             <!-- Core JS -->
             <!-- build:js assets/vendor/js/core.js -->
-            <script src="js/jquery.js"></script>
-            <script src="js/popper.js"></script>
-            <script src="js/bostap.js"></script>
-            <script src="js/bootstrap.js"></script>
-            <script src="js/perfect-scrollbar/perfect-scrollbar.js"></script>
+            <script src="../js/jquery.js"></script>
+            <script src="../js/popper.js"></script>
+            <script src="../js/bostap.js"></script>
+            <script src="../js/bootstrap.js"></script>
+            <script src="../js/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-            <script src="js/menu.js"></script>
+            <script src="../js/menu.js"></script>
             <!-- endbuild -->
 
 
 
             <!-- Main JS -->
-            <script src="js/main.js"></script>
+            <script src="../js/main.js"></script>
 
 
             <!-- Place this tag in your head or just before your close body tag. -->
