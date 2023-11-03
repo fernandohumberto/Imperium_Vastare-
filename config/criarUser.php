@@ -18,7 +18,7 @@ $sqlConnect = mysqli_query($conn, $sql);
 
 
 if($sqlConnect) {
-    header("Location: ../index.php?status=1 ");
+    header("Location: ../login.php?status=1 ");
 }
 else {
     header("Location: ../index.php?erro=1 ");

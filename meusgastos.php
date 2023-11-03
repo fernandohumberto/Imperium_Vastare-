@@ -22,6 +22,7 @@ $row = mysqli_fetch_assoc($query);
 <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
         <!-- Menu -->
+        
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme ">
             <div class="app-brand demo">
@@ -36,6 +37,7 @@ $row = mysqli_fetch_assoc($query);
                     <i class="bx bx-chevron-left bx-sm align-middle"></i>
                 </a>
             </div>
+            
 
             <div class="menu-inner-shadow"></div>
 
@@ -241,6 +243,16 @@ $row = mysqli_fetch_assoc($query);
 
 
             <section class="container p-3">
+                <?php
+                if(isset($_GET['status']) == 1)
+                {
+                    echo' <div class="alert  text-center alert-success" role="alert">
+                   Gasto criado com sucesso!!
+                </div>';
+                }
+                
+                ?>
+           
                 <form class="row g-3" action="config/cadastraDespesa.php" method="POST">
                     <div class="row">
                         <div class="col-4 py-3">

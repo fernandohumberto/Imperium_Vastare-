@@ -242,7 +242,7 @@ include_once('config.php');
                                         <div class="card-body">
                                             <h5 class="card-title text-primary">Parabéns <?php echo $row['user'] ?> 🎉</h5>
                                             <p class="mb-4">
-                                                Você tem economizado <span class="fw-bold">38%</span> mais que o mês passado. Verifique seu cronograma.
+                                                Ótima iniciativa de querer <span class="fw-bold">cuidar</span> do seu dinheiro. Verifique seu cronograma.
                                             </p>
 
                                             <a href="meusgastos.php" class="btn btn-sm btn-outline-primary">Ver cronograma</a>

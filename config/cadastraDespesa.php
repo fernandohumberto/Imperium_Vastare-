@@ -19,7 +19,7 @@ if ($valor !== false && $despesa !== false && $idUser !== false ) {
 
         if (mysqli_stmt_execute($stmt)) {
             mysqli_stmt_close($stmt);
-            header('Location: ../meusgastos.php');
+            header('Location: ../meusgastos.php?status=1');
             exit;
         } else {
             echo 'Erro ao executar a consulta SQL: ' . mysqli_error($conn);

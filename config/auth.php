@@ -26,7 +26,7 @@ $row = mysqli_fetch_assoc($query);
 
 /* conta se teve respota do banco para saber se o login e valido  */
 $resposta = mysqli_num_rows($query);
-
+  
 if ($resposta > 0) {
     $_SESSION['id'] = $row['id'];
     $_SESSION['user'] = $row['user'];
