@@ -230,7 +230,7 @@ include_once('config.php');
 
             <!-- conteudo do site -->
             <!DOCTYPE html>
-            <html lang="en">
+            <html lang="pt-br">
 
             <head>
                 <meta charset="UTF-8">
