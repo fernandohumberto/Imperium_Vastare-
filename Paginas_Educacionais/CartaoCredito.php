@@ -48,7 +48,7 @@
                 <div class="app-brand demo">
                     <a href="../index.php" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <i><img src="../img/favicon-aba.svg" alt=""></i>
+                        <i><img style="transform:scale(290%)" src="../img/Icone_title.jpg" alt=""></i>
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">Imperium <br>Vastare </span>
                     </a>
